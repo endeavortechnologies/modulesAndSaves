@@ -6,7 +6,7 @@
   <engineVersion>2018.1.0f2</engineVersion>
   <slipsInHole>false</slipsInHole>
   <gradingData>
-    <canAdvance>true</canAdvance>
+    <canAdvance>false</canAdvance>
     <gradingState>INACTIVE</gradingState>
     <checkpoint>NONE</checkpoint>
     <gradingLevel>DEFAULT</gradingLevel>
