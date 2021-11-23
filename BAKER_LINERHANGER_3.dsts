@@ -529,10 +529,10 @@
     <isManagedPressureDrilling>false</isManagedPressureDrilling>
     <mpdPumpDepth>0</mpdPumpDepth>
     <isFracPack>false</isFracPack>
-    <isWFLinerHanger>true</isWFLinerHanger>
+    <isWFLinerHanger>false</isWFLinerHanger>
     <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
     <isWireLine>false</isWireLine>
-    <isBakerLinerHanger>false</isBakerLinerHanger>
+    <isBakerLinerHanger>true</isBakerLinerHanger>
     <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
     <isCoiledTubing>false</isCoiledTubing>
     <isWhipstock>false</isWhipstock>
