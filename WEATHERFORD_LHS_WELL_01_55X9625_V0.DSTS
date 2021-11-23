@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="utf-16"?>
+<WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WebWellConfiguration>
+    <casings>
+      <WebCasing>
+        <name>Surface Casing</name>
+        <topDepth>0</topDepth>
+        <depth>1240</depth>
+        <width>0.217</width>
+        <outerDiameter>0</outerDiameter>
+        <weight>79.61677</weight>
+        <burstPressure>0</burstPressure>
+        <collapsePressure>0</collapsePressure>
+        <jointYieldPull>0</jointYieldPull>
+        <jointBucklePush>0</jointBucklePush>
+        <minMakeupTorque>0</minMakeupTorque>
+        <optimumMakeupTorque>0</optimumMakeupTorque>
+        <maxMakeupTorque>0</maxMakeupTorque>
+      </WebCasing>
+    </casings>
+    <initialMudWeight>1397.17615</initialMudWeight>
+    <formationMargin>0</formationMargin>
+    <BOPClass>6</BOPClass>
+  </WebWellConfiguration>
+  <WebRigAssets>
+    <roughneckIndex>0</roughneckIndex>
+    <WebRigAssetCassetteList />
+    <WebTopDrive>
+      <maxLowerSpeed>3</maxLowerSpeed>
+      <maxRotation>1400</maxRotation>
+      <maxHoistSpeed>3</maxHoistSpeed>
+      <totalMass>36000</totalMass>
+      <maxDrillingTorque>50000</maxDrillingTorque>
+      <hookLoadGaugeUpperBound>4000000</hookLoadGaugeUpperBound>
+      <wobGaugeUpperBound>312500</wobGaugeUpperBound>
+      <wobGaugeLowerBound>-90000</wobGaugeLowerBound>
+      <tripInLowerSpeed>1.52399993</tripInLowerSpeed>
+      <tripInHoistSpeed>1.52399993</tripInHoistSpeed>
+      <tripOutLowerSpeed>1.52399993</tripOutLowerSpeed>
+      <tripOutHoistSpeed>1.52399993</tripOutHoistSpeed>
+      <topDriveMaxHeight>0</topDriveMaxHeight>
+    </WebTopDrive>
+    <WebBirdBath>
+      <pipes>5</pipes>
+      <heavyPipes>0</heavyPipes>
+      <collars>0</collars>
+    </WebBirdBath>
+    <WebAIWorkers>
+      <automaticBehavior>false</automaticBehavior>
+      <tripDirection>in</tripDirection>
+      <nameWorker1>Jack</nameWorker1>
+      <nameWorker2>Max</nameWorker2>
+      <nameWorker3>Pete</nameWorker3>
+    </WebAIWorkers>
+    <WebMainPump1>
+      <efficiency>0.95</efficiency>
+      <maxStrokesPerMinute>120</maxStrokesPerMinute>
+      <linerDiameter>0.1524</linerDiameter>
+      <linerStrokeLength>0.315</linerStrokeLength>
+      <reliefValveInitialPressure>32198</reliefValveInitialPressure>
+      <initialPumpPressureLimit>32098</initialPumpPressureLimit>
+    </WebMainPump1>
+    <WebMainPump2>
+      <efficiency>0.95</efficiency>
+      <maxStrokesPerMinute>120</maxStrokesPerMinute>
+      <linerDiameter>0.1524</linerDiameter>
+      <linerStrokeLength>0.315</linerStrokeLength>
+      <reliefValveInitialPressure>32198</reliefValveInitialPressure>
+      <initialPumpPressureLimit>32098</initialPumpPressureLimit>
+    </WebMainPump2>
+    <WebTripPump>
+      <efficiency>0.95</efficiency>
+      <maxStrokesPerMinute>45</maxStrokesPerMinute>
+      <linerDiameter>0.1524</linerDiameter>
+      <linerStrokeLength>0.3048</linerStrokeLength>
+      <reliefValveInitialPressure>0</reliefValveInitialPressure>
+      <initialPumpPressureLimit>0</initialPumpPressureLimit>
+    </WebTripPump>
+    <WebCementPump>
+      <efficiency>1</efficiency>
+      <maxStrokesPerMinute>120</maxStrokesPerMinute>
+      <linerDiameter>0.152399927</linerDiameter>
+      <linerStrokeLength>0.314959824</linerStrokeLength>
+      <reliefValveInitialPressure>68947.57</reliefValveInitialPressure>
+      <initialPumpPressureLimit>68947.57</initialPumpPressureLimit>
+    </WebCementPump>
+    <WebBoostPump>
+      <efficiency>0</efficiency>
+      <maxStrokesPerMinute>0</maxStrokesPerMinute>
+      <linerDiameter>0</linerDiameter>
+      <linerStrokeLength>0</linerStrokeLength>
+      <reliefValveInitialPressure>0</reliefValveInitialPressure>
+      <initialPumpPressureLimit>0</initialPumpPressureLimit>
+    </WebBoostPump>
+    <WebLowVolumePump>
+      <efficiency>0</efficiency>
+      <maxStrokesPerMinute>0</maxStrokesPerMinute>
+      <linerDiameter>0</linerDiameter>
+      <linerStrokeLength>0</linerStrokeLength>
+      <reliefValveInitialPressure>0</reliefValveInitialPressure>
+      <initialPumpPressureLimit>0</initialPumpPressureLimit>
+    </WebLowVolumePump>
+    <WebMpdFillPump>
+      <efficiency>0</efficiency>
+      <maxStrokesPerMinute>0</maxStrokesPerMinute>
+      <linerDiameter>0</linerDiameter>
+      <linerStrokeLength>0</linerStrokeLength>
+      <reliefValveInitialPressure>0</reliefValveInitialPressure>
+      <initialPumpPressureLimit>0</initialPumpPressureLimit>
+    </WebMpdFillPump>
+    <WebSbpdPump>
+      <efficiency>0</efficiency>
+      <maxStrokesPerMinute>0</maxStrokesPerMinute>
+      <linerDiameter>0</linerDiameter>
+      <linerStrokeLength>0</linerStrokeLength>
+      <reliefValveInitialPressure>0</reliefValveInitialPressure>
+      <initialPumpPressureLimit>0</initialPumpPressureLimit>
+    </WebSbpdPump>
+    <WebFracBoatPump>
+      <efficiency>0</efficiency>
+      <maxStrokesPerMinute>0</maxStrokesPerMinute>
+      <linerDiameter>0</linerDiameter>
+      <linerStrokeLength>0</linerStrokeLength>
+      <reliefValveInitialPressure>0</reliefValveInitialPressure>
+      <initialPumpPressureLimit>0</initialPumpPressureLimit>
+    </WebFracBoatPump>
+    <WebAutoChoke>
+      <isActive>false</isActive>
+      <speedFactor>0</speedFactor>
+      <targetOverkill>0</targetOverkill>
+      <pressureTolerance>0</pressureTolerance>
+      <prediction>0</prediction>
+      <deltaLastTick>0</deltaLastTick>
+    </WebAutoChoke>
+    <chokeData>
+      <chokeDataList />
+    </chokeData>
+  </WebRigAssets>
+  <WebDrillString>
+    <name>Long string with mud motor and MWD</name>
+    <initialMudWeight>0</initialMudWeight>
+    <toolSpecs />
+    <WebBHA>
+      <BHAUsed>true</BHAUsed>
+      <maxRotationSpeedWithoutDamageToBHA>360</maxRotationSpeedWithoutDamageToBHA>
+      <length>20</length>
+      <distance_MWD_is_behind_drillBit>10</distance_MWD_is_behind_drillBit>
+      <switch_between_MTF_and_GTF>5</switch_between_MTF_and_GTF>
+      <buildRatePerMeter>0.5</buildRatePerMeter>
+      <TFO_UpdateFrequency>15</TFO_UpdateFrequency>
+      <Azimuth_UpdateFrequency>15</Azimuth_UpdateFrequency>
+      <Inclination_UpdateFrequency>15</Inclination_UpdateFrequency>
+      <ROP_UpdateFrequency>1</ROP_UpdateFrequency>
+    </WebBHA>
+    <WebMudMotor>
+      <mudMotorUsed>true</mudMotorUsed>
+      <weight>1000</weight>
+      <maxPower>241000</maxPower>
+      <maxStallPressure>8960</maxStallPressure>
+      <maxDifferentialPressure>4480</maxDifferentialPressure>
+      <maxRotationSpeed>200</maxRotationSpeed>
+      <dumpSubThresholdFlowRate>0.0125</dumpSubThresholdFlowRate>
+    </WebMudMotor>
+    <WebDrillPipe>
+      <innerDiameter>0.108712</innerDiameter>
+      <outerDiameter>0.127</outerDiameter>
+      <length>0</length>
+      <nominalWeight>30.6561775</nominalWeight>
+      <burstPressure>0</burstPressure>
+      <collapsePressure>0</collapsePressure>
+      <jointYieldPull>0</jointYieldPull>
+      <jointBucklePush>0</jointBucklePush>
+      <minMakeupTorque>0</minMakeupTorque>
+      <optimumMakeupTorque>0</optimumMakeupTorque>
+      <maxMakeupTorque>0</maxMakeupTorque>
+    </WebDrillPipe>
+    <WebHeavyWeightDrillPipe>
+      <innerDiameter>0.0762</innerDiameter>
+      <outerDiameter>0.127</outerDiameter>
+      <length>0</length>
+      <nominalWeight>74.4081955</nominalWeight>
+      <burstPressure>0</burstPressure>
+      <collapsePressure>0</collapsePressure>
+      <jointYieldPull>0</jointYieldPull>
+      <jointBucklePush>0</jointBucklePush>
+      <minMakeupTorque>0</minMakeupTorque>
+      <optimumMakeupTorque>0</optimumMakeupTorque>
+      <maxMakeupTorque>0</maxMakeupTorque>
+    </WebHeavyWeightDrillPipe>
+    <WebCasingSeven>
+      <innerDiameter>0</innerDiameter>
+      <outerDiameter>0</outerDiameter>
+      <length>0</length>
+      <nominalWeight>0</nominalWeight>
+      <burstPressure>0</burstPressure>
+      <collapsePressure>0</collapsePressure>
+      <jointYieldPull>0</jointYieldPull>
+      <jointBucklePush>0</jointBucklePush>
+      <minMakeupTorque>0</minMakeupTorque>
+      <optimumMakeupTorque>0</optimumMakeupTorque>
+      <maxMakeupTorque>0</maxMakeupTorque>
+    </WebCasingSeven>
+    <WebCasingThirteen>
+      <innerDiameter>0</innerDiameter>
+      <outerDiameter>0</outerDiameter>
+      <length>0</length>
+      <nominalWeight>0</nominalWeight>
+      <burstPressure>0</burstPressure>
+      <collapsePressure>0</collapsePressure>
+      <jointYieldPull>0</jointYieldPull>
+      <jointBucklePush>0</jointBucklePush>
+      <minMakeupTorque>0</minMakeupTorque>
+      <optimumMakeupTorque>0</optimumMakeupTorque>
+      <maxMakeupTorque>0</maxMakeupTorque>
+    </WebCasingThirteen>
+    <WebCable>
+      <innerDiameter>0</innerDiameter>
+      <outerDiameter>0</outerDiameter>
+      <length>0</length>
+      <nominalWeight>0</nominalWeight>
+      <burstPressure>0</burstPressure>
+      <collapsePressure>0</collapsePressure>
+      <jointYieldPull>0</jointYieldPull>
+      <jointBucklePush>0</jointBucklePush>
+      <minMakeupTorque>0</minMakeupTorque>
+      <optimumMakeupTorque>0</optimumMakeupTorque>
+      <maxMakeupTorque>0</maxMakeupTorque>
+    </WebCable>
+    <WebDrillCollar>
+      <innerDiameter>0.124205932</innerDiameter>
+      <outerDiameter>0.139699936</outerDiameter>
+      <length>0</length>
+      <nominalWeight>25.2987862</nominalWeight>
+      <burstPressure>0</burstPressure>
+      <collapsePressure>0</collapsePressure>
+      <jointYieldPull>0</jointYieldPull>
+      <jointBucklePush>0</jointBucklePush>
+      <minMakeupTorque>0</minMakeupTorque>
+      <optimumMakeupTorque>0</optimumMakeupTorque>
+      <maxMakeupTorque>0</maxMakeupTorque>
+    </WebDrillCollar>
+    <WebDrillBit>
+      <bitType>PDC</bitType>
+      <diameter>0.176</diameter>
+      <bitHydraulicsDiameter>0.140</bitHydraulicsDiameter>
+      <numberNozzles>3</numberNozzles>
+      <nozzleDiameter>0.0253999867</nozzleDiameter>
+      <maxDrillBitWOB>27000</maxDrillBitWOB>
+      <maxDrillingRotationSpeed>900</maxDrillingRotationSpeed>
+    </WebDrillBit>
+    <WebDrillingJar>
+      <nominalWeight>88.45</nominalWeight>
+      <outerDiameter>0.1651</outerDiameter>
+      <innerDiameter>0.06985</innerDiameter>
+      <type>hydraulic</type>
+      <maxDetentWorkingLoad>778438.75</maxDetentWorkingLoad>
+      <strokeLength>0.635</strokeLength>
+    </WebDrillingJar>
+    <WebNonPortedFloat>
+      <portUsed>false</portUsed>
+      <valveInnerDiameter>4</valveInnerDiameter>
+      <valveLength>20</valveLength>
+    </WebNonPortedFloat>
+    <WebDrillStringConfiguration>
+      <pipeCount>112</pipeCount>
+      <heavyWeightPipeCount>18</heavyWeightPipeCount>
+      <collarCount>129</collarCount>
+      <drillingJarPosition>-1</drillingJarPosition>
+      <dsPackerPosition>129</dsPackerPosition>
+      <casingTwoCount>0</casingTwoCount>
+      <casingSevenCount>0</casingSevenCount>
+      <casingThirteenCount>0</casingThirteenCount>
+    </WebDrillStringConfiguration>
+    <WebDrillStringSegmentList />
+    <WebPacker>
+      <packerType>0</packerType>
+      <maxSleeveRotation>2160</maxSleeveRotation>
+      <maxSleevePositionOffsetBottomJ>0.1</maxSleevePositionOffsetBottomJ>
+      <maxSleevePositionOffsetSideJ>0.3</maxSleevePositionOffsetSideJ>
+      <maxSleevePositionOffsetTopL>0.5</maxSleevePositionOffsetTopL>
+      <minimumSettingCompression>88964.43</minimumSettingCompression>
+      <minimumCompressionToBreakPin>217962.859</minimumCompressionToBreakPin>
+      <minimumCompressionToBreakPin2>222411.078</minimumCompressionToBreakPin2>
+      <secondsForCompression>120</secondsForCompression>
+      <torqueToReleaseOvershot>0</torqueToReleaseOvershot>
+      <turnScaling>0</turnScaling>
+      <plugDensity>7788.718</plugDensity>
+      <pressureToSetDies>15513.2041</pressureToSetDies>
+      <pressureToBreakBall>27579.03</pressureToBreakBall>
+      <pressureToBreakPlug>6894.75732</pressureToBreakPlug>
+      <pressureToDislodgePlug>5171.068</pressureToDislodgePlug>
+      <pressureToSeparateTool>0</pressureToSeparateTool>
+    </WebPacker>
+    <WebTubingHanger>
+      <rotationToPickUp>0</rotationToPickUp>
+      <torqueOnConnection>0</torqueOnConnection>
+      <liftLengthToSeal>0</liftLengthToSeal>
+      <rotationToSeal>0</rotationToSeal>
+      <windUpTorqueScaling>0</windUpTorqueScaling>
+      <hookLoadAddedBySealing>0</hookLoadAddedBySealing>
+      <pinShearDelay>0</pinShearDelay>
+    </WebTubingHanger>
+    <WebWhipstock>
+      <minimumSettingCompression>0</minimumSettingCompression>
+      <minimumSettingCompressionPin2>0</minimumSettingCompressionPin2>
+      <liftToMountMudMotor>0</liftToMountMudMotor>
+      <maxROP>0</maxROP>
+      <minROP>0</minROP>
+      <maxWOB>0</maxWOB>
+      <minWOB>0</minWOB>
+      <maxTorque>0</maxTorque>
+      <minTorque>0</minTorque>
+      <cuttingsDensity>0</cuttingsDensity>
+      <minRpmToClean>0</minRpmToClean>
+      <maxPipeSpeedToClean>0</maxPipeSpeedToClean>
+      <timeToClean>0</timeToClean>
+      <windowSize>0</windowSize>
+      <maxWOBDrillingDirty>0</maxWOBDrillingDirty>
+      <maxTorqueDrillingDirty>0</maxTorqueDrillingDirty>
+      <deflectionAngle>0</deflectionAngle>
+      <maxFlowToEnterWindow>0</maxFlowToEnterWindow>
+      <forceToFreeStuckToolMedium>0</forceToFreeStuckToolMedium>
+      <forceToFreeStuckToolSmall>0</forceToFreeStuckToolSmall>
+      <forceToFreeStuckToolPctReductionByYoYo>0</forceToFreeStuckToolPctReductionByYoYo>
+    </WebWhipstock>
+  </WebDrillString>
+  <WebDrillPlan>
+    <drillPlanName>LINER TRAINING WELL 1</drillPlanName>
+    <maxTrueVerticalDepth>4000</maxTrueVerticalDepth>
+    <maxHorizontalDisplacement>2000</maxHorizontalDisplacement>
+    <initialAnnulusStartsAtSection>70</initialAnnulusStartsAtSection>
+    <sections>
+      <Section>
+        <name>RISER</name>
+        <width>0.217</width>
+        <MD>200</MD>
+        <azimuth>0</azimuth>
+        <inclination>0</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1318.27ft 11.39° Inc 37.88° Azi </name>
+        <width>0.217</width>
+        <MD>401.81</MD>
+        <azimuth>0</azimuth>
+        <inclination>0</inclination>
+        <build>0.05695</build>
+        <turn>0.1894</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1414.47ft 13.94° Inc 41.93° Azi </name>
+        <width>0.217</width>
+        <MD>431.13</MD>
+        <azimuth>41.93</azimuth>
+        <inclination>13.94</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1483.67ft 15.82° Inc 41.67° Azi </name>
+        <width>0.217</width>
+        <MD>452.22</MD>
+        <azimuth>41.67</azimuth>
+        <inclination>15.82</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1581.47ft 19.55° Inc 40.08° Azi </name>
+        <width>0.217</width>
+        <MD>482.03</MD>
+        <azimuth>40.08</azimuth>
+        <inclination>19.55</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1677.28ft 22.44° Inc 39.7° Azi </name>
+        <width>0.217</width>
+        <MD>511.23</MD>
+        <azimuth>39.7</azimuth>
+        <inclination>22.44</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1771.38ft 25.97° Inc 40.0° Azi </name>
+        <width>0.217</width>
+        <MD>539.92</MD>
+        <azimuth>40</azimuth>
+        <inclination>25.97</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1869.19ft 29.23° Inc 40.25° Azi </name>
+        <width>0.217</width>
+        <MD>569.73</MD>
+        <azimuth>40.25</azimuth>
+        <inclination>29.23</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>1964.7ft 31.58° Inc 39.66° Azi </name>
+        <width>0.217</width>
+        <MD>598.84</MD>
+        <azimuth>39.66</azimuth>
+        <inclination>31.58</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2062.4ft 34.82° Inc 41.0° Azi </name>
+        <width>0.217</width>
+        <MD>628.62</MD>
+        <azimuth>41</azimuth>
+        <inclination>34.82</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2156.9ft 38.47° Inc 41.05° Azi </name>
+        <width>0.217</width>
+        <MD>657.42</MD>
+        <azimuth>41.05</azimuth>
+        <inclination>38.47</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2251.42ft 40.14° Inc 41.2° Azi </name>
+        <width>0.217</width>
+        <MD>686.23</MD>
+        <azimuth>41.2</azimuth>
+        <inclination>40.14</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2349.52ft 39.21° Inc 41.24° Azi </name>
+        <width>0.217</width>
+        <MD>716.13</MD>
+        <azimuth>41.24</azimuth>
+        <inclination>39.21</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2444.64ft 40.4° Inc 41.96° Azi </name>
+        <width>0.217</width>
+        <MD>745.13</MD>
+        <azimuth>41.96</azimuth>
+        <inclination>40.4</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2542.41ft 40.22° Inc 41.47° Azi </name>
+        <width>0.217</width>
+        <MD>774.93</MD>
+        <azimuth>41.47</azimuth>
+        <inclination>40.22</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2637.63ft 42.77° Inc 42.12° Azi </name>
+        <width>0.217</width>
+        <MD>803.95</MD>
+        <azimuth>42.12</azimuth>
+        <inclination>42.77</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2734.75ft 43.16° Inc 41.32° Azi </name>
+        <width>0.217</width>
+        <MD>833.55</MD>
+        <azimuth>41.32</azimuth>
+        <inclination>43.16</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2832.45ft 41.68° Inc 42.09° Azi </name>
+        <width>0.217</width>
+        <MD>863.33</MD>
+        <azimuth>42.09</azimuth>
+        <inclination>41.68</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>2929.64ft 42.17° Inc 42.2° Azi </name>
+        <width>0.217</width>
+        <MD>892.95</MD>
+        <azimuth>42.2</azimuth>
+        <inclination>42.17</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3026.07ft 42.16° Inc 41.24° Azi </name>
+        <width>0.217</width>
+        <MD>922.35</MD>
+        <azimuth>41.24</azimuth>
+        <inclination>42.16</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3122.17ft 41.11° Inc 38.73° Azi </name>
+        <width>0.217</width>
+        <MD>951.64</MD>
+        <azimuth>38.73</azimuth>
+        <inclination>41.11</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3216.66ft 42.46° Inc 37.77° Azi </name>
+        <width>0.217</width>
+        <MD>980.44</MD>
+        <azimuth>37.77</azimuth>
+        <inclination>42.46</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3314.76ft 43.22° Inc 38.31° Azi </name>
+        <width>0.217</width>
+        <MD>1010.34</MD>
+        <azimuth>38.31</azimuth>
+        <inclination>43.22</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3411.88ft 42.04° Inc 37.29° Azi </name>
+        <width>0.217</width>
+        <MD>1039.94</MD>
+        <azimuth>37.29</azimuth>
+        <inclination>42.04</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3509.39ft 43.83° Inc 37.04° Azi </name>
+        <width>0.217</width>
+        <MD>1069.66</MD>
+        <azimuth>37.04</azimuth>
+        <inclination>43.83</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3604.87ft 43.15° Inc 37.41° Azi </name>
+        <width>0.217</width>
+        <MD>1098.76</MD>
+        <azimuth>37.41</azimuth>
+        <inclination>43.15</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3699.98ft 43.36° Inc 38.56° Azi </name>
+        <width>0.217</width>
+        <MD>1127.75</MD>
+        <azimuth>38.56</azimuth>
+        <inclination>43.36</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3794.48ft 44.62° Inc 39.41° Azi </name>
+        <width>0.217</width>
+        <MD>1156.56</MD>
+        <azimuth>39.41</azimuth>
+        <inclination>44.62</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>3878.8ft 44.77° Inc 39.92° Azi </name>
+        <width>0.217</width>
+        <MD>1182.26</MD>
+        <azimuth>39.92</azimuth>
+        <inclination>44.77</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4015.91ft 42.74° Inc 39.51° Azi </name>
+        <width>0.217</width>
+        <MD>1224.05</MD>
+        <azimuth>39.51</azimuth>
+        <inclination>42.74</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4070.0ft 41.64° Inc 41.03° Azi </name>
+        <width>0.217</width>
+        <MD>1240</MD>
+        <azimuth>41.03</azimuth>
+        <inclination>41.64</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4212.51ft 40.54° Inc 42.55° Azi </name>
+        <width>0.216</width>
+        <MD>1283.97</MD>
+        <azimuth>42.55</azimuth>
+        <inclination>40.54</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4401.43ft 37.65° Inc 44.46° Azi </name>
+        <width>0.216</width>
+        <MD>1341.56</MD>
+        <azimuth>44.46</azimuth>
+        <inclination>37.65</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4590.74ft 36.37° Inc 54.84° Azi </name>
+        <width>0.216</width>
+        <MD>1399.26</MD>
+        <azimuth>54.84</azimuth>
+        <inclination>36.37</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4685.92ft 35.49° Inc 60.52° Azi </name>
+        <width>0.216</width>
+        <MD>1428.27</MD>
+        <azimuth>60.52</azimuth>
+        <inclination>35.49</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4781.43ft 33.15° Inc 64.08° Azi </name>
+        <width>0.216</width>
+        <MD>1457.38</MD>
+        <azimuth>64.08</azimuth>
+        <inclination>33.15</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4877.86ft 32.38° Inc 68.71° Azi </name>
+        <width>0.216</width>
+        <MD>1486.77</MD>
+        <azimuth>68.71</azimuth>
+        <inclination>32.38</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>4973.67ft 31.68° Inc 71.33° Azi </name>
+        <width>0.216</width>
+        <MD>1515.97</MD>
+        <azimuth>71.33</azimuth>
+        <inclination>31.68</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5069.77ft 31.42° Inc 70.45° Azi </name>
+        <width>0.216</width>
+        <MD>1545.27</MD>
+        <azimuth>70.45</azimuth>
+        <inclination>31.42</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5167.87ft 31.32° Inc 69.22° Azi </name>
+        <width>0.216</width>
+        <MD>1575.17</MD>
+        <azimuth>69.22</azimuth>
+        <inclination>31.32</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5263.68ft 31.42° Inc 66.2° Azi </name>
+        <width>0.216</width>
+        <MD>1604.37</MD>
+        <azimuth>66.2</azimuth>
+        <inclination>31.42</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5358.17ft 33.19° Inc 63.67° Azi </name>
+        <width>0.216</width>
+        <MD>1633.17</MD>
+        <azimuth>63.67</azimuth>
+        <inclination>33.19</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5454.66ft 34.42° Inc 59.17° Azi </name>
+        <width>0.216</width>
+        <MD>1662.58</MD>
+        <azimuth>59.17</azimuth>
+        <inclination>34.42</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5549.48ft 35.3° Inc 54.47° Azi </name>
+        <width>0.216</width>
+        <MD>1691.48</MD>
+        <azimuth>54.47</azimuth>
+        <inclination>35.3</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5644.27ft 36.34° Inc 49.89° Azi </name>
+        <width>0.216</width>
+        <MD>1720.37</MD>
+        <azimuth>49.89</azimuth>
+        <inclination>36.34</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5738.08ft 37.56° Inc 45.27° Azi </name>
+        <width>0.216</width>
+        <MD>1748.97</MD>
+        <azimuth>45.27</azimuth>
+        <inclination>37.56</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5832.6ft 38.97° Inc 40.78° Azi </name>
+        <width>0.216</width>
+        <MD>1777.78</MD>
+        <azimuth>40.78</azimuth>
+        <inclination>38.97</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>5927.49ft 41.35° Inc 38.69° Azi </name>
+        <width>0.216</width>
+        <MD>1806.7</MD>
+        <azimuth>38.69</azimuth>
+        <inclination>41.35</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6021.91ft 44.05° Inc 36.62° Azi </name>
+        <width>0.216</width>
+        <MD>1835.48</MD>
+        <azimuth>36.62</azimuth>
+        <inclination>44.05</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6119.43ft 45.57° Inc 31.84° Azi </name>
+        <width>0.216</width>
+        <MD>1865.2</MD>
+        <azimuth>31.84</azimuth>
+        <inclination>45.57</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6217.82ft 48.03° Inc 29.83° Azi </name>
+        <width>0.216</width>
+        <MD>1895.19</MD>
+        <azimuth>29.83</azimuth>
+        <inclination>48.03</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6314.32ft 49.98° Inc 26.92° Azi </name>
+        <width>0.216</width>
+        <MD>1924.6</MD>
+        <azimuth>26.92</azimuth>
+        <inclination>49.98</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6411.04ft 51.61° Inc 25.95° Azi </name>
+        <width>0.216</width>
+        <MD>1954.08</MD>
+        <azimuth>25.95</azimuth>
+        <inclination>51.61</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6508.22ft 53.11° Inc 24.07° Azi </name>
+        <width>0.216</width>
+        <MD>1983.71</MD>
+        <azimuth>24.07</azimuth>
+        <inclination>53.11</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6604.03ft 54.81° Inc 21.84° Azi </name>
+        <width>0.216</width>
+        <MD>2012.91</MD>
+        <azimuth>21.84</azimuth>
+        <inclination>54.81</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6699.83ft 56.58° Inc 18.72° Azi </name>
+        <width>0.216</width>
+        <MD>2042.11</MD>
+        <azimuth>18.72</azimuth>
+        <inclination>56.58</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6793.64ft 58.73° Inc 17.18° Azi </name>
+        <width>0.216</width>
+        <MD>2070.7</MD>
+        <azimuth>17.18</azimuth>
+        <inclination>58.73</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6886.85ft 61.78° Inc 15.61° Azi </name>
+        <width>0.216</width>
+        <MD>2099.11</MD>
+        <azimuth>15.61</azimuth>
+        <inclination>61.78</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>6982.26ft 63.94° Inc 12.32° Azi </name>
+        <width>0.216</width>
+        <MD>2128.19</MD>
+        <azimuth>12.32</azimuth>
+        <inclination>63.94</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7078.46ft 67.61° Inc 11.04° Azi </name>
+        <width>0.216</width>
+        <MD>2157.51</MD>
+        <azimuth>11.04</azimuth>
+        <inclination>67.61</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7172.27ft 69.18° Inc 7.47° Azi </name>
+        <width>0.216</width>
+        <MD>2186.11</MD>
+        <azimuth>7.47</azimuth>
+        <inclination>69.18</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7265.05ft 72.33° Inc 5.74° Azi </name>
+        <width>0.216</width>
+        <MD>2214.39</MD>
+        <azimuth>5.74</azimuth>
+        <inclination>72.33</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7358.99ft 74.98° Inc 3.39° Azi </name>
+        <width>0.216</width>
+        <MD>2243.02</MD>
+        <azimuth>3.39</azimuth>
+        <inclination>74.98</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7453.09ft 76.94° Inc 0.16° Azi </name>
+        <width>0.216</width>
+        <MD>2271.7</MD>
+        <azimuth>0.16</azimuth>
+        <inclination>76.94</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7549.29ft 79.34° Inc 357.45° Azi </name>
+        <width>0.216</width>
+        <MD>2301.02</MD>
+        <azimuth>357.45</azimuth>
+        <inclination>79.34</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7644.7ft 81.66° Inc 357.38° Azi </name>
+        <width>0.216</width>
+        <MD>2330.1</MD>
+        <azimuth>357.38</azimuth>
+        <inclination>81.66</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7742.8ft 80.83° Inc 357.44° Azi </name>
+        <width>0.216</width>
+        <MD>2360.01</MD>
+        <azimuth>357.44</azimuth>
+        <inclination>80.83</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7840.31ft 80.96° Inc 358.28° Azi </name>
+        <width>0.216</width>
+        <MD>2389.73</MD>
+        <azimuth>358.28</azimuth>
+        <inclination>80.96</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>7938.41ft 80.39° Inc 359.77° Azi </name>
+        <width>0.216</width>
+        <MD>2419.63</MD>
+        <azimuth>359.77</azimuth>
+        <inclination>80.39</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>8004.29ft 80.39° Inc 1.07° Azi </name>
+        <width>0.176</width>
+        <MD>2439.71</MD>
+        <azimuth>1.07</azimuth>
+        <inclination>80.39</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+      <Section>
+        <name>8035.2ft 80.27° Inc 1.07° Azi </name>
+        <width>0.176</width>
+        <MD>2448.15356</MD>
+        <azimuth>1.07</azimuth>
+        <inclination>80.27</inclination>
+        <build>0</build>
+        <turn>0</turn>
+        <operationNote />
+      </Section>
+    </sections>
+  </WebDrillPlan>
+  <WebSubSea>
+    <isSubsea>true</isSubsea>
+    <isRiserUsed>true</isRiserUsed>
+    <airGap>60</airGap>
+    <waterDepth>140</waterDepth>
+    <riserInnerDiameter>0.217</riserInnerDiameter>
+    <chokeLineInnerDiameter>0.08</chokeLineInnerDiameter>
+    <killLineInnerDiameter>0.08</killLineInnerDiameter>
+    <densityOfSeaWater>1029</densityOfSeaWater>
+    <lastPipeSlot>0</lastPipeSlot>
+    <lastPipeRow>0</lastPipeRow>
+  </WebSubSea>
+  <WebFormation>
+    <formationName>Offshore Formation</formationName>
+    <formationDesc>Subsurface configuration for demos</formationDesc>
+    <waterDepth>0</waterDepth>
+    <stratas>
+      <Strata>
+        <name>WATER</name>
+        <depth>60</depth>
+        <pressureGradient>10</pressureGradient>
+        <fracturePressure>50</fracturePressure>
+        <maxROP>200</maxROP>
+        <influxGas>0</influxGas>
+        <influxLiquid>0</influxLiquid>
+        <RockType>
+          <name>Water</name>
+          <porosity>10</porosity>
+          <permeability>10</permeability>
+          <staticFriction>1</staticFriction>
+          <kineticFriction>1</kineticFriction>
+          <strength>1</strength>
+          <texture>-1</texture>
+        </RockType>
+      </Strata>
+      <Strata>
+        <name>Edmonton Group</name>
+        <depth>140</depth>
+        <pressureGradient>10</pressureGradient>
+        <fracturePressure>50</fracturePressure>
+        <maxROP>200</maxROP>
+        <influxGas>0</influxGas>
+        <influxLiquid>0</influxLiquid>
+        <RockType>
+          <name>Default Soft Rock</name>
+          <porosity>8</porosity>
+          <permeability>5</permeability>
+          <staticFriction>2</staticFriction>
+          <kineticFriction>3</kineticFriction>
+          <strength>10</strength>
+          <texture>2</texture>
+        </RockType>
+      </Strata>
+      <Strata>
+        <name>Belly River Group</name>
+        <depth>1406</depth>
+        <pressureGradient>11.310298</pressureGradient>
+        <fracturePressure>40.71707</fracturePressure>
+        <maxROP>100</maxROP>
+        <influxGas>0</influxGas>
+        <influxLiquid>0</influxLiquid>
+        <RockType>
+          <name>Default Hard Rock</name>
+          <porosity>5</porosity>
+          <permeability>5</permeability>
+          <staticFriction>5</staticFriction>
+          <kineticFriction>5</kineticFriction>
+          <strength>20</strength>
+          <texture>5</texture>
+        </RockType>
+      </Strata>
+      <Strata>
+        <name>Viking</name>
+        <depth>5000</depth>
+        <pressureGradient>11.310298</pressureGradient>
+        <fracturePressure>45.24119</fracturePressure>
+        <maxROP>50</maxROP>
+        <influxGas>0</influxGas>
+        <influxLiquid>0</influxLiquid>
+        <RockType>
+          <name>Default Soft Rock</name>
+          <porosity>8</porosity>
+          <permeability>5</permeability>
+          <staticFriction>6</staticFriction>
+          <kineticFriction>6</kineticFriction>
+          <strength>20</strength>
+          <texture>2</texture>
+        </RockType>
+      </Strata>
+    </stratas>
+  </WebFormation>
+  <WebObjectives>
+    <minDrillDistance>-1</minDrillDistance>
+    <maxDrillDistance>-1</maxDrillDistance>
+    <timeLimit>-1</timeLimit>
+    <addSegments>-1</addSegments>
+    <removeSegments>-1</removeSegments>
+    <azimuthMin>-1</azimuthMin>
+    <azimuthMax>-1</azimuthMax>
+    <inclinationMin>-1</inclinationMin>
+    <inclinationMax>-1</inclinationMax>
+    <proximity>-1</proximity>
+    <maxTVD>3700</maxTVD>
+    <minTVD>3300</minTVD>
+    <maxDogLeg>-1</maxDogLeg>
+  </WebObjectives>
+  <ProgrammerSettings>
+    <initialTopDriveHeight>13.716</initialTopDriveHeight>
+    <initialStringHeight>1</initialStringHeight>
+    <simNoise>true</simNoise>
+    <enableGameOverSpam>true</enableGameOverSpam>
+    <maxAnalogGaugePressure>0</maxAnalogGaugePressure>
+    <maxAnalogDrillPipePressureGaugePressure>0</maxAnalogDrillPipePressureGaugePressure>
+    <maxAnalogCasingPressureGaugePressure>0</maxAnalogCasingPressureGaugePressure>
+    <maxAnalogKillLinePressureGaugePressure>0</maxAnalogKillLinePressureGaugePressure>
+    <greenToGo>NONE</greenToGo>
+    <maxStandpipePressure>0</maxStandpipePressure>
+    <maxCasingPressure>0</maxCasingPressure>
+    <maxBottomPressure>0</maxBottomPressure>
+    <incorrectLineups>false</incorrectLineups>
+    <bulkModulus>0</bulkModulus>
+    <plasticViscosity>0</plasticViscosity>
+    <yieldPoint>0</yieldPoint>
+    <kickLossCoeff>0</kickLossCoeff>
+    <fracLossCoeff>0</fracLossCoeff>
+    <minChokePercent>0</minChokePercent>
+    <chokeFastRate>0</chokeFastRate>
+    <chokeSlowRate>0</chokeSlowRate>
+    <isChokeRightToLeft>false</isChokeRightToLeft>
+    <disableUTubeBehaviour>false</disableUTubeBehaviour>
+    <gasMigrationRate>0</gasMigrationRate>
+    <maxInfluxAllowed>0</maxInfluxAllowed>
+    <maxInfluxAllowedDriller>0</maxInfluxAllowedDriller>
+    <maxInfluxAllowedSupervisor>0</maxInfluxAllowedSupervisor>
+    <rateOfInflux>0</rateOfInflux>
+    <gaugeTimeDelay>0</gaugeTimeDelay>
+    <BOPLeakRate>0</BOPLeakRate>
+    <rigType>LAND</rigType>
+    <mpdIndex>0</mpdIndex>
+    <gravity>0</gravity>
+    <JoshMath>
+      <JoshExpression>FP + CP - BPL</JoshExpression>
+      <JoshExpression>DPP - APL</JoshExpression>
+      <JoshExpression>DPP + CP + BPL</JoshExpression>
+      <JoshExpression>CP - KLHP</JoshExpression>
+      <JoshExpression>TPMud + CP - AHP - TPGas - DBHP + HPUB - DSHP + DSPL -OKP</JoshExpression>
+      <JoshExpression>KLP + CLPL - AHP - RHP - DBHP + CLHP - KLHP + DSPL -KLPL</JoshExpression>
+    </JoshMath>
+    <accelerateUTubing>0</accelerateUTubing>
+    <maxRateOfUtubingPerSecond>0</maxRateOfUtubingPerSecond>
+    <minRateOfUtubingPerSecond>0</minRateOfUtubingPerSecond>
+    <pumpTweenRateUpCoeff>0</pumpTweenRateUpCoeff>
+    <pumpTweenRateDownCoeff>0</pumpTweenRateDownCoeff>
+    <killLineGasSplitPct>0</killLineGasSplitPct>
+    <lateralFrictionScaling>0.84</lateralFrictionScaling>
+    <secondsBeforeKick>0</secondsBeforeKick>
+    <flowLineCapacity>0</flowLineCapacity>
+    <cementLineVolume>0</cementLineVolume>
+    <isStatOilScenario>false</isStatOilScenario>
+    <fractureLeakOffPointPct>0.93</fractureLeakOffPointPct>
+    <fractureHealPointPct>0.7</fractureHealPointPct>
+    <fractureFlowSmoothingFactor>0.5</fractureFlowSmoothingFactor>
+    <balloonFlowSmoothingFactor>0.5</balloonFlowSmoothingFactor>
+    <pressureReleaseFactor>0.5</pressureReleaseFactor>
+    <chokeGasMaxSpeedupFactor>9</chokeGasMaxSpeedupFactor>
+    <chokeSpeedupLimitPerTick>0.1</chokeSpeedupLimitPerTick>
+    <newChokeMath>true</newChokeMath>
+    <oilBasedMudPressureBoundary>0</oilBasedMudPressureBoundary>
+    <enableBariteSet>false</enableBariteSet>
+    <isCementingModule>false</isCementingModule>
+    <isManagedPressureDrilling>false</isManagedPressureDrilling>
+    <mpdPumpDepth>0</mpdPumpDepth>
+    <isFracPack>false</isFracPack>
+    <isWFLinerHanger>true</isWFLinerHanger>
+    <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
+    <isWireLine>false</isWireLine>
+    <isWFWireLine>false</isWFWireLine>
+    <isBakerLinerHanger>false</isBakerLinerHanger>
+    <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
+    <isCoiledTubing>false</isCoiledTubing>
+    <isWhipstock>false</isWhipstock>
+    <isWhipstockInstalled>false</isWhipstockInstalled>
+    <isDirectional>false</isDirectional>
+    <noKillSheet>true</noKillSheet>
+    <forceDownhole>false</forceDownhole>
+    <forceEDR>false</forceEDR>
+    <forceGeocube>false</forceGeocube>
+    <forceIncidents>false</forceIncidents>
+    <forceRepair>false</forceRepair>
+    <isSbpd>false</isSbpd>
+    <packerDepth>0</packerDepth>
+    <applyTensionCompressionWobScaling>0</applyTensionCompressionWobScaling>
+    <tensionCompressionWobMax>0</tensionCompressionWobMax>
+    <tensionCompressionWobDisconnectedPackerMax>0</tensionCompressionWobDisconnectedPackerMax>
+    <initialCompression>0</initialCompression>
+    <tensionToMove>0</tensionToMove>
+    <extraFriction>0</extraFriction>
+    <dsYoungsModulus>0</dsYoungsModulus>
+    <casingFrictionCoeff>0</casingFrictionCoeff>
+    <cableAngle>0</cableAngle>
+    <wirelineTensionLimits />
+    <wirelineDiffTensionLimits />
+    <wirelineCPtensionLimits />
+    <tensionToBreakString>0</tensionToBreakString>
+    <tensionToBreakWeakPoint>0</tensionToBreakWeakPoint>
+    <forceToFreeStuckCableMedium>0</forceToFreeStuckCableMedium>
+    <forceToFreeStuckCableSmall>0</forceToFreeStuckCableSmall>
+    <forceToFreeStuckCablePctReductionByYoYo>0</forceToFreeStuckCablePctReductionByYoYo>
+    <maxForceToDamageCableOvertension>0</maxForceToDamageCableOvertension>
+    <maxForceToDamageCableUndertension>0</maxForceToDamageCableUndertension>
+    <minForceToMaintainDrumIntegrity>0</minForceToMaintainDrumIntegrity>
+    <maxForceToDamageDrumIntegrity>0</maxForceToDamageDrumIntegrity>
+    <initialCableTension>0</initialCableTension>
+    <drumTorqueLimiterMax>44482</drumTorqueLimiterMax>
+    <drumPowerLimit>30505.5</drumPowerLimit>
+    <drumSpeedLow>0.3333333</drumSpeedLow>
+    <drumSpeedMed>1.5</drumSpeedMed>
+    <drumSpeedHigh>3</drumSpeedHigh>
+    <drumSpeedEmergPct>0.6666667</drumSpeedEmergPct>
+    <truckRpmMax>18000</truckRpmMax>
+    <truckRpmForMaxPTOPower>10800</truckRpmForMaxPTOPower>
+    <truckRpmForMinPTOPower>7200</truckRpmForMinPTOPower>
+    <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
+    <goodTongTorqueProbability>0</goodTongTorqueProbability>
+  </ProgrammerSettings>
+  <HydroV2Settings>
+    <isOn>true</isOn>
+    <isV2MudTanks>false</isV2MudTanks>
+    <tankParameters />
+  </HydroV2Settings>
+  <GradingSettings>
+    <isTestModule>false</isTestModule>
+    <level>0</level>
+    <includedSteps />
+    <automaticallyRepairIncident>false</automaticallyRepairIncident>
+    <targetAnnularPressure>0</targetAnnularPressure>
+    <targetManifoldPressure>0</targetManifoldPressure>
+    <targetTankFillProportion>0</targetTankFillProportion>
+    <targetTotalStrokesDuringStartup>0</targetTotalStrokesDuringStartup>
+    <targetSlowPumpRate>0</targetSlowPumpRate>
+    <targetDrillingPumpRate>0</targetDrillingPumpRate>
+    <strokeMarginAfterIncident>0</strokeMarginAfterIncident>
+    <targetKillMudWeight>0</targetKillMudWeight>
+    <drillingBreakFormationIndex>0</drillingBreakFormationIndex>
+    <randomIncidentCount>0</randomIncidentCount>
+    <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
+    <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
+  </GradingSettings>
+  <RandomIncidentSettings>
+    <queueRandomIncidentOnStart>false</queueRandomIncidentOnStart>
+    <randomIncidentCount>0</randomIncidentCount>
+    <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
+    <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
+  </RandomIncidentSettings>
+  <WeatherSettings>
+    <timeProgress>NONE</timeProgress>
+    <minutes>0</minutes>
+    <hours>12</hours>
+    <day>1</day>
+    <month>6</month>
+    <timeScale>5</timeScale>
+    <preset>CLEAR_SKY</preset>
+    <quality>MEDIUM</quality>
+    <latitude>0</latitude>
+    <longitude>0</longitude>
+  </WeatherSettings>
+  <moduleName>IWCF Subsea Module One</moduleName>
+  <moduleText>IWCF subsea assessment module #1
+		Stickup Height for hang-off: 5.8m / 19ft
+		Block Height for hang-off: 15.7m / 51.6ft
+		(Assuming hang-off on upper pipe rams.)</moduleText>
+  <isMetric>true</isMetric>
+  <version>MODULE_V5</version>
+</WebModule>
