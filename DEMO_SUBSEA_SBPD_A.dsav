@@ -2792,7 +2792,7 @@
     </ArrayOfLoggingChartPref>
     <ArrayOfLoggingChartPref>
       <LoggingChartPref>
-        <name>DPPLog</name>
+        <name>SPPLog</name>
         <colorHtml>00ABFFFF</colorHtml>
         <printHtml>00ABFFFF</printHtml>
         <strokeIndex>0</strokeIndex>

@@ -2802,7 +2802,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
   </ropControllerData>
   <loggingChartsPrefs>
     <LoggingChartPref>
-      <name>DPPLog</name>
+      <name>SPPLog</name>
       <colorHtml>FFFFFFFF</colorHtml>
       <printHtml>D9D9D9</printHtml>
       <strokeIndex>0</strokeIndex>
@@ -2927,7 +2927,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     </ArrayOfLoggingChartPref>
     <ArrayOfLoggingChartPref>
       <LoggingChartPref>
-        <name>DPPLog</name>
+        <name>SPPLog</name>
         <colorHtml>00ABFFFF</colorHtml>
         <printHtml>00ABFFFF</printHtml>
         <strokeIndex>0</strokeIndex>
