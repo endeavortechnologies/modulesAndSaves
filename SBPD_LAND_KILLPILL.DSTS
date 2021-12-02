@@ -5,7 +5,7 @@
       <WebCasing>
         <name>Surface Casing</name>
         <topDepth>0</topDepth>
-        <depth>500</depth>
+        <depth>1000</depth>
         <width>0.224</width>
         <outerDiameter>0</outerDiameter>
         <weight>0</weight>
@@ -127,10 +127,10 @@
     <WebAutoChoke>
       <isActive>true</isActive>
       <mode>OVERKILL</mode>
-      <speedFactor>0.0001</speedFactor>
+      <speedFactor>0.00001</speedFactor>
       <targetOverkill>0</targetOverkill>
       <pressureTolerance>0</pressureTolerance>
-      <prediction>10</prediction>
+      <prediction>1</prediction>
       <deltaLastTick>0</deltaLastTick>
     </WebAutoChoke>
     <chokeData>
@@ -422,7 +422,7 @@
       <Section>
         <name>Casing Shoe</name>
         <width>0.224</width>
-        <MD>500</MD>
+        <MD>1000</MD>
         <azimuth>0</azimuth>
         <inclination>0</inclination>
         <build>0</build>
@@ -500,7 +500,7 @@
         <fracturePressure>29</fracturePressure>
         <maxROP>200</maxROP>
         <influxGas>0</influxGas>
-        <influxLiquid>0</influxLiquid>
+        <influxLiquid>1</influxLiquid>
         <RockType>
           <name>Default Soft Rock</name>
           <porosity>8</porosity>
@@ -514,11 +514,11 @@
       <Strata>
         <name>Belly River Group</name>
         <depth>1438.656</depth>
-        <pressureGradient>14.8572073</pressureGradient>
+        <pressureGradient>14.8617325</pressureGradient>
         <fracturePressure>29</fracturePressure>
         <maxROP>100</maxROP>
         <influxGas>0</influxGas>
-        <influxLiquid>0</influxLiquid>
+        <influxLiquid>1</influxLiquid>
         <RockType>
           <name>Default Hard Rock</name>
           <porosity>5</porosity>
@@ -566,7 +566,7 @@
     <plasticViscosity>0</plasticViscosity>
     <yieldPoint>0</yieldPoint>
     <kickLossCoeff>1.1E+25</kickLossCoeff>
-    <fracLossCoeff>2.75E+12</fracLossCoeff>
+    <fracLossCoeff>2.75E+14</fracLossCoeff>
     <minChokePercent>0</minChokePercent>
     <chokeFastRate>0.1</chokeFastRate>
     <chokeSlowRate>0.001</chokeSlowRate>
@@ -588,15 +588,15 @@
     <maxRateOfUtubingPerSecond>0</maxRateOfUtubingPerSecond>
     <minRateOfUtubingPerSecond>0</minRateOfUtubingPerSecond>
     <pumpTweenRateUpCoeff>0.5</pumpTweenRateUpCoeff>
-    <pumpTweenRateDownCoeff>0.5</pumpTweenRateDownCoeff>
+    <pumpTweenRateDownCoeff>10</pumpTweenRateDownCoeff>
     <killLineGasSplitPct>0</killLineGasSplitPct>
     <lateralFrictionScaling>0</lateralFrictionScaling>
     <secondsBeforeKick>0</secondsBeforeKick>
     <flowLineCapacity>0</flowLineCapacity>
     <cementLineVolume>0</cementLineVolume>
     <isStatOilScenario>false</isStatOilScenario>
-    <fractureLeakOffPointPct>0.93</fractureLeakOffPointPct>
-    <fractureHealPointPct>0.7</fractureHealPointPct>
+    <fractureLeakOffPointPct>0.99</fractureLeakOffPointPct>
+    <fractureHealPointPct>0.90</fractureHealPointPct>
     <fractureFlowSmoothingFactor>0.5</fractureFlowSmoothingFactor>
     <balloonFlowSmoothingFactor>0.5</balloonFlowSmoothingFactor>
     <pressureReleaseFactor>0.5</pressureReleaseFactor>
@@ -682,7 +682,7 @@
 topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
 if (topDrive != null && Call("isReady", topDrive) == true)
   {
-    Call("Endtech.AutomationScripts.displaceVerticalToKillMud.Process", null, 0, 22300, 344.5, 344.5, 1847, 50, 5);
+    Call("Endtech.AutomationScripts.displaceVerticalToKillMud.Process", null, 0, 22300, 344.5, 344.5, 1847, 80, 79, 1, 11000000000000000, 16.284);
   }
 ]]></cscsScript>
   </ProgrammerSettings>
