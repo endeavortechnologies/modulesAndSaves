@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<WebModule xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebWellConfiguration>
     <casings>
       <WebCasing>
@@ -126,6 +126,7 @@
     </WebFracBoatPump>
     <WebAutoChoke>
       <isActive>false</isActive>
+      <mode>OVERKILL</mode>
       <speedFactor>0</speedFactor>
       <targetOverkill>0</targetOverkill>
       <pressureTolerance>0</pressureTolerance>
@@ -242,6 +243,7 @@
     <WebDrillBit>
       <bitType>PDC</bitType>
       <diameter>0.216</diameter>
+      <bitHydraulicsDiameter>0</bitHydraulicsDiameter>
       <numberNozzles>4</numberNozzles>
       <nozzleDiameter>0.00634999666</nozzleDiameter>
       <maxDrillBitWOB>27000</maxDrillBitWOB>
@@ -299,6 +301,29 @@
       <hookLoadAddedBySealing>0</hookLoadAddedBySealing>
       <pinShearDelay>0</pinShearDelay>
     </WebTubingHanger>
+    <WebWhipstock>
+      <minimumSettingCompression>0</minimumSettingCompression>
+      <minimumSettingCompressionPin2>0</minimumSettingCompressionPin2>
+      <liftToMountMudMotor>0</liftToMountMudMotor>
+      <maxROP>0</maxROP>
+      <minROP>0</minROP>
+      <maxWOB>0</maxWOB>
+      <minWOB>0</minWOB>
+      <maxTorque>0</maxTorque>
+      <minTorque>0</minTorque>
+      <cuttingsDensity>0</cuttingsDensity>
+      <minRpmToClean>0</minRpmToClean>
+      <maxPipeSpeedToClean>0</maxPipeSpeedToClean>
+      <timeToClean>0</timeToClean>
+      <windowSize>0</windowSize>
+      <maxWOBDrillingDirty>0</maxWOBDrillingDirty>
+      <maxTorqueDrillingDirty>0</maxTorqueDrillingDirty>
+      <deflectionAngle>0</deflectionAngle>
+      <maxFlowToEnterWindow>0</maxFlowToEnterWindow>
+      <forceToFreeStuckToolMedium>0</forceToFreeStuckToolMedium>
+      <forceToFreeStuckToolSmall>0</forceToFreeStuckToolSmall>
+      <forceToFreeStuckToolPctReductionByYoYo>0</forceToFreeStuckToolPctReductionByYoYo>
+    </WebWhipstock>
   </WebDrillString>
   <WebDrillPlan>
     <drillPlanName>Liner Hanger</drillPlanName>
@@ -451,7 +476,7 @@
           <permeability>5</permeability>
           <staticFriction>1</staticFriction>
           <kineticFriction>1</kineticFriction>
-          <strength>10</strength>
+          <strength>100</strength>
           <texture>3</texture>
         </RockType>
       </Strata>
@@ -475,6 +500,8 @@
   <ProgrammerSettings>
     <initialTopDriveHeight>11.9</initialTopDriveHeight>
     <initialStringHeight>1</initialStringHeight>
+    <minMudWeightDisplay>0</minMudWeightDisplay>
+    <maxMudWeightDisplay>0</maxMudWeightDisplay>
     <simNoise>true</simNoise>
     <enableGameOverSpam>true</enableGameOverSpam>
     <maxAnalogGaugePressure>34473.7852</maxAnalogGaugePressure>
@@ -498,10 +525,14 @@
     <disableUTubeBehaviour>false</disableUTubeBehaviour>
     <gasMigrationRate>0</gasMigrationRate>
     <maxInfluxAllowed>0</maxInfluxAllowed>
+    <maxInfluxAllowedDriller>0</maxInfluxAllowedDriller>
+    <maxInfluxAllowedSupervisor>0</maxInfluxAllowedSupervisor>
     <rateOfInflux>0</rateOfInflux>
     <gaugeTimeDelay>0</gaugeTimeDelay>
+    <BOPLeakRate>0</BOPLeakRate>
     <rigType>LAND</rigType>
     <mpdIndex>0</mpdIndex>
+    <sbpdType>DEFAULT</sbpdType>
     <gravity>0</gravity>
     <JoshMath />
     <accelerateUTubing>0</accelerateUTubing>
@@ -516,7 +547,7 @@
     <cementLineVolume>0</cementLineVolume>
     <isStatOilScenario>false</isStatOilScenario>
     <fractureLeakOffPointPct>0.93</fractureLeakOffPointPct>
-    <fractureHealPointPct>0.70</fractureHealPointPct>
+    <fractureHealPointPct>0.7</fractureHealPointPct>
     <fractureFlowSmoothingFactor>0.5</fractureFlowSmoothingFactor>
     <balloonFlowSmoothingFactor>0.5</balloonFlowSmoothingFactor>
     <pressureReleaseFactor>0.5</pressureReleaseFactor>
@@ -528,14 +559,21 @@
     <isCementingModule>false</isCementingModule>
     <isManagedPressureDrilling>false</isManagedPressureDrilling>
     <mpdPumpDepth>0</mpdPumpDepth>
+    <sbpdSpoolDepth>0</sbpdSpoolDepth>
     <isFracPack>false</isFracPack>
+    <isEndeavorTools>false</isEndeavorTools>
     <isWFLinerHanger>false</isWFLinerHanger>
     <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
     <isWireLine>false</isWireLine>
+    <isWFWireLine>false</isWFWireLine>
+    <isBakerWireLine>false</isBakerWireLine>
     <isBakerLinerHanger>true</isBakerLinerHanger>
     <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
     <isCoiledTubing>false</isCoiledTubing>
+    <isUpperCompletions>false</isUpperCompletions>
+    <isFishingOps>false</isFishingOps>
     <isWhipstock>false</isWhipstock>
+    <isWhipstockInstalled>false</isWhipstockInstalled>
     <isDirectional>false</isDirectional>
     <noKillSheet>false</noKillSheet>
     <forceDownhole>false</forceDownhole>
@@ -548,15 +586,18 @@
     <applyTensionCompressionWobScaling>0</applyTensionCompressionWobScaling>
     <tensionCompressionWobMax>0</tensionCompressionWobMax>
     <tensionCompressionWobDisconnectedPackerMax>0</tensionCompressionWobDisconnectedPackerMax>
+    <initialCompression>0</initialCompression>
+    <tensionToMove>0</tensionToMove>
+    <extraFriction>0</extraFriction>
     <dsYoungsModulus>0</dsYoungsModulus>
     <casingFrictionCoeff>0</casingFrictionCoeff>
     <cableAngle>0</cableAngle>
     <wirelineTensionLimits />
     <wirelineDiffTensionLimits />
     <wirelineCPtensionLimits />
-    <initialCompression>0</initialCompression>
-    <tensionToMove>0</tensionToMove>
-    <extraFriction>0</extraFriction>
+    <maxTorsionForceBeforePipeBreaks>0</maxTorsionForceBeforePipeBreaks>
+    <torqueAddedPerDegreeOfTwist>0</torqueAddedPerDegreeOfTwist>
+    <maxDegreesReversePipeCanBeWound>0</maxDegreesReversePipeCanBeWound>
     <tensionToBreakString>0</tensionToBreakString>
     <tensionToBreakWeakPoint>0</tensionToBreakWeakPoint>
     <forceToFreeStuckCableMedium>0</forceToFreeStuckCableMedium>
@@ -567,6 +608,9 @@
     <minForceToMaintainDrumIntegrity>0</minForceToMaintainDrumIntegrity>
     <maxForceToDamageDrumIntegrity>0</maxForceToDamageDrumIntegrity>
     <initialCableTension>0</initialCableTension>
+    <forceToFreeFromBottom>0</forceToFreeFromBottom>
+    <forceToFreeFromBottomWeightPct>0</forceToFreeFromBottomWeightPct>
+    <lineDragForceReductionPct>0</lineDragForceReductionPct>
     <drumTorqueLimiterMax>44482</drumTorqueLimiterMax>
     <drumPowerLimit>30505.5</drumPowerLimit>
     <drumSpeedLow>0.3333333</drumSpeedLow>
@@ -576,10 +620,22 @@
     <truckRpmMax>18000</truckRpmMax>
     <truckRpmForMaxPTOPower>10800</truckRpmForMaxPTOPower>
     <truckRpmForMinPTOPower>7200</truckRpmForMinPTOPower>
+    <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
     <goodTongTorqueProbability>0</goodTongTorqueProbability>
+    <segmentsCountOfFish>0</segmentsCountOfFish>
+    <initialGapLength>0</initialGapLength>
+    <fishingMaxSlackOffValue>0</fishingMaxSlackOffValue>
+    <fishingMaxGrappleWorkLoad>0</fishingMaxGrappleWorkLoad>
+    <fishingMinForceToSetGrapple>0</fishingMinForceToSetGrapple>
+    <fishingMinForceToBreakGrapple>0</fishingMinForceToBreakGrapple>
+    <timeProgressMode>None</timeProgressMode>
+    <cscsScript><![CDATA[]]></cscsScript>
   </ProgrammerSettings>
   <HydroV2Settings>
     <isOn>true</isOn>
+    <isV2MudTanks>false</isV2MudTanks>
+    <tankParameters />
+    <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
   </HydroV2Settings>
   <GradingSettings>
     <isTestModule>false</isTestModule>
@@ -607,6 +663,8 @@
   </RandomIncidentSettings>
   <moduleName>BAKER LINER HANGER SET AND PUMP</moduleName>
   <moduleText>PERFORM THE PUMPING OPERATIONS</moduleText>
+  <loggingCharts />
+  <edrCharts />
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>
 </WebModule>
