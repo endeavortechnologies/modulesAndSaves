@@ -127,7 +127,7 @@
     <WebAutoChoke>
       <isActive>true</isActive>
       <mode>OVERKILL</mode>
-      <speedFactor>0.00001</speedFactor>
+      <speedFactor>1E-05</speedFactor>
       <targetOverkill>0</targetOverkill>
       <pressureTolerance>0</pressureTolerance>
       <prediction>1</prediction>
@@ -596,7 +596,7 @@
     <cementLineVolume>0</cementLineVolume>
     <isStatOilScenario>false</isStatOilScenario>
     <fractureLeakOffPointPct>0.99</fractureLeakOffPointPct>
-    <fractureHealPointPct>0.90</fractureHealPointPct>
+    <fractureHealPointPct>0.9</fractureHealPointPct>
     <fractureFlowSmoothingFactor>0.5</fractureFlowSmoothingFactor>
     <balloonFlowSmoothingFactor>0.5</balloonFlowSmoothingFactor>
     <pressureReleaseFactor>0.5</pressureReleaseFactor>
@@ -677,6 +677,7 @@
     <fishingMaxGrappleWorkLoad>0</fishingMaxGrappleWorkLoad>
     <fishingMinForceToSetGrapple>0</fishingMinForceToSetGrapple>
     <fishingMinForceToBreakGrapple>0</fishingMinForceToBreakGrapple>
+    <fishingTotalForceToFreeFish>0</fishingTotalForceToFreeFish>
     <timeProgressMode>None</timeProgressMode>
     <cscsScript><![CDATA[
 topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
@@ -724,7 +725,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
   </HydroV2Settings>
   <GradingSettings>
-    <isTestModule>false</isTestModule>
+    <isTestModule>true</isTestModule>
     <level>0</level>
     <includedSteps />
     <automaticallyRepairIncident>false</automaticallyRepairIncident>
