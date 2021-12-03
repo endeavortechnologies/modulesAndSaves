@@ -1,12 +1,12 @@
-<?xml version='1.0' encoding="utf-16"?>
-<WebModule>
+<?xml version="1.0" encoding="utf-16"?>
+<WebModule xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <WebWellConfiguration>
     <casings>
       <WebCasing>
         <name>Surface Casing</name>
         <topDepth>0</topDepth>
-        <depth>6376.11133</depth>
-        <width>0.346201837</width>
+        <depth>1000</depth>
+        <width>0.224</width>
         <outerDiameter>0</outerDiameter>
         <weight>0</weight>
         <burstPressure>0</burstPressure>
@@ -18,7 +18,7 @@
         <maxMakeupTorque>0</maxMakeupTorque>
       </WebCasing>
     </casings>
-    <initialMudWeight>1713</initialMudWeight>
+    <initialMudWeight>1400</initialMudWeight>
     <formationMargin>0</formationMargin>
     <BOPClass>6</BOPClass>
   </WebWellConfiguration>
@@ -34,10 +34,10 @@
       <hookLoadGaugeUpperBound>0</hookLoadGaugeUpperBound>
       <wobGaugeUpperBound>0</wobGaugeUpperBound>
       <wobGaugeLowerBound>0</wobGaugeLowerBound>
-      <tripInLowerSpeed>-1.4</tripInLowerSpeed>
+      <tripInLowerSpeed>0.5</tripInLowerSpeed>
       <tripInHoistSpeed>3</tripInHoistSpeed>
-      <tripOutLowerSpeed>-3</tripOutLowerSpeed>
-      <tripOutHoistSpeed>1.5</tripOutHoistSpeed>
+      <tripOutLowerSpeed>3</tripOutLowerSpeed>
+      <tripOutHoistSpeed>0.5</tripOutHoistSpeed>
       <topDriveMaxHeight>0</topDriveMaxHeight>
     </WebTopDrive>
     <WebBirdBath>
@@ -57,16 +57,16 @@
       <maxStrokesPerMinute>120</maxStrokesPerMinute>
       <linerDiameter>0.1524</linerDiameter>
       <linerStrokeLength>0.315</linerStrokeLength>
-      <reliefValveInitialPressure>1E+08</reliefValveInitialPressure>
-      <initialPumpPressureLimit>1E+08</initialPumpPressureLimit>
+      <reliefValveInitialPressure>32198</reliefValveInitialPressure>
+      <initialPumpPressureLimit>32098</initialPumpPressureLimit>
     </WebMainPump1>
     <WebMainPump2>
       <efficiency>0.95</efficiency>
       <maxStrokesPerMinute>120</maxStrokesPerMinute>
       <linerDiameter>0.1524</linerDiameter>
       <linerStrokeLength>0.315</linerStrokeLength>
-      <reliefValveInitialPressure>1E+08</reliefValveInitialPressure>
-      <initialPumpPressureLimit>1E+08</initialPumpPressureLimit>
+      <reliefValveInitialPressure>32198</reliefValveInitialPressure>
+      <initialPumpPressureLimit>32098</initialPumpPressureLimit>
     </WebMainPump2>
     <WebTripPump>
       <efficiency>0.95</efficiency>
@@ -86,7 +86,7 @@
     </WebCementPump>
     <WebBoostPump>
       <efficiency>0</efficiency>
-      <maxStrokesPerMinute>120</maxStrokesPerMinute>
+      <maxStrokesPerMinute>0</maxStrokesPerMinute>
       <linerDiameter>0</linerDiameter>
       <linerStrokeLength>0</linerStrokeLength>
       <reliefValveInitialPressure>0</reliefValveInitialPressure>
@@ -127,31 +127,97 @@
     <WebAutoChoke>
       <isActive>true</isActive>
       <mode>OVERKILL</mode>
-      <speedFactor>0.005</speedFactor>
+      <speedFactor>0.00001</speedFactor>
       <targetOverkill>0</targetOverkill>
-      <pressureTolerance>0.001</pressureTolerance>
+      <pressureTolerance>0</pressureTolerance>
       <prediction>1</prediction>
       <deltaLastTick>0</deltaLastTick>
     </WebAutoChoke>
     <chokeData>
       <chokeDataList>
         <ChokeInitData>
-          <chokeId>7</chokeId>
-          <resistanceCoeffDivCrossectionSquared>30000</resistanceCoeffDivCrossectionSquared>
+          <chokeId>2</chokeId>
+          <resistanceCoeffDivCrossectionSquared>200000</resistanceCoeffDivCrossectionSquared>
+          <curve>
+            <curveEntries />
+          </curve>
+        </ChokeInitData>
+        <ChokeInitData>
+          <chokeId>3</chokeId>
+          <resistanceCoeffDivCrossectionSquared>200000</resistanceCoeffDivCrossectionSquared>
+          <curve>
+            <curveEntries>
+              <ChokeCurveEntry>
+                <percent>0</percent>
+                <value>0</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>10</percent>
+                <value>0.06</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>20</percent>
+                <value>0.14</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>30</percent>
+                <value>0.26</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>40</percent>
+                <value>0.42</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>50</percent>
+                <value>0.6</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>60</percent>
+                <value>0.74</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>70</percent>
+                <value>0.86</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>80</percent>
+                <value>0.925</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>90</percent>
+                <value>0.98</value>
+              </ChokeCurveEntry>
+              <ChokeCurveEntry>
+                <percent>100</percent>
+                <value>1</value>
+              </ChokeCurveEntry>
+            </curveEntries>
+          </curve>
+        </ChokeInitData>
+        <ChokeInitData>
+          <chokeId>6</chokeId>
+          <resistanceCoeffDivCrossectionSquared>1</resistanceCoeffDivCrossectionSquared>
           <curve>
             <curveEntries />
           </curve>
         </ChokeInitData>
         <ChokeInitData>
           <chokeId>4</chokeId>
-          <resistanceCoeffDivCrossectionSquared>10000</resistanceCoeffDivCrossectionSquared>
+          <resistanceCoeffDivCrossectionSquared>1</resistanceCoeffDivCrossectionSquared>
           <curve>
             <curveEntries />
           </curve>
         </ChokeInitData>
         <ChokeInitData>
           <chokeId>5</chokeId>
-          <resistanceCoeffDivCrossectionSquared>10000</resistanceCoeffDivCrossectionSquared>
+          <resistanceCoeffDivCrossectionSquared>1</resistanceCoeffDivCrossectionSquared>
+          <curve>
+            <curveEntries />
+          </curve>
+        </ChokeInitData>
+        <ChokeInitData>
+          <chokeId>7</chokeId>
+          <resistanceCoeffDivCrossectionSquared>238636</resistanceCoeffDivCrossectionSquared>
           <curve>
             <curveEntries />
           </curve>
@@ -176,7 +242,7 @@
       <ROP_UpdateFrequency>1</ROP_UpdateFrequency>
     </WebBHA>
     <WebMudMotor>
-      <mudMotorUsed>false</mudMotorUsed>
+      <mudMotorUsed>true</mudMotorUsed>
       <weight>1000</weight>
       <maxPower>241000</maxPower>
       <maxStallPressure>8960</maxStallPressure>
@@ -185,8 +251,8 @@
       <dumpSubThresholdFlowRate>0.0125</dumpSubThresholdFlowRate>
     </WebMudMotor>
     <WebDrillPipe>
-      <innerDiameter>0.14</innerDiameter>
-      <outerDiameter>0.2539999</outerDiameter>
+      <innerDiameter>0.1016</innerDiameter>
+      <outerDiameter>0.165</outerDiameter>
       <length>0</length>
       <nominalWeight>29</nominalWeight>
       <burstPressure>0</burstPressure>
@@ -264,10 +330,10 @@
     </WebDrillCollar>
     <WebDrillBit>
       <bitType>PDC</bitType>
-      <diameter>0.335</diameter>
-      <bitHydraulicsDiameter>0.22</bitHydraulicsDiameter>
-      <numberNozzles>3</numberNozzles>
-      <nozzleDiameter>0</nozzleDiameter>
+      <diameter>0.216</diameter>
+      <bitHydraulicsDiameter>0.165</bitHydraulicsDiameter>
+      <numberNozzles>10</numberNozzles>
+      <nozzleDiameter>0.0126999933</nozzleDiameter>
       <maxDrillBitWOB>27000</maxDrillBitWOB>
       <maxDrillingRotationSpeed>900</maxDrillingRotationSpeed>
     </WebDrillBit>
@@ -285,7 +351,7 @@
       <valveLength>20</valveLength>
     </WebNonPortedFloat>
     <WebDrillStringConfiguration>
-      <pipeCount>900</pipeCount>
+      <pipeCount>116</pipeCount>
       <heavyWeightPipeCount>0</heavyWeightPipeCount>
       <collarCount>0</collarCount>
       <drillingJarPosition>-1</drillingJarPosition>
@@ -348,15 +414,15 @@
     </WebWhipstock>
   </WebDrillString>
   <WebDrillPlan>
-    <drillPlanName>IWCF Subsea Module</drillPlanName>
+    <drillPlanName>IWCF Module 1</drillPlanName>
     <maxTrueVerticalDepth>4000</maxTrueVerticalDepth>
     <maxHorizontalDisplacement>2000</maxHorizontalDisplacement>
-    <initialAnnulusStartsAtSection>2</initialAnnulusStartsAtSection>
+    <initialAnnulusStartsAtSection>3</initialAnnulusStartsAtSection>
     <sections>
       <Section>
         <name>Casing Shoe</name>
-        <width>0.34607482</width>
-        <MD>6376.11133</MD>
+        <width>0.224</width>
+        <MD>1000</MD>
         <azimuth>0</azimuth>
         <inclination>0</inclination>
         <build>0</build>
@@ -364,20 +430,29 @@
         <operationNote />
       </Section>
       <Section>
-        <name>build section</name>
-        <width>0.34607482</width>
-        <MD>7468.81934</MD>
+        <name>Vertical OH</name>
+        <width>0.224</width>
+        <MD>1100</MD>
         <azimuth>0</azimuth>
         <inclination>0</inclination>
         <build>0</build>
         <turn>0</turn>
       </Section>
       <Section>
-        <name>drop section</name>
-        <width>0.34607482</width>
-        <MD>8561.527</MD>
+        <name>Build to 88 deg</name>
+        <width>0.224</width>
+        <MD>1628</MD>
         <azimuth>0</azimuth>
         <inclination>0</inclination>
+        <build>0.166666672</build>
+        <turn>0</turn>
+      </Section>
+      <Section>
+        <name> Horizontal HOLD @ 88 deg</name>
+        <width>0.224</width>
+        <MD>3000</MD>
+        <azimuth>0</azimuth>
+        <inclination>88</inclination>
         <build>0</build>
         <turn>0</turn>
       </Section>
@@ -386,28 +461,46 @@
   <WebSubSea>
     <isSubsea>false</isSubsea>
     <isRiserUsed>true</isRiserUsed>
-    <airGap>50</airGap>
-    <waterDepth>1620</waterDepth>
-    <riserInnerDiameter>0.521</riserInnerDiameter>
-    <chokeLineInnerDiameter>0.114</chokeLineInnerDiameter>
-    <killLineInnerDiameter>0.114</killLineInnerDiameter>
+    <airGap>0</airGap>
+    <waterDepth>0</waterDepth>
+    <riserInnerDiameter>0.5016</riserInnerDiameter>
+    <chokeLineInnerDiameter>0.0762</chokeLineInnerDiameter>
+    <killLineInnerDiameter>0.0762</killLineInnerDiameter>
     <densityOfSeaWater>1029</densityOfSeaWater>
-    <lastPipeSlot>10</lastPipeSlot>
-    <lastPipeRow>10</lastPipeRow>
+    <lastPipeSlot>0</lastPipeSlot>
+    <lastPipeRow>0</lastPipeRow>
   </WebSubSea>
   <WebFormation>
-    <formationName>Offshore Formation</formationName>
+    <formationName>Demo Formation</formationName>
     <formationDesc>Subsurface configuration for demos</formationDesc>
     <waterDepth>0</waterDepth>
     <stratas>
       <Strata>
-        <name>Edmonton Group</name>
+        <name>Water Table</name>
         <depth>0</depth>
         <pressureGradient>10</pressureGradient>
-        <fracturePressure>22.3</fracturePressure>
+        <fracturePressure>29</fracturePressure>
         <maxROP>200</maxROP>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
+        <RockType>
+          <name>Sand</name>
+          <porosity>8</porosity>
+          <permeability>5</permeability>
+          <staticFriction>2</staticFriction>
+          <kineticFriction>3</kineticFriction>
+          <strength>1</strength>
+          <texture>6</texture>
+        </RockType>
+      </Strata>
+      <Strata>
+        <name>Edmonton Group</name>
+        <depth>606</depth>
+        <pressureGradient>10</pressureGradient>
+        <fracturePressure>29</fracturePressure>
+        <maxROP>200</maxROP>
+        <influxGas>0</influxGas>
+        <influxLiquid>1</influxLiquid>
         <RockType>
           <name>Default Soft Rock</name>
           <porosity>8</porosity>
@@ -420,12 +513,12 @@
       </Strata>
       <Strata>
         <name>Belly River Group</name>
-        <depth>2000</depth>
-        <pressureGradient>7.9</pressureGradient>
-        <fracturePressure>17.72</fracturePressure>
+        <depth>1438.656</depth>
+        <pressureGradient>14.8617325</pressureGradient>
+        <fracturePressure>29</fracturePressure>
         <maxROP>100</maxROP>
         <influxGas>0</influxGas>
-        <influxLiquid>0</influxLiquid>
+        <influxLiquid>1</influxLiquid>
         <RockType>
           <name>Default Hard Rock</name>
           <porosity>5</porosity>
@@ -434,60 +527,6 @@
           <kineticFriction>5</kineticFriction>
           <strength>5</strength>
           <texture>5</texture>
-        </RockType>
-      </Strata>
-      <Strata>
-        <name>Viking</name>
-        <depth>6360</depth>
-        <pressureGradient>7</pressureGradient>
-        <fracturePressure>17.72</fracturePressure>
-        <maxROP>50</maxROP>
-        <influxGas>0</influxGas>
-        <influxLiquid>0</influxLiquid>
-        <RockType>
-          <name>Default Soft Rock</name>
-          <porosity>8</porosity>
-          <permeability>5</permeability>
-          <staticFriction>4</staticFriction>
-          <kineticFriction>4</kineticFriction>
-          <strength>5</strength>
-          <texture>2</texture>
-        </RockType>
-      </Strata>
-      <Strata>
-        <name>initial formation</name>
-        <depth>6370</depth>
-        <pressureGradient>7</pressureGradient>
-        <fracturePressure>28</fracturePressure>
-        <maxROP>50</maxROP>
-        <influxGas>0</influxGas>
-        <influxLiquid>0</influxLiquid>
-        <RockType>
-          <name>Default Soft Rock</name>
-          <porosity>8</porosity>
-          <permeability>5</permeability>
-          <staticFriction>4</staticFriction>
-          <kineticFriction>4</kineticFriction>
-          <strength>5</strength>
-          <texture>2</texture>
-        </RockType>
-      </Strata>
-      <Strata>
-        <name>Viking2</name>
-        <depth>8562</depth>
-        <pressureGradient>7</pressureGradient>
-        <fracturePressure>17.52</fracturePressure>
-        <maxROP>50</maxROP>
-        <influxGas>0</influxGas>
-        <influxLiquid>0</influxLiquid>
-        <RockType>
-          <name>Default Soft Rock</name>
-          <porosity>8</porosity>
-          <permeability>5</permeability>
-          <staticFriction>4</staticFriction>
-          <kineticFriction>4</kineticFriction>
-          <strength>5</strength>
-          <texture>2</texture>
         </RockType>
       </Strata>
     </stratas>
@@ -508,60 +547,56 @@
     <maxDogLeg>-1</maxDogLeg>
   </WebObjectives>
   <ProgrammerSettings>
-    <initialTopDriveHeight>35</initialTopDriveHeight>
+    <initialTopDriveHeight>5</initialTopDriveHeight>
     <initialStringHeight>1</initialStringHeight>
+    <minMudWeightDisplay>0</minMudWeightDisplay>
+    <maxMudWeightDisplay>0</maxMudWeightDisplay>
     <simNoise>true</simNoise>
     <enableGameOverSpam>true</enableGameOverSpam>
     <maxAnalogGaugePressure>0</maxAnalogGaugePressure>
     <maxAnalogDrillPipePressureGaugePressure>0</maxAnalogDrillPipePressureGaugePressure>
     <maxAnalogCasingPressureGaugePressure>0</maxAnalogCasingPressureGaugePressure>
     <maxAnalogKillLinePressureGaugePressure>0</maxAnalogKillLinePressureGaugePressure>
-    <greenToGo>NONE</greenToGo>
+    <greenToGo>INSIDE_OPEN</greenToGo>
     <maxStandpipePressure>0</maxStandpipePressure>
     <maxCasingPressure>0</maxCasingPressure>
     <maxBottomPressure>0</maxBottomPressure>
     <incorrectLineups>false</incorrectLineups>
-    <bulkModulus>2.2E+08</bulkModulus>
+    <bulkModulus>2.2E+07</bulkModulus>
     <plasticViscosity>0</plasticViscosity>
     <yieldPoint>0</yieldPoint>
-    <kickLossCoeff>0</kickLossCoeff>
-    <fracLossCoeff>2.5E+13</fracLossCoeff>
+    <kickLossCoeff>1.1E+25</kickLossCoeff>
+    <fracLossCoeff>2.75E+14</fracLossCoeff>
     <minChokePercent>0</minChokePercent>
-    <chokeFastRate>0.045</chokeFastRate>
-    <chokeSlowRate>0</chokeSlowRate>
-    <isChokeRightToLeft>false</isChokeRightToLeft>
+    <chokeFastRate>0.1</chokeFastRate>
+    <chokeSlowRate>0.001</chokeSlowRate>
+    <isChokeRightToLeft>true</isChokeRightToLeft>
     <disableUTubeBehaviour>false</disableUTubeBehaviour>
-    <gasMigrationRate>0</gasMigrationRate>
+    <gasMigrationRate>0.000706</gasMigrationRate>
     <maxInfluxAllowed>0</maxInfluxAllowed>
     <maxInfluxAllowedDriller>0</maxInfluxAllowedDriller>
     <maxInfluxAllowedSupervisor>0</maxInfluxAllowedSupervisor>
-    <rateOfInflux>0</rateOfInflux>
-    <gaugeTimeDelay>0</gaugeTimeDelay>
+    <rateOfInflux>0.003</rateOfInflux>
+    <gaugeTimeDelay>1</gaugeTimeDelay>
     <BOPLeakRate>0</BOPLeakRate>
     <rigType>LAND</rigType>
     <mpdIndex>0</mpdIndex>
+    <sbpdType>DEFAULT</sbpdType>
     <gravity>0</gravity>
-    <JoshMath>
-      <JoshExpression>FP + CP - BPL</JoshExpression>
-      <JoshExpression>DPP - APL</JoshExpression>
-      <JoshExpression>DPP + CP + BPL</JoshExpression>
-      <JoshExpression>CP - KLHP</JoshExpression>
-      <JoshExpression>TPMud + CP - AHP - TPGas - DBHP + HPUB - DSHP + DSPL -OKP</JoshExpression>
-      <JoshExpression>KLP + CLPL - AHP - RHP - DBHP + CLHP - KLHP + DSPL -KLPL</JoshExpression>
-    </JoshMath>
+    <JoshMath />
     <accelerateUTubing>0</accelerateUTubing>
     <maxRateOfUtubingPerSecond>0</maxRateOfUtubingPerSecond>
     <minRateOfUtubingPerSecond>0</minRateOfUtubingPerSecond>
-    <pumpTweenRateUpCoeff>0.2</pumpTweenRateUpCoeff>
-    <pumpTweenRateDownCoeff>0.2</pumpTweenRateDownCoeff>
+    <pumpTweenRateUpCoeff>0.5</pumpTweenRateUpCoeff>
+    <pumpTweenRateDownCoeff>10</pumpTweenRateDownCoeff>
     <killLineGasSplitPct>0</killLineGasSplitPct>
     <lateralFrictionScaling>0</lateralFrictionScaling>
     <secondsBeforeKick>0</secondsBeforeKick>
     <flowLineCapacity>0</flowLineCapacity>
     <cementLineVolume>0</cementLineVolume>
     <isStatOilScenario>false</isStatOilScenario>
-    <fractureLeakOffPointPct>1</fractureLeakOffPointPct>
-    <fractureHealPointPct>0.99</fractureHealPointPct>
+    <fractureLeakOffPointPct>0.99</fractureLeakOffPointPct>
+    <fractureHealPointPct>0.90</fractureHealPointPct>
     <fractureFlowSmoothingFactor>0.5</fractureFlowSmoothingFactor>
     <balloonFlowSmoothingFactor>0.5</balloonFlowSmoothingFactor>
     <pressureReleaseFactor>0.5</pressureReleaseFactor>
@@ -573,7 +608,9 @@
     <isCementingModule>false</isCementingModule>
     <isManagedPressureDrilling>false</isManagedPressureDrilling>
     <mpdPumpDepth>0</mpdPumpDepth>
+    <sbpdSpoolDepth>0</sbpdSpoolDepth>
     <isFracPack>false</isFracPack>
+    <isEndeavorTools>false</isEndeavorTools>
     <isWFLinerHanger>false</isWFLinerHanger>
     <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
     <isWireLine>false</isWireLine>
@@ -582,6 +619,7 @@
     <isBakerLinerHanger>false</isBakerLinerHanger>
     <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
     <isCoiledTubing>false</isCoiledTubing>
+    <isUpperCompletions>false</isUpperCompletions>
     <isFishingOps>false</isFishingOps>
     <isWhipstock>false</isWhipstock>
     <isWhipstockInstalled>false</isWhipstockInstalled>
@@ -633,13 +671,69 @@
     <truckRpmForMinPTOPower>7200</truckRpmForMinPTOPower>
     <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
     <goodTongTorqueProbability>0</goodTongTorqueProbability>
+    <segmentsCountOfFish>0</segmentsCountOfFish>
+    <initialGapLength>0</initialGapLength>
+    <fishingMaxSlackOffValue>0</fishingMaxSlackOffValue>
+    <fishingMaxGrappleWorkLoad>0</fishingMaxGrappleWorkLoad>
+    <fishingMinForceToSetGrapple>0</fishingMinForceToSetGrapple>
+    <fishingMinForceToBreakGrapple>0</fishingMinForceToBreakGrapple>
     <timeProgressMode>None</timeProgressMode>
-    <cscsScript><![CDATA[]]></cscsScript>
+    <cscsScript><![CDATA[
+topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
+if (topDrive != null && Call("isReady", topDrive) == true)
+  {
+	chokeManifold = Call("Endtech.Simulation.SimBlackboard.circulationSystem.chokeManifold");
+	choke1 = Call("GetChoke", chokeManifold, 0)
+    
+	
+	pump1 = CallConditional("Endtech.Simulation.SimBlackboard.mudPumps.mainPumps[0]");
+	bit = CallConditional("Endtech.Simulation.SimBlackboard.drillBit");
+	if (pump1 != null && Call("isPumpOn", pump1) && Call("strokesPerMinute", pump1) > 10)
+	{
+		Call("WashOutBit", bit, 0.5);
+		if (Call("bitFailureState", bit) == "WASHOUT" )
+		StopUpdate();
+	}
+
+  }
+]]></cscsScript>
   </ProgrammerSettings>
   <HydroV2Settings>
     <isOn>true</isOn>
-    <isV2MudTanks>false</isV2MudTanks>
-    <tankParameters />
+    <isV2MudTanks>true</isV2MudTanks>
+    <tankParameters>
+      <TankParameters>
+        <tankId>ACTIVE_6</tankId>
+        <initialVolumePct>0.9</initialVolumePct>
+        <initialDensity>1198.26428</initialDensity>
+        <initialSkimmerPct>1</initialSkimmerPct>
+      </TankParameters>
+      <TankParameters>
+        <tankId>ACTIVE_5</tankId>
+        <initialVolumePct>0.9</initialVolumePct>
+        <initialDensity>1198.26428</initialDensity>
+        <initialSkimmerPct>1</initialSkimmerPct>
+      </TankParameters>
+      <TankParameters>
+        <tankId>ACTIVE_4</tankId>
+        <initialVolumePct>0</initialVolumePct>
+        <initialDensity>0</initialDensity>
+        <initialSkimmerPct>1</initialSkimmerPct>
+      </TankParameters>
+      <TankParameters>
+        <tankId>ACTIVE_3</tankId>
+        <initialVolumePct>0</initialVolumePct>
+        <initialDensity>0</initialDensity>
+        <initialSkimmerPct>0</initialSkimmerPct>
+      </TankParameters>
+      <TankParameters>
+        <tankId>TRIP</tankId>
+        <initialVolumePct>0.6</initialVolumePct>
+        <initialDensity>1198.26428</initialDensity>
+        <initialSkimmerPct>0</initialSkimmerPct>
+      </TankParameters>
+    </tankParameters>
+    <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
   </HydroV2Settings>
   <GradingSettings>
     <isTestModule>false</isTestModule>
@@ -665,11 +759,8 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>IWCF Subsea Module One</moduleName>
-  <moduleText>IWCF subsea assessment module #1
-		Stickup Height for hang-off: 5.8m / 19ft
-		Block Height for hang-off: 15.7m / 51.6ft
-		(Assuming hang-off on upper pipe rams.)</moduleText>
+  <moduleName>IWCF Module One</moduleName>
+  <moduleText>IWCF assessment module #1</moduleText>
   <loggingCharts />
   <edrCharts />
   <isMetric>true</isMetric>

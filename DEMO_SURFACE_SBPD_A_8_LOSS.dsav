@@ -2243,7 +2243,7 @@
       <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
       <goodTongTorqueProbability>0</goodTongTorqueProbability>
       <timeProgressMode>None</timeProgressMode>
-      <cscsScript />
+      <cscsScript><![CDATA[]]></cscsScript>
     </ProgrammerSettings>
     <HydroV2Settings>
       <isOn>true</isOn>
