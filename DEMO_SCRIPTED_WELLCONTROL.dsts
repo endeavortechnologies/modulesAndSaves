@@ -174,7 +174,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 					<permeability>5</permeability>
 					<staticFriction>4</staticFriction>
 					<kineticFriction>4</kineticFriction>
-					<strength>5</strength>
+					<strength>7</strength>
 					<texture>2</texture>
 				</RockType>
 			</Strata>
@@ -197,7 +197,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 					<permeability>5</permeability>
 					<staticFriction>1</staticFriction>
 					<kineticFriction>1</kineticFriction>
-					<strength>1</strength>
+					<strength>4</strength>
 					<texture>3</texture>
 				</RockType>
 			</Strata>
