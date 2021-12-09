@@ -2,6 +2,56 @@
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<moduleName>IWCF Module One</moduleName>
 	<moduleText>IWCF assessment module #1</moduleText>
+	<loggingCharts>
+		<LoggingChartPref>
+		  <name>DPPLog</name>
+		  <colorHtml>00FFFFFF</colorHtml>
+		  <printHtml>00FFFFFF</printHtml>
+		  <strokeIndex>0</strokeIndex>
+		  <lowerBound>0</lowerBound>
+		  <upperBound>20000</upperBound>
+		</LoggingChartPref>
+		<LoggingChartPref>
+		  <name>CPLog</name>
+		  <colorHtml>00FFFFFF</colorHtml>
+		  <printHtml>00FFFFFF</printHtml>
+		  <strokeIndex>1</strokeIndex>
+		  <lowerBound>0</lowerBound>
+		  <upperBound>20000</upperBound>
+		</LoggingChartPref>
+		<LoggingChartPref>
+		  <name>BHPLog</name>
+		  <colorHtml>FF00FFFF</colorHtml>
+		  <printHtml>FF00FFFF</printHtml>
+		  <strokeIndex>0</strokeIndex>
+		  <lowerBound>20000</lowerBound>
+		  <upperBound>40000</upperBound>
+		</LoggingChartPref>
+		<LoggingChartPref>
+		  <name>FormationLog</name>
+		  <colorHtml>FF00FFFF</colorHtml>
+		  <printHtml>FF00FFFF</printHtml>
+		  <strokeIndex>1</strokeIndex>
+		  <lowerBound>20000</lowerBound>
+		  <upperBound>40000</upperBound>
+		</LoggingChartPref>
+		<LoggingChartPref>
+		  <name>WOBLog</name>
+		  <colorHtml>FFEB04FF</colorHtml>
+		  <printHtml>FFEB04FF</printHtml>
+		  <strokeIndex>0</strokeIndex>
+		  <lowerBound>-50000</lowerBound>
+		  <upperBound>200000</upperBound>
+		</LoggingChartPref>
+		<LoggingChartPref>
+		  <name>ROPLog</name>
+		  <colorHtml>FF0058FF</colorHtml>
+		  <printHtml>FF0058FF</printHtml>
+		  <strokeIndex>0</strokeIndex>
+		  <lowerBound>0</lowerBound>
+		  <upperBound>0</upperBound>
+		</LoggingChartPref>
+	</loggingCharts>
 	<moduleVersion>0.7</moduleVersion>
 	<isMetric>true</isMetric>
 	<WebObjectives> <!-- -1 means ignore -->
