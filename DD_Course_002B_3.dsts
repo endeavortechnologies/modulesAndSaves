@@ -764,7 +764,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 ]]></cscsScript>
   </ProgrammerSettings>
   <HydroV2Settings>
-    <isOn>false</isOn>
+    <isOn>true</isOn>
     <isV2MudTanks>false</isV2MudTanks>
     <tankParameters />
     <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
