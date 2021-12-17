@@ -31,7 +31,7 @@ topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
 if (topDrive != null && Call("isReady", topDrive) == true)
   {
     Call("Endtech.AutomationScripts.Automation.balesControl");
-    Call("Endtech.AutomationScripts.DrillingBreakandFlowCheck.Process", null, 0);
+    Call("Endtech.AutomationScripts.DrillingBreakandFlowCheck.Process", null, 120, 1605, 1605.5, 1610, 1610.5, 26.66, 38.34);
   }
 ]]></cscsScript>
 		<initialTopDriveHeight>5</initialTopDriveHeight>
@@ -151,7 +151,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 					<permeability>5</permeability>
 					<staticFriction>5</staticFriction>
 					<kineticFriction>5</kineticFriction>
-					<strength>5</strength>
+					<strength>9</strength>
 					<texture>5</texture>
 				</RockType>
 			</Strata>
@@ -174,7 +174,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 					<permeability>5</permeability>
 					<staticFriction>4</staticFriction>
 					<kineticFriction>4</kineticFriction>
-					<strength>5</strength>
+					<strength>9</strength>
 					<texture>2</texture>
 				</RockType>
 			</Strata>
@@ -197,7 +197,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 					<permeability>5</permeability>
 					<staticFriction>1</staticFriction>
 					<kineticFriction>1</kineticFriction>
-					<strength>1</strength>
+					<strength>8</strength>
 					<texture>3</texture>
 				</RockType>
 			</Strata>
@@ -220,7 +220,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 					<permeability>5</permeability>
 					<staticFriction>5</staticFriction>
 					<kineticFriction>5</kineticFriction>
-					<strength>5</strength>
+					<strength>9</strength>
 					<texture>5</texture>
 				</RockType>
 			</Strata>
@@ -575,11 +575,11 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 			<maxPower>241000</maxPower>
 			<dumpSubThresholdFlowRate>0.0125</dumpSubThresholdFlowRate>
 			<maxDifferentialPressure>4480</maxDifferentialPressure>
-			<maxRotationSpeed>200</maxRotationSpeed>
+			<maxRotationSpeed>9000</maxRotationSpeed>
 		</WebMudMotor>
 		<WebBHA>
-			<BHAUsed>true</BHAUsed>
-			<maxRotationSpeedWithoutDamageToBHA>360</maxRotationSpeedWithoutDamageToBHA><!-- deg/s (divide by 6 for rpm)-->
+			<BHAUsed>false</BHAUsed>
+			<maxRotationSpeedWithoutDamageToBHA>9000</maxRotationSpeedWithoutDamageToBHA><!-- deg/s (divide by 6 for rpm)-->
 			<length>20</length>
 			<distance_MWD_is_behind_drillBit>10</distance_MWD_is_behind_drillBit>
 			<switch_between_MTF_and_GTF>5</switch_between_MTF_and_GTF>
