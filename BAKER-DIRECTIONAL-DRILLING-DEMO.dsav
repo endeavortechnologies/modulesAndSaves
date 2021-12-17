@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 <SimSaveState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <userNames>A|A|A</userNames>
+  <userNames>Josh|A|A</userNames>
   <version>DATA_VERSION_0_18</version>
   <softwareVersion>O.1.1.7426-NONE</softwareVersion>
   <engineVersion>2018.1.0f2</engineVersion>
