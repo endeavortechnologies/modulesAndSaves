@@ -1233,19 +1233,19 @@
           <isFailed>false</isFailed>
         </BOPComponentData>
         <BOPComponentData>
-          <isOpen>false</isOpen>
+          <isOpen>true</isOpen>
           <type>SBPD_RCD_INNER</type>
-          <bopCurrentState>CLOSED</bopCurrentState>
-          <lightCurrentState>CLOSED</lightCurrentState>
-          <previousLightState>BLOCK</previousLightState>
+          <bopCurrentState>OPEN</bopCurrentState>
+          <lightCurrentState>OPEN</lightCurrentState>
+          <previousLightState>OPEN</previousLightState>
           <isFailed>false</isFailed>
         </BOPComponentData>
         <BOPComponentData>
-          <isOpen>false</isOpen>
+          <isOpen>true</isOpen>
           <type>SBPD_RCD_OUTER</type>
-          <bopCurrentState>CLOSED</bopCurrentState>
-          <lightCurrentState>CLOSED</lightCurrentState>
-          <previousLightState>BLOCK</previousLightState>
+          <bopCurrentState>OPEN</bopCurrentState>
+          <lightCurrentState>OPEN</lightCurrentState>
+          <previousLightState>OPEN</previousLightState>
           <isFailed>false</isFailed>
         </BOPComponentData>
         <BOPComponentData>
