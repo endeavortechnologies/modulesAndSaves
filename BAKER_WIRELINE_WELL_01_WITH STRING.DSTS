@@ -388,6 +388,8 @@
       <Azimuth_UpdateFrequency>15</Azimuth_UpdateFrequency>
       <Inclination_UpdateFrequency>15</Inclination_UpdateFrequency>
       <ROP_UpdateFrequency>1</ROP_UpdateFrequency>
+      <gravityPushForce>0</gravityPushForce>
+      <centerStabilizingForce>0</centerStabilizingForce>
     </WebBHA>
     <WebMudMotor>
       <mudMotorUsed>true</mudMotorUsed>
@@ -565,7 +567,7 @@
     <drillPlanName>IWCF Module 1</drillPlanName>
     <maxTrueVerticalDepth>6000</maxTrueVerticalDepth>
     <maxHorizontalDisplacement>2000</maxHorizontalDisplacement>
-    <initialAnnulusStartsAtSection>154</initialAnnulusStartsAtSection>
+    <initialAnnulusStartsAtSection>153</initialAnnulusStartsAtSection>
     <sections>
       <Section>
         <name>30.48m 0.2° Inc 344.8° Azi </name>
@@ -2107,16 +2109,6 @@
         <turn>0</turn>
         <operationNote />
       </Section>
-      <Section>
-        <name>4526.28m 2.1° Inc 140.1° Azi </name>
-        <width>0.1492</width>
-        <MD>4526.28</MD>
-        <azimuth>0</azimuth>
-        <inclination>0</inclination>
-        <build>0</build>
-        <turn>0</turn>
-        <operationNote />
-      </Section>
     </sections>
   </WebDrillPlan>
   <WebSubSea>
@@ -2144,6 +2136,12 @@
         <maxROP>200</maxROP>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
+        <kickLossCoeff>0</kickLossCoeff>
+        <fracLossCoeff>0</fracLossCoeff>
+        <pushInclination>0</pushInclination>
+        <pushAzimuth>0</pushAzimuth>
+        <pushForceInclination>0</pushForceInclination>
+        <pushForceAzimuth>0</pushForceAzimuth>
         <RockType>
           <name>Sand</name>
           <porosity>8</porosity>
@@ -2162,6 +2160,12 @@
         <maxROP>200</maxROP>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
+        <kickLossCoeff>0</kickLossCoeff>
+        <fracLossCoeff>0</fracLossCoeff>
+        <pushInclination>0</pushInclination>
+        <pushAzimuth>0</pushAzimuth>
+        <pushForceInclination>0</pushForceInclination>
+        <pushForceAzimuth>0</pushForceAzimuth>
         <RockType>
           <name>Default Soft Rock</name>
           <porosity>8</porosity>
@@ -2180,6 +2184,12 @@
         <maxROP>100</maxROP>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
+        <kickLossCoeff>0</kickLossCoeff>
+        <fracLossCoeff>0</fracLossCoeff>
+        <pushInclination>0</pushInclination>
+        <pushAzimuth>0</pushAzimuth>
+        <pushForceInclination>0</pushForceInclination>
+        <pushForceAzimuth>0</pushForceAzimuth>
         <RockType>
           <name>Default Hard Rock</name>
           <porosity>5</porosity>
@@ -2198,6 +2208,12 @@
         <maxROP>50</maxROP>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
+        <kickLossCoeff>0</kickLossCoeff>
+        <fracLossCoeff>0</fracLossCoeff>
+        <pushInclination>0</pushInclination>
+        <pushAzimuth>0</pushAzimuth>
+        <pushForceInclination>0</pushForceInclination>
+        <pushForceAzimuth>0</pushForceAzimuth>
         <RockType>
           <name>Default Soft Rock</name>
           <porosity>8</porosity>
@@ -2216,6 +2232,12 @@
         <maxROP>100</maxROP>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
+        <kickLossCoeff>0</kickLossCoeff>
+        <fracLossCoeff>0</fracLossCoeff>
+        <pushInclination>0</pushInclination>
+        <pushAzimuth>0</pushAzimuth>
+        <pushForceInclination>0</pushForceInclination>
+        <pushForceAzimuth>0</pushForceAzimuth>
         <RockType>
           <name>Default Soft Rock</name>
           <porosity>5</porosity>
@@ -2246,6 +2268,8 @@
   <ProgrammerSettings>
     <initialTopDriveHeight>5</initialTopDriveHeight>
     <initialStringHeight>1</initialStringHeight>
+    <minMudWeightDisplay>0</minMudWeightDisplay>
+    <maxMudWeightDisplay>0</maxMudWeightDisplay>
     <simNoise>true</simNoise>
     <enableGameOverSpam>true</enableGameOverSpam>
     <maxAnalogGaugePressure>0</maxAnalogGaugePressure>
@@ -2276,6 +2300,7 @@
     <BOPLeakRate>0</BOPLeakRate>
     <rigType>LAND</rigType>
     <mpdIndex>0</mpdIndex>
+    <sbpdType>DEFAULT</sbpdType>
     <gravity>0</gravity>
     <JoshMath />
     <accelerateUTubing>0</accelerateUTubing>
@@ -2302,7 +2327,9 @@
     <isCementingModule>false</isCementingModule>
     <isManagedPressureDrilling>false</isManagedPressureDrilling>
     <mpdPumpDepth>0</mpdPumpDepth>
+    <sbpdSpoolDepth>0</sbpdSpoolDepth>
     <isFracPack>false</isFracPack>
+    <isEndeavorTools>false</isEndeavorTools>
     <isWFLinerHanger>false</isWFLinerHanger>
     <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
     <isWireLine>true</isWireLine>
@@ -2311,6 +2338,7 @@
     <isBakerLinerHanger>false</isBakerLinerHanger>
     <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
     <isCoiledTubing>false</isCoiledTubing>
+    <isUpperCompletions>false</isUpperCompletions>
     <isFishingOps>false</isFishingOps>
     <isWhipstock>false</isWhipstock>
     <isWhipstockInstalled>false</isWhipstockInstalled>
@@ -2340,8 +2368,8 @@
     <maxDegreesReversePipeCanBeWound>0</maxDegreesReversePipeCanBeWound>
     <tensionToBreakString>108981.43</tensionToBreakString>
     <tensionToBreakWeakPoint>44482.2148</tensionToBreakWeakPoint>
-    <forceToFreeStuckCableMedium>0</forceToFreeStuckCableMedium>
-    <forceToFreeStuckCableSmall>0</forceToFreeStuckCableSmall>
+    <forceToFreeStuckCableMedium>35585.7734</forceToFreeStuckCableMedium>
+    <forceToFreeStuckCableSmall>53378.66</forceToFreeStuckCableSmall>
     <forceToFreeStuckCablePctReductionByYoYo>0.25</forceToFreeStuckCablePctReductionByYoYo>
     <maxForceToDamageCableOvertension>80067.99</maxForceToDamageCableOvertension>
     <maxForceToDamageCableUndertension>2224.11084</maxForceToDamageCableUndertension>
@@ -2362,6 +2390,13 @@
     <truckRpmForMinPTOPower>6000</truckRpmForMinPTOPower>
     <wirelineDiffTensionIgnoreThreshold>0.595265567</wirelineDiffTensionIgnoreThreshold>
     <goodTongTorqueProbability>0</goodTongTorqueProbability>
+    <segmentsCountOfFish>0</segmentsCountOfFish>
+    <initialGapLength>0</initialGapLength>
+    <fishingMaxSlackOffValue>0</fishingMaxSlackOffValue>
+    <fishingMaxGrappleWorkLoad>0</fishingMaxGrappleWorkLoad>
+    <fishingMinForceToSetGrapple>0</fishingMinForceToSetGrapple>
+    <fishingMinForceToBreakGrapple>0</fishingMinForceToBreakGrapple>
+    <fishingTotalForceToFreeFish>0</fishingTotalForceToFreeFish>
     <timeProgressMode>None</timeProgressMode>
     <cscsScript><![CDATA[
     Call("Endtech.AutomationScripts.wirelineScripts.maxPullWithoutResettingTorqueLimit", null, 305);
@@ -2371,6 +2406,7 @@
     <isOn>true</isOn>
     <isV2MudTanks>false</isV2MudTanks>
     <tankParameters />
+    <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
   </HydroV2Settings>
   <GradingSettings>
     <isTestModule>false</isTestModule>
