@@ -2653,22 +2653,6 @@
       <upperBound>20684.2715</upperBound>
     </LoggingChartPref>
     <LoggingChartPref>
-      <name>BOPPressureLog</name>
-      <colorHtml>8600FFFF</colorHtml>
-      <printHtml>8600FFFF</printHtml>
-      <strokeIndex>0</strokeIndex>
-      <lowerBound>3447.37866</lowerBound>
-      <upperBound>10342.1357</upperBound>
-    </LoggingChartPref>
-    <LoggingChartPref>
-      <name>FSPPressureLog</name>
-      <colorHtml>0038FFFF</colorHtml>
-      <printHtml>0038FFFF</printHtml>
-      <strokeIndex>0</strokeIndex>
-      <lowerBound>0</lowerBound>
-      <upperBound>6894.75732</upperBound>
-    </LoggingChartPref>
-    <LoggingChartPref>
       <name>SBPPressureLog</name>
       <colorHtml>0086FFFF</colorHtml>
       <printHtml>0086FFFF</printHtml>

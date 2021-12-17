@@ -2660,16 +2660,16 @@
       <colorHtml>FFFFFFFF</colorHtml>
       <printHtml>D9D9D9</printHtml>
       <strokeIndex>0</strokeIndex>
-      <lowerBound>0</lowerBound>
-      <upperBound>35000</upperBound>
+      <lowerBound>13790</lowerBound>
+      <upperBound>24132</upperBound>
     </LoggingChartPref>
     <LoggingChartPref>
       <name>BHPLog</name>
       <colorHtml>FF00ECFF</colorHtml>
       <printHtml>FF00ECFF</printHtml>
       <strokeIndex>0</strokeIndex>
-      <lowerBound>20684.2715</lowerBound>
-      <upperBound>34473.7852</upperBound>
+      <lowerBound>17237</lowerBound>
+      <upperBound>27579</upperBound>
     </LoggingChartPref>
     <LoggingChartPref>
       <name>casingShoePressureLog</name>
@@ -2680,28 +2680,12 @@
       <upperBound>20684.2715</upperBound>
     </LoggingChartPref>
     <LoggingChartPref>
-      <name>BOPPressureLog</name>
-      <colorHtml>8600FFFF</colorHtml>
-      <printHtml>8600FFFF</printHtml>
-      <strokeIndex>0</strokeIndex>
-      <lowerBound>3447.37866</lowerBound>
-      <upperBound>10342.1357</upperBound>
-    </LoggingChartPref>
-    <LoggingChartPref>
-      <name>FSPPressureLog</name>
-      <colorHtml>0038FFFF</colorHtml>
-      <printHtml>0038FFFF</printHtml>
-      <strokeIndex>0</strokeIndex>
-      <lowerBound>0</lowerBound>
-      <upperBound>6894.75732</upperBound>
-    </LoggingChartPref>
-    <LoggingChartPref>
       <name>SBPPressureLog</name>
       <colorHtml>0086FFFF</colorHtml>
       <printHtml>0086FFFF</printHtml>
       <strokeIndex>0</strokeIndex>
       <lowerBound>0</lowerBound>
-      <upperBound>6894.75732</upperBound>
+      <upperBound>10342.1</upperBound>
     </LoggingChartPref>
     <LoggingChartPref>
       <name>outCoriolisFlowLog</name>
