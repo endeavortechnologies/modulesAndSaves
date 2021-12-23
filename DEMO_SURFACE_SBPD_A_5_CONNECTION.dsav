@@ -2114,7 +2114,7 @@
       <simNoise>true</simNoise>
       <enableGameOverSpam>true</enableGameOverSpam>
       <maxAnalogGaugePressure>0</maxAnalogGaugePressure>
-      <maxAnalogDrillPipePressureGaugePressure>0</maxAnalogDrillPipePressureGaugePressure>
+      <maxAnalogDrillPipePressureGaugePressure>51675</maxAnalogDrillPipePressureGaugePressure>
       <maxAnalogCasingPressureGaugePressure>0</maxAnalogCasingPressureGaugePressure>
       <maxAnalogKillLinePressureGaugePressure>0</maxAnalogKillLinePressureGaugePressure>
       <greenToGo>BOTH</greenToGo>
