@@ -2121,7 +2121,7 @@
       <initialStringHeight>1</initialStringHeight>
       <simNoise>true</simNoise>
       <enableGameOverSpam>true</enableGameOverSpam>
-      <maxAnalogGaugePressure>0</maxAnalogGaugePressure>
+      <maxAnalogGaugePressure>51675</maxAnalogGaugePressure>
       <maxAnalogDrillPipePressureGaugePressure>51675</maxAnalogDrillPipePressureGaugePressure>
       <maxAnalogCasingPressureGaugePressure>0</maxAnalogCasingPressureGaugePressure>
       <maxAnalogKillLinePressureGaugePressure>0</maxAnalogKillLinePressureGaugePressure>
