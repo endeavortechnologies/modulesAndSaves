@@ -1846,7 +1846,7 @@
       <WebDrillBit>
         <bitType>PDC</bitType>
         <diameter>0.2031999</diameter>
-        <bitHydraulicsDiameter>0.165099919</bitHydraulicsDiameter>
+        <bitHydraulicsDiameter>0.127</bitHydraulicsDiameter>
         <numberNozzles>3</numberNozzles>
         <nozzleDiameter>0</nozzleDiameter>
         <maxDrillBitWOB>27000</maxDrillBitWOB>
@@ -1866,9 +1866,9 @@
         <valveLength>20</valveLength>
       </WebNonPortedFloat>
       <WebDrillStringConfiguration>
-        <pipeCount>139</pipeCount>
+        <pipeCount>169</pipeCount>
         <heavyWeightPipeCount>0</heavyWeightPipeCount>
-        <collarCount>30</collarCount>
+        <collarCount>0</collarCount>
         <drillingJarPosition>-1</drillingJarPosition>
         <dsPackerPosition>0</dsPackerPosition>
         <casingTwoCount>0</casingTwoCount>
