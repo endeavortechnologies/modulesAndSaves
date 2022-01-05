@@ -2256,6 +2256,15 @@ int incident_int = 4;
 
 if (topDrive != null && Call("isReady", topDrive) == true)
   {
+    countDowns = Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled");
+    faults =  Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled");
+    b_notificationsEnabled = countDowns || faults;
+    if (b_notificationsEnabled)
+      {
+        Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled", null, false);
+        Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled", null, false);
+      }
+    
     chokeA = Call("GetChoke", chokeManifold, 2);
     junkCatcher = Call ("GetChoke", chokeManifold, 4);
     coriolis = Call("GetChoke", chokeManifold, 5);

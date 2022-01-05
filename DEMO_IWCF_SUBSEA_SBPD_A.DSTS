@@ -682,7 +682,20 @@
     <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
     <goodTongTorqueProbability>0</goodTongTorqueProbability>
     <timeProgressMode>None</timeProgressMode>
-    <cscsScript><![CDATA[]]></cscsScript>
+          <cscsScript><![CDATA[
+      topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
+      if (topDrive != null && Call("isReady", topDrive) == true)
+        {
+          countDowns = Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled");
+          faults =  Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled");
+          b_notificationsEnabled = countDowns || faults;
+          if (b_notificationsEnabled)
+            {
+              Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled", null, false);
+              Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled", null, false);
+            }
+        }
+      ]]></cscsScript>
   </ProgrammerSettings>
   <HydroV2Settings>
     <isOn>true</isOn>

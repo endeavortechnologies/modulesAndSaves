@@ -102,9 +102,11 @@
       <ROP_UpdateFrequency>1</ROP_UpdateFrequency>
       <gravityPushForce>0.1</gravityPushForce>
       <centerStabilizingForce>0.5</centerStabilizingForce>
+      <numberOfRibs>0</numberOfRibs>
+      <torquePerRib>0</torquePerRib>
     </WebBHA>
     <WebMudMotor>
-      <mudMotorUsed>true</mudMotorUsed>
+      <mudMotorUsed>false</mudMotorUsed>
       <weight>1000</weight>
       <maxPower>241000</maxPower>
       <maxStallPressure>20000</maxStallPressure>
@@ -335,7 +337,7 @@
         <depth>0</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>200</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -359,7 +361,7 @@
         <depth>606</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>500</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -383,7 +385,7 @@
         <depth>852</depth>
         <pressureGradient>7.9</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -407,7 +409,7 @@
         <depth>895</depth>
         <pressureGradient>7</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>50</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -431,7 +433,7 @@
         <depth>957</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -455,7 +457,7 @@
         <depth>989</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -479,7 +481,7 @@
         <depth>1057</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -503,7 +505,7 @@
         <depth>1130</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -527,7 +529,7 @@
         <depth>1200</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -551,7 +553,7 @@
         <depth>1270</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -575,7 +577,7 @@
         <depth>1320</depth>
         <pressureGradient>10</pressureGradient>
         <fracturePressure>29</fracturePressure>
-        <maxROP>100</maxROP>
+        <maxROPv2>0.1388889</maxROPv2>
         <influxGas>0</influxGas>
         <influxLiquid>0</influxLiquid>
         <kickLossCoeff>0</kickLossCoeff>
@@ -692,7 +694,7 @@
     <noKillSheet>false</noKillSheet>
     <forceDownhole>false</forceDownhole>
     <forceEDR>false</forceEDR>
-    <forceGeocube>false</forceGeocube>
+    <forceGeocube>true</forceGeocube>
     <forceIncidents>false</forceIncidents>
     <forceRepair>false</forceRepair>
     <isSbpd>false</isSbpd>
@@ -749,7 +751,8 @@ topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
 if (topDrive != null && Call("isReady", topDrive) == true)
   {
     Call("Endtech.AutomationScripts.Automation.balesControl");
-    Call("Endtech.AutomationScripts.directionalDrilling.Process", null, 140, true);
+    //null, maxAllowedDLS (deg/m), minAllowedTVD(m), maxAllowedTVD(m), maxAllowedMD(m), minimumDeparture(m), departureInclination(deg), maximumEW(m), maximumNS(m) 
+    Call("Endtech.AutomationScripts.directionalDrilling.Process", null, 140, true, 0.4, 1000, 720, 730, 10.0, 30.0, 20.0, 20.0 );
   }
 ]]></cscsScript>
   </ProgrammerSettings>
