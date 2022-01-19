@@ -81,7 +81,7 @@ topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
 if (topDrive != null && Call("isReady", topDrive) == true)
   {
     Call("Endtech.AutomationScripts.Automation.balesControl");
-    Call("Endtech.AutomationScripts.DrillingBreakandFlowCheck.Process", null, 0);
+    Call("Endtech.AutomationScripts.DrillingBreakandFlowCheck.Process", null, 120, 1605, 1605.5, 1610, 1610.5, 26.66, 38.34);
   }
 ]]></cscsScript>
 		<initialTopDriveHeight>5</initialTopDriveHeight>
