@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<moduleName>IWCF Module One</moduleName>
+	<moduleText>IWCF assessment module #1</moduleText>
+	<moduleVersion>0.7</moduleVersion>
+	<isMetric>true</isMetric>
+	<WebObjectives>
+		<!-- -1 means ignore -->
+		<!-- hole MD in m -->
+		<minDrillDistance>-1</minDrillDistance>
+		<maxDrillDistance>-1</maxDrillDistance>
+		<!-- pipe count to add/remove, relative to start of scenario -->
+		<!-- NOTE 1 stand == 3 pipe -->
+		<addSegments>-1</addSegments>
+		<removeSegments>-1</removeSegments>
+		<!-- azim/incl in degrees -->
+		<azimuthMin>-1</azimuthMin>
+		<azimuthMax>-1</azimuthMax>
+		<inclinationMin>-1</inclinationMin>
+		<inclinationMax>-1</inclinationMax>
+		<!-- hole TVD in m -->
+		<minTVD>3300</minTVD>
+		<maxTVD>3700</maxTVD>
+		<!-- time limit in seconds -->
+		<timeLimit>-1</timeLimit>
+		<proximity>-1</proximity>
+		<!-- in m -->
+		<maxDogLeg>-1</maxDogLeg>
+	</WebObjectives>
+	<ProgrammerSettings>
+		<cscsScript>
+			<![CDATA[
+topDrive = Call("Endtech.Simulation.SimBlackboard.topDrive");
+if (topDrive != null && Call("isReady", topDrive) == true)
+  {
+    Call("Endtech.AutomationScripts.Automation.balesControl");
+    Call("Endtech.AutomationScripts.DrillingBreakandFlowCheck.Process", null, 120, 1605, 1605.5, 1610, 1610.5, 26.66, 38.34);
+  }
+]]>
+		</cscsScript>
+		<initialTopDriveHeight>5</initialTopDriveHeight>
+		<initialStringHeight>1</initialStringHeight>
+		<simNoise>true</simNoise>
+		<enableGameOverSpam>true</enableGameOverSpam>
+		<bulkModulus>2200000</bulkModulus>
+		<!-- kpa -->
+		<chokeFastRate>0.015</chokeFastRate>
+		<!-- %/tick -->
+		<chokeSlowRate>0.001</chokeSlowRate>
+		<!-- %/tick -->
+		<disableUTubeBehaviour>false</disableUTubeBehaviour>
+		<gasMigrationRate>0.000706</gasMigrationRate>
+		<!-- m3/sec -->
+		<rateOfInflux>0.003</rateOfInflux>
+		<!-- m3/sec -->
+		<gaugeTimeDelay>1.00</gaugeTimeDelay>
+		<!--multiplier, the higher this is the more time delay for casing pressure and drill pipe pressure.  eg 1.00 = standard time, 2.00 means twice the delay -->
+		<JoshMath>
+			<!-- 	add josh custom arithmetic here
+		
+		valid variables are: 				
+			for surface or subsea:
+				TPMud 	= trapped pressure from mud
+				TPGas 	= trapped pressure from gas
+				DBHP	= dynamic bottom hole pressure
+				FP		= formation pressure
+				AHP		= annulus hydrostatic pressure
+				HPUB	= annulus hydrostatic pressure under bit
+				DSHP	= drill string hydrostatic pressure at bit				
+				DSPL	= drill string pressure loss
+				BPL		= drill bit pressure loss
+				APL		= annulus pressure loss
+				CP		= casing pressure
+				DPP		= drill pipe pressure
+				OKP		= overkill pressure (DBHP - FP)
+				
+			ONLY for subsea:
+				RHP		= riser hydrostatic pressure
+				CLPL	= choke line pressure loss
+				CLHP	= choke line hydrostatic pressure
+				KLPL	= kill line pressure loss
+				KLHP	= kill line hydrostatic pressure
+				KLP		= kill line pressure
+				
+			Using a subsea variable in a surface module will result in a NAN value.
+		-->
+			<!-- <JoshExpression>FP + CP - BPL</JoshExpression>
+		  <JoshExpression>DPP - APL</JoshExpression>
+		  <JoshExpression>DPP + CP + BPL</JoshExpression>
+		  <JoshExpression>CP - KLHP</JoshExpression>
+		  <JoshExpression>TPMud + CP - AHP - TPGas - DBHP + HPUB - DSHP + DSPL -OKP</JoshExpression>
+		  <JoshExpression>KLP + CLPL - AHP - RHP - DBHP + CLHP - KLHP + DSPL -KLPL</JoshExpression>-->
+		</JoshMath>
+	</ProgrammerSettings>
+	<WebFormation>
+		<formationName>Demo Formation</formationName>
+		<formationDesc>Subsurface configuration for demos</formationDesc>
+		<stratas>
+			<Strata>
+				<name>Water Table</name>
+				<depth>0</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>10</gamma>
+				<formationPressure>10</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>200</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Sand</name>
+					<lithology>Sandstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>6</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Edmonton Group</name>
+				<depth>606</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>10</gamma>
+				<formationPressure>6060</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>200</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Siltstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>2</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Belly River Group</name>
+				<depth>1406</depth>
+				<pressureGradient>7.9</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>10</gamma>
+				<formationPressure>14060</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Hard Rock</name>
+					<lithology>Shale</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>9</strength>
+					<texture>5</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Viking</name>
+				<depth>1505</depth>
+				<pressureGradient>7</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>33278</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>50</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Siltstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>4</staticFriction>
+					<kineticFriction>4</kineticFriction>
+					<strength>9</strength>
+					<texture>2</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Drilling Break</name>
+				<depth>1603</depth>
+				<pressureGradient>8</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>33278</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Conglomerate</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>1</staticFriction>
+					<kineticFriction>1</kineticFriction>
+					<strength>8</strength>
+					<texture>3</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Lea Park</name>
+				<depth>1706</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>1</gamma>
+				<formationPressure>17060</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Hard Rock</name>
+					<lithology>Shale</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>9</strength>
+					<texture>5</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Badheart</name>
+				<depth>1967</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>1</gamma>
+				<formationPressure>19670</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Hard Rock 2</name>
+					<lithology>Dolomite</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>5</strength>
+					<texture>3</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Muskiki</name>
+				<depth>1981</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>1</gamma>
+				<formationPressure>19810</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Siltstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>2</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Cardium Zone</name>
+				<depth>2047</depth>
+				<pressureGradient>11.5</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>1</gamma>
+				<formationPressure>23541</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Hard Rock</name>
+					<lithology>Shale</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>5</strength>
+					<texture>5</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Cardium Sand</name>
+				<depth>2086</depth>
+				<pressureGradient>11.5</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>1</gamma>
+				<formationPressure>23989</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Siltstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>2</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Blackstone</name>
+				<depth>2117</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>21170</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Hard Rock</name>
+					<lithology>Shale</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>5</strength>
+					<texture>5</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Base Of 2WS</name>
+				<depth>2330</depth>
+				<pressureGradient>13</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>29939</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Siltstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>2</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Notikewin</name>
+				<depth>2484</depth>
+				<pressureGradient>9.3</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>23101</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>200</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Hard Rock</name>
+					<lithology>Shale</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>5</strength>
+					<texture>5</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Falher</name>
+				<depth>2540</depth>
+				<pressureGradient>10</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>0</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Hard Rock 2</name>
+					<lithology>Dolomite</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>5</strength>
+					<texture>3</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Falher G Coal</name>
+				<depth>2617</depth>
+				<pressureGradient>10.9</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>28526</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Soft Rock</name>
+					<lithology>Siltstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>2</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Falher G Sand</name>
+				<depth>2642</depth>
+				<pressureGradient>10.9</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>28798</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>100</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Sand</name>
+					<lithology>Sandstone</lithology>
+					<porosity>8</porosity>
+					<permeability>5</permeability>
+					<staticFriction>2</staticFriction>
+					<kineticFriction>3</kineticFriction>
+					<strength>1</strength>
+					<texture>6</texture>
+				</RockType>
+			</Strata>
+			<Strata>
+				<name>Elkton</name>
+				<depth>3801</depth>
+				<pressureGradient>12.8</pressureGradient>
+				<tempGradient>0.03</tempGradient>
+				<gamma>0</gamma>
+				<formationPressure>48653</formationPressure>
+				<fracturePressure>29</fracturePressure>
+				<maxROP>200</maxROP>
+				<influxGas>0</influxGas>
+				<influxLiquid>0</influxLiquid>
+				<typeOfLiquid>Gas</typeOfLiquid>
+				<RockType>
+					<name>Default Hard Rock</name>
+					<lithology>Shale</lithology>
+					<porosity>5</porosity>
+					<permeability>5</permeability>
+					<staticFriction>5</staticFriction>
+					<kineticFriction>5</kineticFriction>
+					<strength>5</strength>
+					<texture>5</texture>
+				</RockType>
+			</Strata>
+		</stratas>
+	</WebFormation>
+	<WebDrillPlan>
+		<drillPlanName>IWCF Module 1</drillPlanName>
+		<maxTrueVerticalDepth>4000</maxTrueVerticalDepth>
+		<maxHorizontalDisplacement>2000</maxHorizontalDisplacement>
+		<initialAnnulusStartsAtSection>2</initialAnnulusStartsAtSection>
+		<sections>
+			<Section>
+				<name>Casing Shoe</name>
+				<MD>615</MD>
+				<inclination>0</inclination>
+				<azimuth>0</azimuth>
+				<build>0</build>
+				<turn>0</turn>
+				<width>0.224</width>
+				<operationNote></operationNote>
+			</Section>
+			<Section>
+				<name>Vertical Section</name>
+				<MD>1500</MD>
+				<inclination>0</inclination>
+				<azimuth>0</azimuth>
+				<build>0</build>
+				<turn>0</turn>
+				<width>0.217</width>
+				<operationNote></operationNote>
+			</Section>
+			<Section>
+				<name>Kick Off Point</name>
+				<MD>1600</MD>
+				<inclination>0</inclination>
+				<azimuth>0</azimuth>
+				<build>0</build>
+				<turn>0</turn>
+				<width>0.217</width>
+				<operationNote>All wellsite supervisors should post an 'EDR memo' stating the warranted ability to reduce mud weights if desired.</operationNote>
+			</Section>
+			<Section>
+				<name>Planned Hold</name>
+				<MD>1890</MD>
+				<inclination>-1</inclination>
+				<azimuth>30</azimuth>
+				<build>6</build>
+				<turn>0</turn>
+				<width>0.217</width>
+				<operationNote>Formation can be ratty drilling and may require slowing down of drilling parameters to help maintain bit life / motor output.</operationNote>
+			</Section>
+			<Section>
+				<name>Planned Drop And Turn</name>
+				<MD>2400</MD>
+				<inclination>-1</inclination>
+				<azimuth>-1</azimuth>
+				<build>0</build>
+				<turn>0</turn>
+				<width>0.217</width>
+				<operationNote>Pay close attention and keep constant communication with DD to ensure doglegs are minimized.</operationNote>
+			</Section>
+			<Section>
+				<name>Planned End of Drop</name>
+				<MD>2690</MD>
+				<inclination>-1</inclination>
+				<azimuth>-1</azimuth>
+				<build>-6</build>
+				<turn>6</turn>
+				<width>0.217</width>
+				<operationNote>Pay close attention to PVT, flow and gas when penetrating the above zones and on trips.</operationNote>
+			</Section>
+			<Section>
+				<name>Target</name>
+				<MD>3500</MD>
+				<inclination>0</inclination>
+				<azimuth>0</azimuth>
+				<build>0</build>
+				<turn>0</turn>
+				<width>0.217</width>
+				<operationNote>Have sufficient barite on location to control the potential for kicks.</operationNote>
+			</Section>
+		</sections>
+	</WebDrillPlan>
+	<WebSubSea>
+		<isSubsea>false</isSubsea>
+		<waterDepth>0</waterDepth>
+		<isRiserUsed>true</isRiserUsed>
+		<airGap>0</airGap>
+		<riserInnerDiameter>0.5016</riserInnerDiameter>
+		<chokeLineInnerDiameter>0.0762</chokeLineInnerDiameter>
+		<killLineInnerDiameter>0.0762</killLineInnerDiameter>
+		<densityOfSeaWater>1029</densityOfSeaWater>
+	</WebSubSea>
+	<WebDrillString>
+		<name>Long string with mud motor and MWD</name>
+		<WebMudMotor>
+			<mudMotorUsed>true</mudMotorUsed>
+			<weight>1000</weight>
+			<maxPower>241000</maxPower>
+			<dumpSubThresholdFlowRate>0.0125</dumpSubThresholdFlowRate>
+			<maxDifferentialPressure>4480</maxDifferentialPressure>
+			<maxRotationSpeed>9000</maxRotationSpeed>
+		</WebMudMotor>
+		<WebBHA>
+			<BHAUsed>false</BHAUsed>
+			<maxRotationSpeedWithoutDamageToBHA>9000</maxRotationSpeedWithoutDamageToBHA>
+			<!-- deg/s (divide by 6 for rpm)-->
+			<length>20</length>
+			<distance_MWD_is_behind_drillBit>10</distance_MWD_is_behind_drillBit>
+			<switch_between_MTF_and_GTF>5</switch_between_MTF_and_GTF>
+			<buildRatePerMeter>0.5</buildRatePerMeter>
+			<TFO_UpdateFrequency>15</TFO_UpdateFrequency>
+			<Azimuth_UpdateFrequency>15</Azimuth_UpdateFrequency>
+			<Inclination_UpdateFrequency>15</Inclination_UpdateFrequency>
+			<ROP_UpdateFrequency>1</ROP_UpdateFrequency>
+		</WebBHA>
+		<WebDrillPipe>
+			<nominalWeight>29</nominalWeight>
+			<outerDiameter>0.1016</outerDiameter>
+			<innerDiameter>0.084836</innerDiameter>
+		</WebDrillPipe>
+		<WebHeavyWeightDrillPipe>
+			<nominalWeight>74.06</nominalWeight>
+			<outerDiameter>0.127</outerDiameter>
+			<innerDiameter>0.076</innerDiameter>
+		</WebHeavyWeightDrillPipe>
+		<WebDrillCollar>
+			<nominalWeight>147</nominalWeight>
+			<outerDiameter>0.1651</outerDiameter>
+			<innerDiameter>0.05715</innerDiameter>
+		</WebDrillCollar>
+		<WebDrillBit>
+			<diameter>0.216</diameter>
+			<maxDrillBitWOB>27000</maxDrillBitWOB>
+			<maxDrillingRotationSpeed>900</maxDrillingRotationSpeed>
+			<numberNozzles>3</numberNozzles>
+			<totalFlowArea>0.000445</totalFlowArea>
+			<bitType>PDC</bitType>
+		</WebDrillBit>
+		<WebDrillingJar>
+			<nominalWeight>88.45</nominalWeight>
+			<outerDiameter>0.1651</outerDiameter>
+			<innerDiameter>0.06985</innerDiameter>
+			<type>hydraulic</type>
+			<maxDetentWorkingLoad>778438.78</maxDetentWorkingLoad>
+			<strokeLength>0.635</strokeLength>
+		</WebDrillingJar>
+		<WebNonPortedFloat>
+			<portUsed>false</portUsed>
+			<valveInnerDiameter>4</valveInnerDiameter>
+			<valveLength>20</valveLength>
+		</WebNonPortedFloat>
+		<WebPacker>
+			<hasPacker>false</hasPacker>
+			<maxSleeveRotation>90</maxSleeveRotation>
+			<maxSleevePositionOffsetBottomJ>0.1</maxSleevePositionOffsetBottomJ>
+			<maxSleevePositionOffsetSideJ>0.3</maxSleevePositionOffsetSideJ>
+			<maxSleevePositionOffsetTopL>0.5</maxSleevePositionOffsetTopL>
+			<minimumSettingCompression>66720</minimumSettingCompression>
+			<secondsForCompression>120</secondsForCompression>
+		</WebPacker>
+		<WebDrillStringConfiguration>
+			<pipeCount>124</pipeCount>
+			<heavyWeightPipeCount>15</heavyWeightPipeCount>
+			<collarCount>29</collarCount>
+			<drillingJarPosition>29</drillingJarPosition>
+			<!-- int 1-N(0 is bit, N is top) marking segment that is the jar, -1 for none -->
+		</WebDrillStringConfiguration>
+	</WebDrillString>
+	<WebRigAssets>
+		<useRoughNeck>true</useRoughNeck>
+		<WebTopDrive>
+			<maxHoistSpeed>3</maxHoistSpeed>
+			<maxLowerSpeed>3</maxLowerSpeed>
+			<maxRotation>1400</maxRotation>
+			<maxDrillingTorque>50000</maxDrillingTorque>
+			<totalMass>36000</totalMass>
+			<tripInLowerSpeed>-1.4</tripInLowerSpeed>
+			<tripInHoistSpeed>3</tripInHoistSpeed>
+			<tripOutLowerSpeed>-3</tripOutLowerSpeed>
+			<tripOutHoistSpeed>1.5</tripOutHoistSpeed>
+		</WebTopDrive>
+		<WebBirdBath>
+			<pipes>5</pipes>
+			<heavyPipes>0</heavyPipes>
+			<collars>0</collars>
+		</WebBirdBath>
+		<WebAIWorkers>
+			<automaticBehavior>false</automaticBehavior>
+			<tripDirection>in</tripDirection>
+			<nameWorker1>Jack</nameWorker1>
+			<nameWorker2>Max</nameWorker2>
+			<nameWorker3>Pete</nameWorker3>
+		</WebAIWorkers>
+		<WebMainPump1>
+			<efficiency>0.95</efficiency>
+			<maxStrokesPerMinute>120</maxStrokesPerMinute>
+			<linerDiameter>0.1524</linerDiameter>
+			<linerStrokeLength>0.315</linerStrokeLength>
+			<reliefValveInitialPressure>32198</reliefValveInitialPressure>
+			<initialPumpPressureLimit>32098</initialPumpPressureLimit>
+		</WebMainPump1>
+		<WebMainPump2>
+			<efficiency>0.95</efficiency>
+			<maxStrokesPerMinute>120</maxStrokesPerMinute>
+			<linerDiameter>0.1524</linerDiameter>
+			<linerStrokeLength>0.315</linerStrokeLength>
+			<reliefValveInitialPressure>32198</reliefValveInitialPressure>
+			<initialPumpPressureLimit>32098</initialPumpPressureLimit>
+		</WebMainPump2>
+		<WebTripPump>
+			<efficiency>0.95</efficiency>
+			<maxStrokesPerMinute>45</maxStrokesPerMinute>
+			<linerDiameter>0.1524</linerDiameter>
+			<linerStrokeLength>0.3048</linerStrokeLength>
+			<reliefValveInitialPressure>0</reliefValveInitialPressure>
+			<initialPumpPressureLimit>0</initialPumpPressureLimit>
+		</WebTripPump>
+		<WebCementPump>
+			<efficiency>0.95</efficiency>
+			<maxStrokesPerMinute>30</maxStrokesPerMinute>
+			<linerDiameter>0.02</linerDiameter>
+			<linerStrokeLength>0.186</linerStrokeLength>
+			<reliefValveInitialPressure>0</reliefValveInitialPressure>
+			<initialPumpPressureLimit>0</initialPumpPressureLimit>
+		</WebCementPump>
+	</WebRigAssets>
+	<WebWellConfiguration>
+		<initialMudWeight>1400</initialMudWeight>
+		<gelStrength>1</gelStrength>
+		<plasticViscosity>12</plasticViscosity>
+		<yieldPoint>8</yieldPoint>
+		<BOPClass>6</BOPClass>
+		<casings>
+			<WebCasing>
+				<name>Surface Casing</name>
+				<depth>615</depth>
+				<width>0.224</width>
+			</WebCasing>
+		</casings>
+	</WebWellConfiguration>
+</WebModule>
