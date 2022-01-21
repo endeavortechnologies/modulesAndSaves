@@ -32,6 +32,14 @@ if (topDrive != null && Call("isReady", topDrive) == true)
   {
     Call("Endtech.AutomationScripts.Automation.balesControl");
     Call("Endtech.AutomationScripts.DrillingBreakandFlowCheck.Process", null, 120, 1605, 1605.5, 1610, 1610.5, 26.66, 38.34);
+	countDowns = Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled");
+	faults =  Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled");
+	b_notificationsEnabled = countDowns || faults;
+	if (b_notificationsEnabled)
+		{
+			Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled", null, false);
+			Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled", null, false);
+		}
   }
 ]]></cscsScript>
 		<initialTopDriveHeight>5</initialTopDriveHeight>
