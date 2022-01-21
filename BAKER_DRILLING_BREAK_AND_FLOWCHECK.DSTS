@@ -51,7 +51,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
 		<chokeSlowRate>0.001</chokeSlowRate><!-- %/tick -->
 		<disableUTubeBehaviour>false</disableUTubeBehaviour>
 		<gasMigrationRate>0.000706</gasMigrationRate><!-- m3/sec -->
-		<rateOfInflux>0.003</rateOfInflux><!-- m3/sec -->
+		<rateOfInflux>0.006</rateOfInflux><!-- m3/sec -->
 		<gaugeTimeDelay>1.00</gaugeTimeDelay><!--multiplier, the higher this is the more time delay for casing pressure and drill pipe pressure.  eg 1.00 = standard time, 2.00 means twice the delay -->
 		<JoshMath>
 			<!-- 	add josh custom arithmetic here
