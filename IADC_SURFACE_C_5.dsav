@@ -23,7 +23,7 @@
     <isInitialized>true</isInitialized>
     <targetStrokesForIncident>150</targetStrokesForIncident>
     <allowedIncidents>
-      <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
+<!--       <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents> -->
       <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
     <!--  <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
       <ScriptedIncidents>BOP_FAILURE_UPPER_RAMS</ScriptedIncidents> -->
