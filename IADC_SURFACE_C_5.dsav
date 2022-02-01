@@ -24,9 +24,9 @@
     <targetStrokesForIncident>150</targetStrokesForIncident>
     <allowedIncidents>
       <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
-      <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
+<!--       <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
       <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
-      <ScriptedIncidents>BOP_FAILURE_UPPER_RAMS</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_UPPER_RAMS</ScriptedIncidents> -->
     </allowedIncidents>
     <zeroStrokeReference>0</zeroStrokeReference>
     <triggeredIncidents>0</triggeredIncidents>
