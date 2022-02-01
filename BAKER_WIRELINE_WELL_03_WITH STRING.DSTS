@@ -877,7 +877,7 @@
     <tensionToMove>0</tensionToMove>
     <extraFriction>0</extraFriction>
     <dsYoungsModulus>62688296</dsYoungsModulus>
-    <casingFrictionCoeff>1700</casingFrictionCoeff>
+    <casingFrictionCoeff>1000</casingFrictionCoeff>
     <cableAngle>110</cableAngle>
     <wirelineTensionLimits />
     <wirelineDiffTensionLimits />
@@ -912,6 +912,7 @@
     <timeProgressMode>None</timeProgressMode>
     <cscsScript><![CDATA[
     Call("Endtech.AutomationScripts.wirelineScripts.maxPullWithoutResettingTorqueLimit", null, 305);
+    Call("Endtech.AutomationScripts.wirelineScripts.TensionTest", null);
     ]]></cscsScript>
   </ProgrammerSettings>
   <HydroV2Settings>
