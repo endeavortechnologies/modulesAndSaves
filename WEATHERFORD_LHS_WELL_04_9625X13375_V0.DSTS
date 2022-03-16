@@ -23,8 +23,12 @@
     <BOPClass>6</BOPClass>
   </WebWellConfiguration>
   <WebRigAssets>
-    <roughneckIndex>0</roughneckIndex>
-    <WebRigAssetCassetteList />
+		<roughneckIndex>2</roughneckIndex>
+		<WebRigAssetCassetteList>
+			<WfPowertongCassetteType>TW</WfPowertongCassetteType><!-- case-sensitive! cassette in the tong at start -->
+			<!--WfPowertongCassetteType></WfPowertongCassetteType><!- cassette on the deck at start -->
+			<!-- the final type is TWENTYTWO, but any additional entries beyond the first 2 are ignored -->
+		</WebRigAssetCassetteList>
     <WebTopDrive>
       <maxLowerSpeed>3</maxLowerSpeed>
       <maxRotation>1400</maxRotation>

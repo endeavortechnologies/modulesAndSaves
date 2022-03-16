@@ -624,8 +624,8 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>IWCF Module One</moduleName>
-  <moduleText>IWCF assessment module #1</moduleText>
+  <moduleName>Wide Catch Overshot</moduleName>
+  <moduleText>Fish a stuck drill string out of the well</moduleText>
   <loggingCharts />
   <edrCharts />
   <isMetric>true</isMetric>
