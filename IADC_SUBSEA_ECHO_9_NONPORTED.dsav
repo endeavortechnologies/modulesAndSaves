@@ -1601,7 +1601,7 @@
         <initialPumpPressureLimit>53679.11</initialPumpPressureLimit>
       </WebCementPump>
       <WebAutoChoke>
-        <isActive>true</isActive>
+        <isActive>false</isActive>
         <mode>OVERKILL</mode>
         <speedFactor>0.5</speedFactor>
         <targetOverkill>1000</targetOverkill>

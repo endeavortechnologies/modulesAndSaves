@@ -1,43 +1,69 @@
 <?xml version="1.0" encoding="utf-16"?>
-<SimSaveState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <userNames>NONE||NONE</userNames>
-  <version>DATA_VERSION_0_15</version>
+<SimSaveState>
+  <userNames>||</userNames>
+  <version>DATA_VERSION_0_18</version>
+  <softwareVersion>O.1.1.8130-NONE (DEBUG)</softwareVersion>
+  <engineVersion>2020.3.30f1</engineVersion>
   <slipsInHole>false</slipsInHole>
   <gradingData>
-    <canAdvance>true</canAdvance>
+    <canAdvance>false</canAdvance>
     <gradingState>INACTIVE</gradingState>
     <checkpoint>PREKILL</checkpoint>
+    <gradingLevel>DEFAULT</gradingLevel>
+    <includedSteps>
+      <GradingCheckpoint>PREDRILL</GradingCheckpoint>
+      <GradingCheckpoint>DRILLING_AHEAD</GradingCheckpoint>
+      <GradingCheckpoint>PREKILL</GradingCheckpoint>
+      <GradingCheckpoint>STARTUP</GradingCheckpoint>
+      <GradingCheckpoint>INCIDENT</GradingCheckpoint>
+      <GradingCheckpoint>REMOVEINFLUX</GradingCheckpoint>
+      <GradingCheckpoint>SHUTDOWN</GradingCheckpoint>
+    </includedSteps>
     <bhpState>OK</bhpState>
     <zeroStrokeReference>0</zeroStrokeReference>
     <currentCapturedIncident>NONE</currentCapturedIncident>
     <currentIdentifiedIncident>
       <ScriptedIncidents>NONE</ScriptedIncidents>
     </currentIdentifiedIncident>
-    <targetStrokesForIncident>1</targetStrokesForIncident>
     <resolvedIncidents />
+  </gradingData>
+  <randomIncidentData>
+    <isInitialized>true</isInitialized>
+    <queuedIncident>NONE</queuedIncident>
+    <targetStrokesForIncident>-1</targetStrokesForIncident>
     <allowedIncidents>
       <ScriptedIncidents>PUMP_ONE_FAILURE</ScriptedIncidents>
       <ScriptedIncidents>PUMP_TWO_FAILURE</ScriptedIncidents>
       <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
-      <ScriptedIncidents>CHOKE_PLUGGED</ScriptedIncidents>
-      <ScriptedIncidents>CHOKE_WASHOUT</ScriptedIncidents>
+      <ScriptedIncidents>BIT_WASHOUT</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_BOTH_ANNULARS</ScriptedIncidents>
       <ScriptedIncidents>BOP_FAILURE_LOWER_ANNULAR</ScriptedIncidents>
       <ScriptedIncidents>BOP_FAILURE_LOWER_RAMS</ScriptedIncidents>
       <ScriptedIncidents>BOP_FAILURE_MIDDLE_RAMS</ScriptedIncidents>
       <ScriptedIncidents>BOP_FAILURE_UPPER_ANNULAR</ScriptedIncidents>
       <ScriptedIncidents>BOP_FAILURE_UPPER_RAMS</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_2_PLUGGED</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_2_WASHOUT</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_BLIND_RAMS</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_UPPER_BLIND_RAMS</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_LOWER_BLIND_RAMS</ScriptedIncidents>
     </allowedIncidents>
-  </gradingData>
+    <zeroStrokeReference>0</zeroStrokeReference>
+    <triggeredIncidents>0</triggeredIncidents>
+  </randomIncidentData>
   <travelBlockPosition>
-    <x>0</x>
+    <x>1.35525272E-20</x>
     <y>22.4479351</y>
     <z>0</z>
   </travelBlockPosition>
   <topDriveData>
-    <pipeHandlerRotation>180.000031</pipeHandlerRotation>
+    <pipeHandlerRotation>180.000015</pipeHandlerRotation>
     <extenderPosition>0</extenderPosition>
     <isMadeUpToDrillString>true</isMadeUpToDrillString>
     <currentMode>DRILL</currentMode>
+    <spinDirection>STOPPED</spinDirection>
     <drawworksBrakeEngaged>false</drawworksBrakeEngaged>
     <spinBrakeEngaged>false</spinBrakeEngaged>
     <isAutoSpinBrake>true</isAutoSpinBrake>
@@ -388,10 +414,11 @@
       <blockers />
       <compressionDelta>0</compressionDelta>
       <tensionDelta>0</tensionDelta>
-      <measuredDepthWhereStuckDownhole>3.40282347E+38</measuredDepthWhereStuckDownhole>
+      <measuredDepthWhereStuckDownhole>3.4028234663852886E+38</measuredDepthWhereStuckDownhole>
       <compressionForce>0</compressionForce>
       <tensionForce>0</tensionForce>
     </blockMotionOverride>
+    <wobZeroReference>0</wobZeroReference>
     <isDrawworksFailed>false</isDrawworksFailed>
     <isLinkArmsFailed>false</isLinkArmsFailed>
     <isRotaryFailed>false</isRotaryFailed>
@@ -399,6 +426,11 @@
   </topDriveData>
   <roughneckData>
     <isFailed>false</isFailed>
+    <isReady>true</isReady>
+    <totalMakes>0</totalMakes>
+    <totalRejects>0</totalRejects>
+    <goodTorqueCount>0</goodTorqueCount>
+    <badTorqueCount>0</badTorqueCount>
   </roughneckData>
   <drillStringData>
     <segments>
@@ -471,12 +503,13 @@
       <SegmentType>DRILL_PIPE</SegmentType>
     </segments>
     <position>
-      <x>-1.48587254E-10</x>
+      <x>-3.47204363E-08</x>
       <y>20.1178551</y>
-      <z>1.05146478E-06</z>
+      <z>1.36828282E-06</z>
     </position>
     <stuckPipeBehaviour>
       <isSloughing>false</isSloughing>
+      <isCollapsed>false</isCollapsed>
       <torqueAppliedAtStuckPoint>0</torqueAppliedAtStuckPoint>
       <stuckPipeState>NOT_STUCK</stuckPipeState>
       <measuredDepthWhereStuck>-1</measuredDepthWhereStuck>
@@ -484,15 +517,20 @@
     </stuckPipeBehaviour>
     <drillBit>
       <flowAreaModifier>1</flowAreaModifier>
+      <targetFlowModifierDepth>0</targetFlowModifierDepth>
+      <targetFlowModifier>0</targetFlowModifier>
+      <flowModifierRate>NaN</flowModifierRate>
       <bitFailureState>NONE</bitFailureState>
       <diameter>0.216</diameter>
-      <tfo>322.042053</tfo>
+      <tfo>180</tfo>
     </drillBit>
     <freezeTfoAt>-1</freezeTfoAt>
     <degreesPipeWoundUp>0</degreesPipeWoundUp>
     <torqueFromPipeWindUp>0</torqueFromPipeWindUp>
     <massOffsetFromTwistOff>0</massOffsetFromTwistOff>
+    <tensionCompressionWeight>0</tensionCompressionWeight>
     <perforationOffsetFromTopOfString>NaN</perforationOffsetFromTopOfString>
+    <targetPerforationDepth>-1</targetPerforationDepth>
   </drillStringData>
   <annulusPath>
     <Vector4>
@@ -525,6 +563,7 @@
       <mainPump1Data>
         <strokesPerMinute>0</strokesPerMinute>
         <isOn>false</isOn>
+        <tweenRateUp>5</tweenRateUp>
         <totalStrokes>1048.9137</totalStrokes>
         <zeroStrokesReference>0</zeroStrokesReference>
         <zeroVolumeReference>0</zeroVolumeReference>
@@ -533,17 +572,20 @@
         <isFailed>false</isFailed>
         <isReliefValveBlown>false</isReliefValveBlown>
         <isOverriddenByRecentFailure>false</isOverriddenByRecentFailure>
-        <appliedPressure>1351.67932</appliedPressure>
+        <appliedPressure>1353.12292</appliedPressure>
         <stateHistory>
           <PumpHistory>
             <spm>0</spm>
-            <pressure>1351.67932</pressure>
+            <pressure>1353.12292</pressure>
           </PumpHistory>
         </stateHistory>
+        <pumpEfficiencyModifier>1</pumpEfficiencyModifier>
+        <isEfficiencyDecreasingOverTime>false</isEfficiencyDecreasingOverTime>
       </mainPump1Data>
       <mainPump2Data>
         <strokesPerMinute>0</strokesPerMinute>
         <isOn>false</isOn>
+        <tweenRateUp>5</tweenRateUp>
         <totalStrokes>0</totalStrokes>
         <zeroStrokesReference>0</zeroStrokesReference>
         <zeroVolumeReference>0</zeroVolumeReference>
@@ -552,17 +594,20 @@
         <isFailed>false</isFailed>
         <isReliefValveBlown>false</isReliefValveBlown>
         <isOverriddenByRecentFailure>false</isOverriddenByRecentFailure>
-        <appliedPressure>1351.67932</appliedPressure>
+        <appliedPressure>1353.12292</appliedPressure>
         <stateHistory>
           <PumpHistory>
             <spm>0</spm>
-            <pressure>1351.67932</pressure>
+            <pressure>1353.12292</pressure>
           </PumpHistory>
         </stateHistory>
+        <pumpEfficiencyModifier>1</pumpEfficiencyModifier>
+        <isEfficiencyDecreasingOverTime>false</isEfficiencyDecreasingOverTime>
       </mainPump2Data>
       <tripPumpData>
         <strokesPerMinute>0</strokesPerMinute>
         <isOn>false</isOn>
+        <tweenRateUp>5</tweenRateUp>
         <totalStrokes>0</totalStrokes>
         <zeroStrokesReference>0</zeroStrokesReference>
         <zeroVolumeReference>0</zeroVolumeReference>
@@ -573,21 +618,43 @@
         <isOverriddenByRecentFailure>false</isOverriddenByRecentFailure>
         <appliedPressure>0</appliedPressure>
         <stateHistory />
+        <pumpEfficiencyModifier>1</pumpEfficiencyModifier>
+        <isEfficiencyDecreasingOverTime>false</isEfficiencyDecreasingOverTime>
       </tripPumpData>
-      <cementPumpData>
+      <cementingPumpData>
         <strokesPerMinute>0</strokesPerMinute>
         <isOn>false</isOn>
+        <tweenRateUp>2.5</tweenRateUp>
         <totalStrokes>0</totalStrokes>
         <zeroStrokesReference>0</zeroStrokesReference>
         <zeroVolumeReference>0</zeroVolumeReference>
         <userStrokeLimitSetPoint>30</userStrokeLimitSetPoint>
-        <pressureLimit>32098</pressureLimit>
+        <pressureLimit>53679.11</pressureLimit>
         <isFailed>false</isFailed>
         <isReliefValveBlown>false</isReliefValveBlown>
         <isOverriddenByRecentFailure>false</isOverriddenByRecentFailure>
         <appliedPressure>0</appliedPressure>
         <stateHistory />
-      </cementPumpData>
+        <pumpEfficiencyModifier>1</pumpEfficiencyModifier>
+        <isEfficiencyDecreasingOverTime>false</isEfficiencyDecreasingOverTime>
+      </cementingPumpData>
+      <lvhpPumpData>
+        <strokesPerMinute>0</strokesPerMinute>
+        <isOn>false</isOn>
+        <tweenRateUp>2.5</tweenRateUp>
+        <totalStrokes>0</totalStrokes>
+        <zeroStrokesReference>0</zeroStrokesReference>
+        <zeroVolumeReference>0</zeroVolumeReference>
+        <userStrokeLimitSetPoint>30</userStrokeLimitSetPoint>
+        <pressureLimit>999899</pressureLimit>
+        <isFailed>false</isFailed>
+        <isReliefValveBlown>false</isReliefValveBlown>
+        <isOverriddenByRecentFailure>false</isOverriddenByRecentFailure>
+        <appliedPressure>0</appliedPressure>
+        <stateHistory />
+        <pumpEfficiencyModifier>1</pumpEfficiencyModifier>
+        <isEfficiencyDecreasingOverTime>false</isEfficiencyDecreasingOverTime>
+      </lvhpPumpData>
     </mudPumpCollectionData>
     <mudTankCollectionData>
       <activeTanks>
@@ -596,29 +663,29 @@
           <averageDensity>1000</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>13.5907021</mudVolume>
+          <mudVolume>92.6448441</mudVolume>
           <averageDensity>1000</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>17.45066</mudVolume>
+          <mudVolume>3</mudVolume>
           <averageDensity>1000</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>18.1601925</mudVolume>
+          <mudVolume>3</mudVolume>
           <averageDensity>1000</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>19.4327145</mudVolume>
+          <mudVolume>3</mudVolume>
           <averageDensity>1000</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>38.51057</mudVolume>
+          <mudVolume>5.5</mudVolume>
           <averageDensity>1000</averageDensity>
         </MudTankData>
       </activeTanks>
       <tripTank>
         <mudVolume>0.0062</mudVolume>
-        <averageDensity>1000.551</averageDensity>
+        <averageDensity>1000.55072</averageDensity>
       </tripTank>
       <reserveTank>
         <mudVolume>200</mudVolume>
@@ -627,7 +694,14 @@
       <zeroSingleTripReference>-0.0062</zeroSingleTripReference>
       <zeroTotalTripReference>-0.0062</zeroTotalTripReference>
       <isTripTrackRunning>true</isTripTrackRunning>
-      <pitGain>1.841686696198784949951702158</pitGain>
+      <pitGain>1.841686696198785</pitGain>
+      <fixedTankDensity>1000.55072</fixedTankDensity>
+      <bariteMixRate>0</bariteMixRate>
+      <timeRequiredToMixBarite>0</timeRequiredToMixBarite>
+      <totalBariteQueued>0</totalBariteQueued>
+      <bariteTweenTime>0</bariteTweenTime>
+      <bariteOriginalMudWeight>0</bariteOriginalMudWeight>
+      <selectedCementTank>PILL</selectedCementTank>
     </mudTankCollectionData>
     <standpipeManifoldData>
       <trappedDrillStringPressure>0</trappedDrillStringPressure>
@@ -642,9 +716,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.2961370788388666955918294</volume>
+              <volume>0.2961370788388667</volume>
               <density>1000</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </pumpOneMud>
@@ -658,9 +733,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.2961370788388666955918294</volume>
+              <volume>0.2961370788388667</volume>
               <density>1000.551</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </pumpTwoMud>
@@ -674,9 +750,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>1.003854528156252654855648475</volume>
+              <volume>1.0038545281562528</volume>
               <density>1000</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </standpipeMud>
@@ -690,9 +767,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>1.003854528156252654855648475</volume>
+              <volume>1.0038545281562528</volume>
               <density>1000.551</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </killLineMud>
@@ -700,6 +778,7 @@
         <openValves>
           <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_1</MUD_SYSTEM_VISUAL_BUTTON>
           <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_2</MUD_SYSTEM_VISUAL_BUTTON>
+          <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_10</MUD_SYSTEM_VISUAL_BUTTON>
         </openValves>
         <closedValves>
           <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_3</MUD_SYSTEM_VISUAL_BUTTON>
@@ -709,6 +788,7 @@
           <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_7</MUD_SYSTEM_VISUAL_BUTTON>
           <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_8</MUD_SYSTEM_VISUAL_BUTTON>
           <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_9</MUD_SYSTEM_VISUAL_BUTTON>
+          <MUD_SYSTEM_VISUAL_BUTTON>STAND_PIPE_VALVE_11</MUD_SYSTEM_VISUAL_BUTTON>
         </closedValves>
       </valveStates>
     </standpipeManifoldData>
@@ -718,9 +798,19 @@
           <rawOpenClosePercent>0</rawOpenClosePercent>
           <washOutPercentModifier>NaN</washOutPercentModifier>
           <pluggedPercentModifier>NaN</pluggedPercentModifier>
-          <variableSpeed>0.007999999</variableSpeed>
+          <variableSpeed>0.001</variableSpeed>
+          <targetWashoutDepth>0</targetWashoutDepth>
+          <targetPlugDepth>0</targetPlugDepth>
+          <targetWashoutPercent>0</targetWashoutPercent>
+          <targetPlugPercent>0</targetPlugPercent>
+          <washoutRate>0</washoutRate>
+          <plugRate>0</plugRate>
+          <autoSpeed>0</autoSpeed>
+          <minPercent>0.24</minPercent>
+          <maxPercent>0.95</maxPercent>
+          <displayOpenClosePercent>0</displayOpenClosePercent>
           <currentState>HOLD</currentState>
-          <currentSpeed>FAST</currentSpeed>
+          <currentSpeed>VARIABLE</currentSpeed>
           <isFailed>false</isFailed>
         </Choke>
         <Choke>
@@ -728,6 +818,16 @@
           <washOutPercentModifier>NaN</washOutPercentModifier>
           <pluggedPercentModifier>NaN</pluggedPercentModifier>
           <variableSpeed>0.007999999</variableSpeed>
+          <targetWashoutDepth>0</targetWashoutDepth>
+          <targetPlugDepth>0</targetPlugDepth>
+          <targetWashoutPercent>0</targetWashoutPercent>
+          <targetPlugPercent>0</targetPlugPercent>
+          <washoutRate>0</washoutRate>
+          <plugRate>0</plugRate>
+          <autoSpeed>0</autoSpeed>
+          <minPercent>0.24</minPercent>
+          <maxPercent>0.95</maxPercent>
+          <displayOpenClosePercent>0.149999991</displayOpenClosePercent>
           <currentState>HOLD</currentState>
           <currentSpeed>FAST</currentSpeed>
           <isFailed>false</isFailed>
@@ -743,9 +843,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.5922741576777333911836588</volume>
+              <volume>0.59227415767773339</volume>
               <density>1000.551</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </hcrNode>
@@ -759,9 +860,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>1.003854528156252654855648475</volume>
-              <density>1000.4557597538758624459792339</density>
+              <volume>1.0038545281562528</volume>
+              <density>1000.4557597538759</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </degasserLine>
@@ -778,6 +880,7 @@
               <volume>0</volume>
               <density>1000.551</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </flareLine>
@@ -831,9 +934,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.000000000000000000000000000</volume>
-              <density>1000.5091800977094461893386061</density>
+              <volume>0</volume>
+              <density>1000.5091800977094</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </flowFluid>
@@ -847,9 +951,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.000000000000000000000000000</volume>
-              <density>1000.5510000000000000000000000</density>
+              <volume>0</volume>
+              <density>1000.551</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </tripLineFluid>
@@ -946,37 +1051,48 @@
           <previousLightState>BLOCK</previousLightState>
           <isFailed>false</isFailed>
         </BOPComponentData>
+        <BOPComponentData>
+          <isOpen>false</isOpen>
+          <type>UPPER_BOOST</type>
+          <bopCurrentState>CLOSED</bopCurrentState>
+          <lightCurrentState>CLOSED</lightCurrentState>
+          <previousLightState>BLOCK</previousLightState>
+          <isFailed>false</isFailed>
+        </BOPComponentData>
       </bopComponentDataList>
       <isWellBlocked>false</isWellBlocked>
     </bopData>
     <isMudSaverClosed>false</isMudSaverClosed>
     <autoDrillerZeroPressure>4308.89551</autoDrillerZeroPressure>
     <zeroFlowReference>39.50861</zeroFlowReference>
-    <lastGoodDrillPipePressure>1351.67932</lastGoodDrillPipePressure>
+    <lastGoodDrillPipePressure>1353.12292</lastGoodDrillPipePressure>
+    <depthToTriggerFracture>-1</depthToTriggerFracture>
+    <targetFractureDepth>-1</targetFractureDepth>
+    <targetSecondsToHealFracture>-1</targetSecondsToHealFracture>
     <underPressuredAtBottom>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
@@ -1081,12 +1197,16 @@
             <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
           </gas>
           <mud>
-            <volume>5.130433494161323344526664000</volume>
+            <volume>5.1304334941613234</volume>
             <density>1000</density>
           </mud>
+          <type>NORMAL</type>
         </MixtureBlock>
       </mixtureBlocks>
     </drillStringFluid>
+    <drillStringTrappedFluid>
+      <mixtureBlocks />
+    </drillStringTrappedFluid>
     <annulus>
       <annulusFluid>
         <mixtureBlocks>
@@ -1098,21 +1218,23 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>8.191654771634582075010776578</volume>
-              <density>1000.1501725312027158679803947</density>
+              <volume>8.1760686857950926</volume>
+              <density>1000.1501725312032</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
           <MixtureBlock>
             <gas>
               <mass>0</mass>
-              <volume>0.0085531390296555597689514238</volume>
-              <pressure>6829.0516394608728959873534546</pressure>
-              <densityOfFluidGasIsMixedWith>1033.0989587644676029701317433</densityOfFluidGasIsMixedWith>
+              <volume>0.0084369711295381351</volume>
+              <pressure>6923.0802400770581</pressure>
+              <densityOfFluidGasIsMixedWith>1033.0989587644676</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
               <volume>0</volume>
               <density>0</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
           <MixtureBlock>
             <gas>
@@ -1122,9 +1244,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.494495150000000000000000000</volume>
-              <density>1000.0058425127962194355720996</density>
+              <volume>0.51002715000000209</volume>
+              <density>1000.0102378353671</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
           <MixtureBlock>
             <gas>
@@ -1134,21 +1257,23 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.111138916838866695591829400</volume>
-              <density>1080.5510000000000000000000000</density>
+              <volume>0.095606916838867032</volume>
+              <density>1080.551</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
           <MixtureBlock>
             <gas>
               <mass>0</mass>
-              <volume>0.3172715174598551530586278979</volume>
-              <pressure>7180.4614192299920544976607854</pressure>
-              <densityOfFluidGasIsMixedWith>1010.5378362182786270122168833</densityOfFluidGasIsMixedWith>
+              <volume>0.31771087518877306</volume>
+              <pressure>7170.5316640087949</pressure>
+              <densityOfFluidGasIsMixedWith>1010.5378362182786</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
               <volume>0</volume>
               <density>0</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
           <MixtureBlock>
             <gas>
@@ -1158,9 +1283,10 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.01906200</volume>
-              <density>1080.5510000000000000000</density>
+              <volume>0.034594000000000028</volume>
+              <density>1080.5509999999967</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
           <MixtureBlock>
             <gas>
@@ -1170,9 +1296,36 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.449244824000000000000000000</volume>
-              <density>1000</density>
+              <volume>0.44606782399999956</volume>
+              <density>999.99999999999943</density>
             </mud>
+            <type>NORMAL</type>
+          </MixtureBlock>
+          <MixtureBlock>
+            <gas>
+              <mass>0</mass>
+              <volume>0.024014992156808093</volume>
+              <pressure>7363.74821577699</pressure>
+              <densityOfFluidGasIsMixedWith>999.99999999999977</densityOfFluidGasIsMixedWith>
+            </gas>
+            <mud>
+              <volume>0</volume>
+              <density>0</density>
+            </mud>
+            <type>NORMAL</type>
+          </MixtureBlock>
+          <MixtureBlock>
+            <gas>
+              <mass>0</mass>
+              <volume>0</volume>
+              <pressure>0</pressure>
+              <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
+            </gas>
+            <mud>
+              <volume>0.003177</volume>
+              <density>999.99999999999943</density>
+            </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </annulusFluid>
@@ -1186,83 +1339,42 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>0.006434970779601626988851864</volume>
-              <density>1000.1501725312027158679803948</density>
+              <volume>0.0064890566190687338</volume>
+              <density>1000.1501725312029</density>
             </mud>
+            <type>NORMAL</type>
           </MixtureBlock>
         </mixtureBlocks>
       </trappedFluid>
       <fluidLostToFormation>
         <mixtureBlocks />
       </fluidLostToFormation>
-      <lastCalculatedBottomHoleHydrostaticPressure>5889.2831960009830762989946643</lastCalculatedBottomHoleHydrostaticPressure>
-      <hydrostaticPressureInChokeLine>2943.4416331983992908092041318</hydrostaticPressureInChokeLine>
-      <hasChokeBeenConstantForAwhile_withGasInAnnulus>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-      </hasChokeBeenConstantForAwhile_withGasInAnnulus>
-      <hasChokeBeenConstantForAwhile_noGasInAnnulus>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-      </hasChokeBeenConstantForAwhile_noGasInAnnulus>
-      <isChokeAllowedFlowMatchingOutFlowVolume_withGasInAnnulus>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-      </isChokeAllowedFlowMatchingOutFlowVolume_withGasInAnnulus>
-      <isVacillatingForAwhile>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-      </isVacillatingForAwhile>
+      <lastCalculatedBottomHoleHydrostaticPressure>5880.2171706747922</lastCalculatedBottomHoleHydrostaticPressure>
+      <hydrostaticPressureInChokeLine>2943.442083663243</hydrostaticPressureInChokeLine>
       <underbalancedHistory>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
-        <boolean>false</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
+        <boolean>true</boolean>
         <boolean>false</boolean>
         <boolean>false</boolean>
         <boolean>false</boolean>
@@ -1283,8 +1395,11 @@
       </underbalancedHistory>
       <fractureDepth>NaN</fractureDepth>
       <instructorInducedOverPressureToFormation>0</instructorInducedOverPressureToFormation>
+      <instructorInducedUnderPressureToFormation>0</instructorInducedUnderPressureToFormation>
       <bottomElementInfluxGas>1</bottomElementInfluxGas>
       <bottomElementInfluxLiquid>0</bottomElementInfluxLiquid>
+      <fractureCanHealNextTick>true</fractureCanHealNextTick>
+      <balloonDepth>-1</balloonDepth>
     </annulus>
     <riserFluid>
       <mixtureBlocks>
@@ -1296,9 +1411,10 @@
             <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
           </gas>
           <mud>
-            <volume>60.156472767998734836000000000</volume>
-            <density>1000.5001042184998952969012939</density>
+            <volume>60.156472767998736</volume>
+            <density>1000.5001042184999</density>
           </mud>
+          <type>NORMAL</type>
         </MixtureBlock>
       </mixtureBlocks>
     </riserFluid>
@@ -1312,9 +1428,10 @@
             <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
           </gas>
           <mud>
-            <volume>1.507964473723099200</volume>
+            <volume>1.5079644737230993</volume>
             <density>1000.551</density>
           </mud>
+          <type>NORMAL</type>
         </MixtureBlock>
       </mixtureBlocks>
     </upperKillLineFluid>
@@ -1328,26 +1445,29 @@
             <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
           </gas>
           <mud>
-            <volume>1.507964473723099200</volume>
+            <volume>1.5079644737230993</volume>
             <density>1000.551</density>
           </mud>
+          <type>NORMAL</type>
         </MixtureBlock>
       </mixtureBlocks>
     </lowerKillLineFluid>
     <cuttings>
       <Cuttings>
-        <volume>0.30397941950546681610832075</volume>
-        <density>2063.0881981920601511077585677</density>
-        <headMD>304.74178023777797954234627198</headMD>
-        <tailMD>596.46591994046609160199830558</tailMD>
-        <averageCuttingsDiameter>0.0160000000000000000000000000</averageCuttingsDiameter>
+        <volume>0.30397941950546681</volume>
+        <density>2063.08819819206</density>
+        <headMD>304.86913063758146</headMD>
+        <tailMD>596.59327034027</tailMD>
+        <averageCuttingsDiameter>0.016</averageCuttingsDiameter>
         <isStuck>false</isStuck>
         <darcyCoefficient>8219.3</darcyCoefficient>
-        <transportDelta>0.0014259722436557964361985947</transportDelta>
-        <dilutedDensity>58.127314539968963921808498964</dilutedDensity>
+        <transportDelta>0.0014685422052493134</transportDelta>
+        <dilutedDensity>58.127314539968964</dilutedDensity>
       </Cuttings>
     </cuttings>
-    <hydrostaticPressureAboveBOPActingOnAnnulus_lastCalculated>2943.4416331983992908092041318</hydrostaticPressureAboveBOPActingOnAnnulus_lastCalculated>
+    <totalInfluxAdded>0.0240316879353486</totalInfluxAdded>
+    <totalVolumeLostToFracture>0</totalVolumeLostToFracture>
+    <hydrostaticPressureAboveBOPActingOnAnnulus_lastCalculated>2943.4416331983994</hydrostaticPressureAboveBOPActingOnAnnulus_lastCalculated>
     <isChokeAllowedFlowGreaterThanActualFlowOverSeveralTicks>
       <boolean>false</boolean>
       <boolean>false</boolean>
@@ -1358,9 +1478,16 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
     </isChokeAllowedFlowGreaterThanActualFlowOverSeveralTicks>
+    <targetGasKickDepth>-1</targetGasKickDepth>
+    <targetGasKickPressure>-1</targetGasKickPressure>
+    <targetGasInfluxRate>-1</targetGasInfluxRate>
+    <targetLiquidKickDepth>-1</targetLiquidKickDepth>
+    <targetLiquidKickPressure>-1</targetLiquidKickPressure>
+    <targetLiquidInfluxRate>-1</targetLiquidInfluxRate>
   </hydraulicsSystemData>
   <simulationTimeData>
-    <ticks>0</ticks>
+    <uiSimTime>0001-01-01T00:00:22.395</uiSimTime>
+    <ticks>88</ticks>
     <uiTimeMultiplier>1</uiTimeMultiplier>
   </simulationTimeData>
   <module>
@@ -1387,17 +1514,22 @@
       <BOPClass>3</BOPClass>
     </WebWellConfiguration>
     <WebRigAssets>
-      <useRoughNeck>true</useRoughNeck>
+      <roughneckIndex>0</roughneckIndex>
+      <WebRigAssetCassetteList />
       <WebTopDrive>
         <maxLowerSpeed>1.5</maxLowerSpeed>
         <maxRotation>1400</maxRotation>
         <maxHoistSpeed>1.5</maxHoistSpeed>
         <totalMass>36000</totalMass>
         <maxDrillingTorque>50000</maxDrillingTorque>
+        <hookLoadGaugeUpperBound>0</hookLoadGaugeUpperBound>
+        <wobGaugeUpperBound>0</wobGaugeUpperBound>
+        <wobGaugeLowerBound>0</wobGaugeLowerBound>
         <tripInLowerSpeed>-1.5</tripInLowerSpeed>
         <tripInHoistSpeed>1.5</tripInHoistSpeed>
         <tripOutLowerSpeed>-1.5</tripOutLowerSpeed>
         <tripOutHoistSpeed>1.5</tripOutHoistSpeed>
+        <topDriveMaxHeight>0</topDriveMaxHeight>
       </WebTopDrive>
       <WebBirdBath>
         <pipes>5</pipes>
@@ -1432,20 +1564,23 @@
         <maxStrokesPerMinute>45</maxStrokesPerMinute>
         <linerDiameter>0.14</linerDiameter>
         <linerStrokeLength>0.3048</linerStrokeLength>
-        <reliefValveInitialPressure>0</reliefValveInitialPressure>
-        <initialPumpPressureLimit>0</initialPumpPressureLimit>
+        <reliefValveInitialPressure>999999</reliefValveInitialPressure>
+        <initialPumpPressureLimit>999899</initialPumpPressureLimit>
       </WebTripPump>
       <WebCementPump>
         <efficiency>0.95</efficiency>
         <maxStrokesPerMinute>30</maxStrokesPerMinute>
         <linerDiameter>0.02</linerDiameter>
         <linerStrokeLength>0.186</linerStrokeLength>
-        <reliefValveInitialPressure>0</reliefValveInitialPressure>
-        <initialPumpPressureLimit>0</initialPumpPressureLimit>
+        <reliefValveInitialPressure>53779.11</reliefValveInitialPressure>
+        <initialPumpPressureLimit>53679.11</initialPumpPressureLimit>
       </WebCementPump>
     </WebRigAssets>
     <WebDrillString>
       <name>SLICK STRING WITH PORTED FLOAT</name>
+      <initialMudWeight>0</initialMudWeight>
+      <toolSpecs />
+      <fishingToolSpecs />
       <WebBHA>
         <BHAUsed>false</BHAUsed>
         <maxRotationSpeedWithoutDamageToBHA>360</maxRotationSpeedWithoutDamageToBHA>
@@ -1457,6 +1592,10 @@
         <Azimuth_UpdateFrequency>15</Azimuth_UpdateFrequency>
         <Inclination_UpdateFrequency>15</Inclination_UpdateFrequency>
         <ROP_UpdateFrequency>1</ROP_UpdateFrequency>
+        <gravityPushForce>0</gravityPushForce>
+        <centerStabilizingForce>0</centerStabilizingForce>
+        <numberOfRibs>0</numberOfRibs>
+        <torquePerRib>0</torquePerRib>
       </WebBHA>
       <WebMudMotor>
         <mudMotorUsed>true</mudMotorUsed>
@@ -1509,6 +1648,7 @@
       <WebDrillBit>
         <bitType>PDC</bitType>
         <diameter>0.216</diameter>
+        <bitHydraulicsDiameter>0</bitHydraulicsDiameter>
         <numberNozzles>3</numberNozzles>
         <nozzleDiameter>0.01374</nozzleDiameter>
         <maxDrillBitWOB>27000</maxDrillBitWOB>
@@ -1532,15 +1672,30 @@
         <heavyWeightPipeCount>0</heavyWeightPipeCount>
         <collarCount>0</collarCount>
         <drillingJarPosition>-1</drillingJarPosition>
+        <dsPackerPosition>0</dsPackerPosition>
+        <casingTwoCount>0</casingTwoCount>
+        <casingSevenCount>0</casingSevenCount>
+        <casingThirteenCount>0</casingThirteenCount>
       </WebDrillStringConfiguration>
+      <WebDrillStringSegmentList />
       <WebPacker>
+        <packerType>0</packerType>
         <maxSleeveRotation>90</maxSleeveRotation>
         <maxSleevePositionOffsetBottomJ>0.1</maxSleevePositionOffsetBottomJ>
         <maxSleevePositionOffsetSideJ>0.3</maxSleevePositionOffsetSideJ>
         <maxSleevePositionOffsetTopL>0.5</maxSleevePositionOffsetTopL>
         <minimumSettingCompression>66720</minimumSettingCompression>
+        <minimumCompressionToBreakPin>0</minimumCompressionToBreakPin>
+        <minimumCompressionToBreakPin2>0</minimumCompressionToBreakPin2>
         <secondsForCompression>120</secondsForCompression>
         <torqueToReleaseOvershot>0</torqueToReleaseOvershot>
+        <turnScaling>0</turnScaling>
+        <plugDensity>0</plugDensity>
+        <pressureToSetDies>0</pressureToSetDies>
+        <pressureToBreakBall>0</pressureToBreakBall>
+        <pressureToBreakPlug>0</pressureToBreakPlug>
+        <pressureToDislodgePlug>0</pressureToDislodgePlug>
+        <pressureToSeparateTool>0</pressureToSeparateTool>
       </WebPacker>
     </WebDrillString>
     <WebDrillPlan>
@@ -1610,6 +1765,8 @@
       <chokeLineInnerDiameter>0.08</chokeLineInnerDiameter>
       <killLineInnerDiameter>0.08</killLineInnerDiameter>
       <densityOfSeaWater>1029</densityOfSeaWater>
+      <lastPipeSlot>0</lastPipeSlot>
+      <lastPipeRow>0</lastPipeRow>
     </WebSubSea>
     <WebFormation>
       <formationName>Offshore Formation</formationName>
@@ -1621,9 +1778,16 @@
           <depth>50</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>22.62</fracturePressure>
-          <maxROP>200</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Water</name>
             <porosity>10</porosity>
@@ -1639,9 +1803,16 @@
           <depth>600</depth>
           <pressureGradient>7.9</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>80</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1657,9 +1828,16 @@
           <depth>610</depth>
           <pressureGradient>7.9</pressureGradient>
           <fracturePressure>21</fracturePressure>
-          <maxROP>120</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>SHALE</name>
             <porosity>5</porosity>
@@ -1675,9 +1853,16 @@
           <depth>612</depth>
           <pressureGradient>7</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>50</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>HARD STRINGER</name>
             <porosity>8</porosity>
@@ -1693,9 +1878,16 @@
           <depth>613</depth>
           <pressureGradient>12</pressureGradient>
           <fracturePressure>23.62</fracturePressure>
-          <maxROP>120</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>1</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Kick Formation</name>
             <porosity>6</porosity>
@@ -1726,21 +1918,39 @@
     <ProgrammerSettings>
       <initialTopDriveHeight>5</initialTopDriveHeight>
       <initialStringHeight>1</initialStringHeight>
+      <minMudWeightDisplay>0</minMudWeightDisplay>
+      <maxMudWeightDisplay>0</maxMudWeightDisplay>
       <simNoise>true</simNoise>
       <enableGameOverSpam>true</enableGameOverSpam>
       <maxAnalogGaugePressure>0</maxAnalogGaugePressure>
+      <maxAnalogDrillPipePressureGaugePressure>0</maxAnalogDrillPipePressureGaugePressure>
+      <maxAnalogCasingPressureGaugePressure>0</maxAnalogCasingPressureGaugePressure>
+      <maxAnalogKillLinePressureGaugePressure>0</maxAnalogKillLinePressureGaugePressure>
+      <greenToGo>NONE</greenToGo>
       <maxStandpipePressure>0</maxStandpipePressure>
       <maxCasingPressure>0</maxCasingPressure>
       <maxBottomPressure>0</maxBottomPressure>
       <incorrectLineups>false</incorrectLineups>
       <bulkModulus>0</bulkModulus>
+      <plasticViscosity>0</plasticViscosity>
+      <yieldPoint>0</yieldPoint>
+      <kickLossCoeff>0</kickLossCoeff>
+      <fracLossCoeff>0</fracLossCoeff>
+      <minChokePercent>0</minChokePercent>
       <chokeFastRate>0</chokeFastRate>
       <chokeSlowRate>0</chokeSlowRate>
+      <isChokeRightToLeft>false</isChokeRightToLeft>
       <disableUTubeBehaviour>false</disableUTubeBehaviour>
       <gasMigrationRate>0</gasMigrationRate>
       <maxInfluxAllowed>0</maxInfluxAllowed>
+      <maxInfluxAllowedDriller>0</maxInfluxAllowedDriller>
+      <maxInfluxAllowedSupervisor>0</maxInfluxAllowedSupervisor>
       <rateOfInflux>0.003100863</rateOfInflux>
       <gaugeTimeDelay>2</gaugeTimeDelay>
+      <BOPLeakRate>0</BOPLeakRate>
+      <rigType>LAND</rigType>
+      <mpdIndex>0</mpdIndex>
+      <sbpdType>DEFAULT</sbpdType>
       <gravity>0</gravity>
       <JoshMath>
         <JoshExpression>FP + CP - BPL</JoshExpression>
@@ -1757,17 +1967,115 @@
       <pumpTweenRateDownCoeff>0</pumpTweenRateDownCoeff>
       <killLineGasSplitPct>0.01</killLineGasSplitPct>
       <lateralFrictionScaling>0</lateralFrictionScaling>
+      <secondsBeforeKick>0</secondsBeforeKick>
+      <flowLineCapacity>0</flowLineCapacity>
+      <cementLineVolume>0</cementLineVolume>
+      <isStatOilScenario>false</isStatOilScenario>
+      <fractureLeakOffPointPct>0.93</fractureLeakOffPointPct>
+      <fractureHealPointPct>0.7</fractureHealPointPct>
+      <fractureFlowSmoothingFactor>0.5</fractureFlowSmoothingFactor>
+      <balloonFlowSmoothingFactor>0.5</balloonFlowSmoothingFactor>
+      <pressureReleaseFactor>0.5</pressureReleaseFactor>
+      <chokeGasMaxSpeedupFactor>9</chokeGasMaxSpeedupFactor>
+      <chokeSpeedupLimitPerTick>0.1</chokeSpeedupLimitPerTick>
+      <newChokeMath>true</newChokeMath>
+      <oilBasedMudPressureBoundary>0</oilBasedMudPressureBoundary>
+      <enableBariteSet>false</enableBariteSet>
+      <isCementingModule>false</isCementingModule>
+      <isManagedPressureDrilling>false</isManagedPressureDrilling>
+      <mpdPumpDepth>0</mpdPumpDepth>
+      <sbpdSpoolDepth>0</sbpdSpoolDepth>
+      <isFracPack>false</isFracPack>
+      <isEndeavorTools>false</isEndeavorTools>
+      <isWFLinerHanger>false</isWFLinerHanger>
+      <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
+      <isWireLine>false</isWireLine>
+      <isWFWireLine>false</isWFWireLine>
+      <isBakerWireLine>false</isBakerWireLine>
+      <isBakerLinerHanger>false</isBakerLinerHanger>
+      <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
+      <isCoiledTubing>false</isCoiledTubing>
+      <isKellyDrive>false</isKellyDrive>
+      <isUpperCompletions>false</isUpperCompletions>
+      <isFishingOps>false</isFishingOps>
+      <isWhipstock>false</isWhipstock>
+      <isWhipstockInstalled>false</isWhipstockInstalled>
+      <isCementSqueeze>false</isCementSqueeze>
+      <isDirectional>false</isDirectional>
+      <noKillSheet>false</noKillSheet>
+      <forceDownhole>false</forceDownhole>
+      <forceEDR>false</forceEDR>
+      <forceGeocube>false</forceGeocube>
+      <forceIncidents>false</forceIncidents>
+      <forceRepair>false</forceRepair>
+      <isSbpd>false</isSbpd>
+      <packerDepth>0</packerDepth>
+      <applyTensionCompressionWobScaling>0</applyTensionCompressionWobScaling>
+      <tensionCompressionWobMax>0</tensionCompressionWobMax>
+      <tensionCompressionWobDisconnectedPackerMax>0</tensionCompressionWobDisconnectedPackerMax>
+      <initialCompression>0</initialCompression>
+      <tensionToMove>0</tensionToMove>
+      <extraFriction>0</extraFriction>
+      <dsYoungsModulus>0</dsYoungsModulus>
+      <casingFrictionCoeff>0</casingFrictionCoeff>
+      <cableAngle>0</cableAngle>
+      <wirelineTensionLimits />
+      <wirelineDiffTensionLimits />
+      <wirelineCPtensionLimits />
+      <maxTorsionForceBeforePipeBreaks>0</maxTorsionForceBeforePipeBreaks>
+      <torqueAddedPerDegreeOfTwist>0</torqueAddedPerDegreeOfTwist>
+      <maxDegreesReversePipeCanBeWound>0</maxDegreesReversePipeCanBeWound>
+      <tensionToBreakString>0</tensionToBreakString>
+      <tensionToBreakWeakPoint>0</tensionToBreakWeakPoint>
+      <forceToFreeStuckCableMedium>0</forceToFreeStuckCableMedium>
+      <forceToFreeStuckCableSmall>0</forceToFreeStuckCableSmall>
+      <forceToFreeStuckCablePctReductionByYoYo>0</forceToFreeStuckCablePctReductionByYoYo>
+      <maxForceToDamageCableOvertension>0</maxForceToDamageCableOvertension>
+      <maxForceToDamageCableUndertension>0</maxForceToDamageCableUndertension>
+      <minForceToMaintainDrumIntegrity>0</minForceToMaintainDrumIntegrity>
+      <maxForceToDamageDrumIntegrity>0</maxForceToDamageDrumIntegrity>
+      <initialCableTension>0</initialCableTension>
+      <forceToFreeFromBottom>0</forceToFreeFromBottom>
+      <forceToFreeFromBottomWeightPct>0</forceToFreeFromBottomWeightPct>
+      <lineDragForceReductionPct>0</lineDragForceReductionPct>
+      <drumTorqueLimiterMax>44482</drumTorqueLimiterMax>
+      <drumPowerLimit>30505.5</drumPowerLimit>
+      <drumSpeedLow>0.3333333</drumSpeedLow>
+      <drumSpeedMed>1.5</drumSpeedMed>
+      <drumSpeedHigh>3</drumSpeedHigh>
+      <drumSpeedEmergPct>0.6666667</drumSpeedEmergPct>
+      <truckRpmMax>18000</truckRpmMax>
+      <truckRpmForMaxPTOPower>10800</truckRpmForMaxPTOPower>
+      <truckRpmForMinPTOPower>7200</truckRpmForMinPTOPower>
+      <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
+      <goodTongTorqueProbability>0</goodTongTorqueProbability>
+      <segmentsCountOfFish>0</segmentsCountOfFish>
+      <initialGapLength>0</initialGapLength>
+      <fishingMaxSlackOffValue>0</fishingMaxSlackOffValue>
+      <fishingMaxGrappleWorkLoad>0</fishingMaxGrappleWorkLoad>
+      <fishingMinForceToSetGrapple>0</fishingMinForceToSetGrapple>
+      <fishingMinForceToBreakGrapple>0</fishingMinForceToBreakGrapple>
+      <fishingTotalForceToFreeFish>0</fishingTotalForceToFreeFish>
+      <fishingTotalTorqueToFreeFish>0</fishingTotalTorqueToFreeFish>
+      <fishingIsBumperSubInstalled>false</fishingIsBumperSubInstalled>
+      <fishingBumperSubLength>0</fishingBumperSubLength>
+      <fishingResetHeightAboveFish>0</fishingResetHeightAboveFish>
+      <fishingDistanceToResetPos>0</fishingDistanceToResetPos>
+      <timeProgressMode>None</timeProgressMode>
+      <cscsScript><![CDATA[]]></cscsScript>
     </ProgrammerSettings>
     <HydroV2Settings>
       <isOn>false</isOn>
+      <isV2MudTanks>false</isV2MudTanks>
+      <tankParameters />
+      <substanceInjectors />
+      <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
     </HydroV2Settings>
     <GradingSettings>
       <isTestModule>true</isTestModule>
       <wellControlMethod>WAIT AND WEIGHT</wellControlMethod>
-      <includeDrillingAhead>true</includeDrillingAhead>
-      <randomIncidentCount>1</randomIncidentCount>
-      <minStrokesBeforeIncident>200</minStrokesBeforeIncident>
-      <maxStrokesBeforeIncident>400</maxStrokesBeforeIncident>
+      <level>0</level>
+      <includedSteps />
       <automaticallyRepairIncident>false</automaticallyRepairIncident>
       <targetAnnularPressure>10500</targetAnnularPressure>
       <targetManifoldPressure>15000</targetManifoldPressure>
@@ -1778,7 +2086,16 @@
       <strokeMarginAfterIncident>100</strokeMarginAfterIncident>
       <targetKillMudWeight>1230</targetKillMudWeight>
       <drillingBreakFormationIndex>2</drillingBreakFormationIndex>
+      <randomIncidentCount>1</randomIncidentCount>
+      <minStrokesBeforeIncident>200</minStrokesBeforeIncident>
+      <maxStrokesBeforeIncident>400</maxStrokesBeforeIncident>
     </GradingSettings>
+    <RandomIncidentSettings>
+      <queueRandomIncidentOnStart>false</queueRandomIncidentOnStart>
+      <randomIncidentCount>1</randomIncidentCount>
+      <minStrokesBeforeIncident>200</minStrokesBeforeIncident>
+      <maxStrokesBeforeIncident>400</maxStrokesBeforeIncident>
+    </RandomIncidentSettings>
     <moduleName>LEVEL 4 SUBSEA - WAIT AND WEIGHT METHOD</moduleName>
     <moduleText>Use the application to execute the Level 4 Supervisor Well Control Procedures. (SUBSEA)
   
@@ -1792,13 +2109,337 @@
   2. SCRs have been taken with both mud pumps @ 30 and 50 spm.
   3. Kill the well using 30 SPM.
 	</moduleText>
+    <loggingCharts />
     <isMetric>true</isMetric>
-    <version>MODULE_V4</version>
+    <version>MODULE_V5</version>
   </module>
   <networkLogs>
+    <NetworkLogData>
+      <name>Root.__topDriveData.blockHeight</name>
+      <storedData>20:30.04794;10:30.04794</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__topDriveData.weightOnBit</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__topDriveData.hookLoad</name>
+      <storedData>20:545200.9;10:545200.9</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__topDriveData.blockSpeed</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__topDriveData.rateOfPenetration</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__topDriveData.rpm</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__topDriveData.torque</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.edrGas</name>
+      <storedData>20:17.21887;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.temperature</name>
+      <storedData>20:18.39658;10:18.39658</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.bitMeasuredDepth</name>
+      <storedData>20:612.6972;10:612.6972</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.bitMeasuredDepthChart</name>
+      <storedData>20:-612.6972;10:-612.6972</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.wirelineActualMD</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.wirelineUncorrectedMD</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.wirelineTension</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.wirelineSpeed</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__annulusData.wirelineCHTension</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__tanksData.totalFillVolume</name>
+      <storedData>20:-0.0062;10:-0.0062</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__tanksData.activeTanksVolume</name>
+      <storedData>20:92.64484;10:92.64484</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__tanksData.mudGainLossLog</name>
+      <storedData>20:1.841686;10:1.841686</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__tanksData.tripVolumeLog</name>
+      <storedData>20:0.0062;10:0.0062</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.0.value.percentOpen</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.1.value.percentOpen</name>
+      <storedData>20:0.15;10:0.15</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.2.value.percentOpen</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.3.value.percentOpen</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.4.value.percentOpen</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.5.value.percentOpen</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.__chokes.6.value.percentOpen</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.flowRatePercent</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.drillPipePressure</name>
+      <storedData>20:1011.255;10:929.487</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.casingPressure</name>
+      <storedData>20:1284.001;10:1026.776</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.diffPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.standpipePressure</name>
+      <storedData>20:1011.255;10:929.487</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.totalSpm</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__surfaceCirc.totalStrokes</name>
+      <storedData>20:1048.914;10:1048.914</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__dirData.gamma</name>
+      <storedData>20:164.9727;10:165.3908</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__dirData.azimuth</name>
+      <storedData>20:270;10:270</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__dirData.inclination</name>
+      <storedData>20:6.83019E-06;10:6.83019E-06</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__dirData.ribOrientation</name>
+      <storedData>22.37:200;22.36:200;22.34:200;22.32:200;22.31:200;22.29:200;22.27:200;22.25:200;22.24:200;22.22:200;22.2:200;22.18:200;22.17:200;22.14:200;22.12:200;22.1:200;22.09:200;22.07:200;22.04:200;22.02:200;22:200;21.99:200;21.97:200;21.95:200;21.93:200;21.92:200;21.9:200;21.87:200;21.85:200;21.83:200;21.82:200;21.8:200;21.78:200;21.76:200;21.75:200;21.73:200;21.7:200;21.68:200;21.66:200;21.65:200;21.63:200;21.61:200;21.59:200;21.58:200;21.56:200;21.54:200;21.53:200;21.51:200;21.49:200;21.48:200;21.46:200;21.44:200;21.42:200;21.41:200;21.39:200;21.37:200;21.36:200;21.34:200;21.32:200;21.31:200;21.29:200;21.27:200;21.25:200;21.24:200;21.22:200;21.2:200;21.19:200;21.17:200;21.15:200;21.14:200;21.12:200;21.1:200;21.08:200;21.07:200;21.05:200;21.03:200;21.02:200;21:200;20.98:200;20.97:200;20.95:200;20.93:200;20.91:200;20.9:200;20.88:200;20.86:200;20.85:200;20.83:200;20.81:200;20.8:200;20.78:200;20.76:200;20.74:200;20.73:200;20.71:200;20.69:200;20.68:200;20.66:200;20.64:200;20.63:200;20.61:200;20.59:200;20.57:200;20.56:200;20.54:200;20.52:200;20.51:200;20.49:200;20.47:200;20.46:200;20.44:200;20.42:200;20.4:200;20.39:200;20.37:200;20.35:200;20.34:200;20.32:200;20.29:200;20.27:200;20.25:200;20.23:200;20.22:200;20.2:200;20.18:200;20.17:200;20.15:200;20.12:200;20.1:200;20.08:200;20.06:200;20.05:200;20.03:200;20.02:200;20:200;19.98:200;19.95:200;19.93:200;19.91:200;19.9:200;19.88:200;19.86:200;19.84:200;19.83:200;19.81:200;19.79:200;19.78:200;19.76:200;19.74:200;19.73:200;19.71:200;19.69:200;19.67:200;19.66:200;19.64:200;19.62:200;19.61:200;19.59:200;19.57:200;19.56:200;19.54:200;19.52:200;19.5:200;19.49:200;19.47:200;19.45:200;19.44:200;19.42:200;19.4:200;19.39:200;19.37:200;19.35:200;19.33:200;19.32:200;19.3:200;19.28:200;19.27:200;19.25:200;19.23:200;19.22:200;19.2:200;19.18:200;19.16:200;19.15:200;19.13:200;19.11:200;19.1:200;19.08:200;19.06:200;19.04:200;19.03:200;19:200;18.98:200;18.96:200;18.94:200;18.93:200;18.91:200;18.89:200;18.88:200;18.86:200;18.84:200;18.83:200;18.81:200;18.79:200;18.77:200;18.76:200;18.74:200;18.72:200;18.71:200;18.69:200;18.67:200;18.66:200;18.64:200;18.62:200;18.6:200;18.59:200;18.57:200;18.54:200;18.52:200;18.5:200;18.49:200;18.47:200;18.45:200;18.43:200;18.42:200;18.4:200;18.37:200;18.35:200;18.33:200;18.32:200;18.3:200;18.28:200;18.26:200;18.25:200;18.23:200;18.2:200;18.18:200;18.16:200;18.15:200;18.13:200;18.11:200;18.09:200;18.08:200;18.06:200;18.04:200;18.03:200;18.01:200;17.99:200;17.98:200;17.96:200;17.94:200;17.92:200;17.91:200;17.89:200;17.87:200;17.86:200;17.84:200;17.82:200;17.81:200;17.79:200;17.77:200;17.76:200;17.74:200;17.72:200;17.7:200;17.69:200;17.67:200;17.65:200;17.64:200;17.62:200;17.61:200;17.59:200;17.58:200;17.54:200;17.52:200;17.5:200;17.49:200;17.47:200;17.45:200;17.43:200;17.42:200;17.4:200;17.37:200;17.35:200;17.33:200;17.32:200;17.3:200;17.28:200;17.26:200;17.25:200;17.23:200;17.2:200;17.18:200;17.16:200;17.15:200;17.13:200;17.11:200;17.09:200;17.08:200;17.06:200;17.04:200;17.03:200;17.01:200;16.99:200;16.98:200;16.96:200;16.94:200;16.92:200;16.91:200;16.89:200;16.87:200;16.86:200;16.84:200;16.82:200;16.81:200;16.79:200;16.77:200;16.75:200;16.74:200;16.72:200;16.7:200;16.69:200;16.67:200;16.65:200;16.64:200;16.62:200;16.6:200;16.58:200;16.57:200;16.55:200;16.53:200;16.52:200;16.5:200;16.48:200;16.47:200;16.45:200;16.43:200;16.41:200;16.4:200;16.38:200;16.36:200;16.35:200;16.33:200;16.31:200;16.3:200;16.28:200;16.26:200;16.24:200;16.23:200;16.21:200;16.19:200;16.18:200;16.16:200;16.14:200;16.13:200;16.11:200;16.09:200;16.07:200;16.06:200;16.04:200;16.02:200;16.01:200;15.99:200;15.97:200;15.96:200;15.94:200;15.92:200;15.89:200;15.87:200;15.85:200;15.82:200;15.8:200;15.79:200;15.77:200;15.75:200;15.74:200;15.72:200;15.7:200;15.68:200;15.67:200;15.65:200;15.63:200;15.62:200;15.6:200;15.58:200;15.57:200;15.55:200;15.53:200;15.51:200;15.5:200;15.48:200;15.46:200;15.45:200;15.43:200;15.41:200;15.4:200;15.38:200;15.36:200;15.34:200;15.33:200;15.31:200;15.29:200;15.28:200;15.26:200;15.24:200;15.23:200;15.21:200;15.19:200;15.17:200;15.16:200;15.14:200;15.12:200;15.11:200;15.09:200;15.06:200;15.04:200;15.02:200;15:200;14.99:200;14.97:200;14.95:200;14.94:200;14.92:200;14.89:200;14.87:200;14.85:200;14.83:200;14.82:200;14.8:200;14.77:200;14.75:200;14.72:200;14.7:200;14.68:200;14.66:200;14.65:200;14.63:200;14.6:200;14.58:200;14.56:200;14.55:200;14.53:200;14.51:200;14.5:200;14.48:200;14.46:200;14.43:200;14.41:200;14.39:200;14.38:200;14.36:200;14.34:200;14.33:200;14.31:200;14.29:200;14.27:200;14.26:200;14.24:200;14.22:200;14.21:200;14.19:200;14.17:200;14.16:200;14.14:200;14.12:200;14.1:200;14.09:200;14.07:200;14.05:200;14.04:200;14.02:200;14:200;13.99:200;13.97:200;13.95:200;13.93:200;13.92:200;13.9:200;13.88:200;13.87:200;13.85:200;13.83:200;13.82:200;13.8:200;13.78:200;13.76:200;13.75:200;13.73:200;13.71:200;13.7:200;13.68:200;13.66:200;13.65:200;13.63:200;13.61:200;13.59:200;13.58:200;13.56:200;13.54:200;13.53:200;13.51:200;13.49:200;13.48:200;13.46:200;13.44:200;13.42:200;13.41:200;13.39:200;13.37:200;13.36:200;13.34:200;13.31:200;13.29:200;13.27:200;13.25:200;13.24:200;13.22:200;13.2:200;13.19:200;13.17:200;13.14:200;13.12:200;13.1:200;13.09:200;13.07:200;13.05:200;13.02:200;13:200;12.97:200;12.95:200;12.93:200;12.92:200;12.9:200;12.88:200;12.85:200;12.83:200;12.81:200;12.8:200;12.77:200;12.76:200;12.75:200;12.73:200;12.7:200;12.68:200;12.66:200;12.65:200;12.63:200;12.6:200;12.58:200;12.56:200;12.54:200;12.53:200;12.51:200;12.49:200;12.48:200;12.46:200;12.43:200;12.41:200;12.39:200;12.37:200;12.36:200;12.34:200;12.31:200;12.29:200;12.27:200;12.26:200;12.24:200;12.22:200;12.2:200;12.19:200;12.17:200;12.14:200;12.12:200;12.1:200;12.09:200;12.07:200;12.05:200;12.02:200;12:200;11.97:200;11.95:200;11.93:200;11.92:200;11.9:200;11.88:200;11.85:200;11.83:200;11.81:200;11.8:200;11.78:200;11.76:200;11.75:200;11.73:200;11.71:200;11.68:200;11.66:200;11.64:200;11.63:200;11.61:200;11.59:200;11.58:200;11.56:200;11.54:200;11.52:200;11.51:200;11.49:200;11.47:200;11.46:200;11.44:200;11.42:200;11.41:200;11.39:200;11.37:200;11.35:200;11.34:200;11.32:200;11.3:200;11.29:200;11.27:200;11.25:200;11.24:200;11.22:200;11.2:200;11.18:200;11.17:200;11.15:200;11.13:200;11.12:200;11.1:200;11.08:200;11.07:200;11.05:200;11.03:200;11.01:200;11:200;10.98:200;10.96:200;10.95:200;10.93:200;10.91:200;10.9:200;10.88:200;10.86:200;10.84:200;10.83:200;10.81:200;10.79:200;10.78:200;10.76:200;10.74:200;10.73:200;10.71:200;10.69:200;10.67:200;10.66:200;10.64:200;10.62:200;10.61:200;10.59:200;10.56:200;10.54:200;10.52:200;10.5:200;10.49:200;10.47:200;10.45:200;10.44:200;10.42:200;10.39:200;10.37:200;10.35:200;10.33:200;10.32:200;10.3:200;10.27:200;10.25:200;10.22:200;10.2:200;10.18:200;10.16:200;10.15:200;10.13:200;10.1:200;10.08:200;10.06:200;10.05:200;10.03:200;10.01:200;9.99:200;9.98:200;9.96:200;9.93:200;9.91:200;9.89:200;9.88:200;9.86:200;9.84:200;9.81:200;9.79:200;9.77:200;9.76:200;9.74:200;9.72:200;9.71:200;9.69:200;9.67:200;9.64:200;9.62:200;9.6:200;9.59:200;9.56:200;9.55:200;9.52:200;9.5:200;9.49:200;9.47:200;9.45:200;9.43:200;9.42:200;9.4:200;9.38:200;9.37:200;9.35:200;9.33:200;9.32:200;9.3:200;9.28:200;9.26:200;9.25:200;9.23:200;9.21:200;9.2:200;9.18:200;9.16:200;9.15:200;9.13:200;9.11:200;9.09:200;9.08:200;9.06:200;9.04:200;9.03:200;9.01:200;8.99:200;8.98:200;8.96:200;8.94:200;8.92:200;8.91:200;8.89:200;8.87:200;8.86:200;8.84:200;8.81:200;8.79:200;8.77:200;8.75:200;8.74:200;8.72:200;8.7:200;8.69:200;8.67:200;8.64:200;8.62:200;8.6:200;8.58:200;8.57:200;8.55:200;8.52:200;8.5:200;8.47:200;8.45:200;8.43:200;8.41:200;8.4:200;8.38:200;8.35:200;8.33:200;8.31:200;8.3:200;8.28:200;8.26:200;8.24:200;8.23:200;8.21:200;8.18:200;8.16:200;8.14:200;8.13:200;8.11:200;8.09:200;8.06:200;8.04:200;8.02:200;8.01:200;7.99:200;7.96:200;7.94:200;7.92:200;7.9:200;7.89:200;7.87:200;7.84:200;7.82:200;7.8:200;7.79:200;7.77:200;7.75:200;7.73:200;7.72:200;7.7:200;7.67:200;7.65:200;7.63:200;7.62:200;7.6:200;7.58:200;7.55:200;7.53:200;7.51:200;7.5:200;7.48:200;7.46:200;7.45:200;7.43:200;7.41:200;7.38:200;7.36:200;7.34:200;7.33:200;7.31:200;7.28:200;7.26:200;7.24:200;7.21:200;7.19:200;7.17:200;7.16:200;7.14:200;7.11:200;7.09:200;7.07:200;7.05:200;7.04:200;7.02:200;7:200;6.99:200;6.97:200;6.94:200;6.92:200;6.9:200;6.88:200;6.87:200;6.85:200;6.82:200;6.8:200;6.78:200;6.77:200;6.75:200;6.73:200;6.71:200;6.7:200;6.68:200;6.65:200;6.63:200;6.61:200;6.6:200;6.58:200;6.56:200;6.53:200;6.51:200;6.48:200;6.46:200;6.44:200;6.42:200;6.4:200;6.38:200;6.35:200;6.33:200;6.3:200;6.28:200;6.26:200;6.23:200;6.21:200;6.19:200;6.18:200;6.16:200;6.13:200;6.11:200;6.09:200;6.07:200;6.06:200;6.04:200;6.01:200;5.99:200;5.96:200;5.94:200;5.92:200;5.9:200;5.89:200;5.87:200;5.84:200;5.82:200;5.8:200;5.79:200;5.77:200;5.75:200;5.73:200;5.72:200;5.7:200;5.67:200;5.65:200;5.63:200;5.62:200;5.6:200;5.58:200;5.55:200;5.53:200;5.51:200;5.5:200;5.48:200;5.46:200;5.45:200;5.43:200;5.41:200;5.38:200;5.36:200;5.34:200;5.33:200;5.31:200;5.28:200;5.26:200;5.24:200;5.21:200;5.19:200;5.17:200;5.16:200;5.14:200;5.11:200;5.09:200;5.07:200;5.05:200;5.04:200;5.02:200;5:200;4.99:200;4.97:200;4.94:200;4.92:200;4.9:200;4.88:200;4.87:200;4.85:200;4.82:200;4.8:200;4.78:200;4.77:200;4.75:200;4.73:200;4.71:200;4.7:200;4.68:200;4.65:200;4.63:200;4.61:200;4.6:200;4.58:200;4.55:200;4.53:200;4.51:200;4.48:200;4.46:200;4.44:200;4.43:200;4.41:200;4.38:200;4.36:200;4.34:200;4.33:200;4.31:200;4.29:200;4.26:200;4.24:200;4.21:200;4.19:200;4.17:200;4.16:200;4.14:200;4.12:200;4.09:200;4.07:200;4.05:200;4.04:200;4.02:200;3.99:200;3.97:200;3.95:200;3.92:200;3.9:200;3.88:200;3.87:200;3.85:200;3.82:200;3.8:200;3.78:200;3.75:200;3.73:200;3.7:200;3.68:200;3.65:200;3.63:200;3.61:200;3.58:200;3.56:200;3.53:200;3.51:200;3.48:200;3.46:200;3.44:200;3.41:200;3.39:200;3.36:200;3.34:200;3.31:200;3.29:200;3.27:200;3.24:200;3.22:200;3.2:200;3.17:200;3.14:200;3.12:200;3.09:200;3.07:200;3.04:200;3.02:200;3:200;2.97:200;2.95:200;2.92:200;2.9:200;2.88:200;2.87:200;2.85:200;2.83:200;2.8:200;2.78:200;2.75:200;2.73:200;2.7:200;2.68:200;2.65:200;2.63:200;2.61:200;2.58:200;2.56:200;2.53:200;2.51:200;2.49:200;2.47:200;2.45:200;2.43:200;2.38:200;2.36:200;2.34:200;2.31:200;2.29:200;2.26:200;2.24:200;2.21:200;2.19:200;2.17:200;2.14:200;2.12:200;2.09:200;2.07:200;2.04:200;2.02:200;1.99:200;1.97:200;1.95:200;1.92:200;1.9:200;1.87:200;1.85:200;1.82:200;1.8:200;1.78:200;1.75:200;1.73:200;1.7:200;1.68:200;1.65:200;1.63:200;1.61:200;1.58:200;1.56:200;1.53:200;1.51:200;1.48:200;1.46:200;1.44:200;1.41:200;1.39:200;1.36:200;1.34:200;1.32:200;1.31:200;1.29:200;1.27:200;1.24:200;1.22:200;1.19:200;1.17:200;1.14:200;1.12:200;1.1:200;1.07:200;1.05:200;1.02:200;1:200;0.97:200;0.95:200;0.93:200;0.91:200;0.9:200;0.88:200;0.85:200;0.83:200;0.8:200;0.78:200;0.76:200;0.73:200;0.71:200;0.68:200;0.66:200;0.63:200;0.59:200;0.56:200;0.53:200;0.49:200;0.46:200;0.43:200;0.4:200;0.36:200;0.33:200;0.3:200;0.26:200;0.23:0;0.2:0;0.18:0;0.15:0;0.11:0;0.09:0;0.07:0;0.05:0;0.01:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.bottomHolePressure</name>
+      <storedData>20:7193.708;10:6905.912</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.bottomHoleFracturePressure</name>
+      <storedData>20:13985.45;10:13985.45</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.bottomHoleLeakOffPressure</name>
+      <storedData>20:14484.24;10:14484.24</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.formationPressure</name>
+      <storedData>20:7358.632;10:7358.632</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.formationMargin</name>
+      <storedData>20:10806.01;10:10806.01</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.casingShoeFracturePressure</name>
+      <storedData>20:7917.001;10:7917.001</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.casingShoeLeakOffPressure</name>
+      <storedData>20:7607.81;10:7607.81</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.casingShoePressure</name>
+      <storedData>20:4735.708;10:4459.729</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.totalGasVolume</name>
+      <storedData>20:0.3493632;10:0.3481575</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.gasPressure</name>
+      <storedData>20:7193.164;10:6717.659</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.bottomMostGasDepthChart</name>
+      <storedData>20:613.2073;10:594.087</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.topMostGasDepthChart</name>
+      <storedData>20:554.5265;10:554.8621</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.trappedMudPressure</name>
+      <storedData>20:1313.466;10:1025.641</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.trappedGasPressure</name>
+      <storedData>20:1313.052;10:1025.887</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.overkillPressure</name>
+      <storedData>20:1.0552;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.annulusHydrostaticPressure</name>
+      <storedData>20:2936.801;10:2936.829</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.hydrostaticUnderBit</name>
+      <storedData>20:1.074184;10:5.12326</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.drillPipeHydrostaticAtBit</name>
+      <storedData>20:6010.559;10:6010.559</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.annulusLosses</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.drillBitLosses</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.drillStringLosses</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.killLinePressure</name>
+      <storedData>20:1300.513;10:1024.534</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.killLineLosses</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.killLineHydrostaticPressure</name>
+      <storedData>20:2944.622;10:2944.622</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.chokeLineLosses</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.chokeLineHydrostaticPressure</name>
+      <storedData>20:2943.442;10:2943.442</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.riserHydrostaticPressure</name>
+      <storedData>20:2944.472;10:2944.472</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.volumeLostToFracture</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.balloonVolume</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.mudPumpsFlow</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.boostPumpFlow</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.outCoriolisFlow</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.FSPPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.SBPPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.PT13</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.PT06</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.liquidSealPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.MGSPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.BOPPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.serviceRigTubingPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.serviceRigAnnulusCPressure</name>
+      <storedData>20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__rnData.torqueLog</name>
+      <storedData />
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__rnData.tableSpinSpeed</name>
+      <storedData />
+    </NetworkLogData>
   </networkLogs>
-  <userFaults>
-  </userFaults>
+  <userFaults />
   <incidents />
   <chatLog />
   <gradingFaults />
@@ -1905,7 +2546,7 @@
           <string>killsheet_p1_formStr_maxMw_result_density_value_control</string>
         </key>
         <value>
-          <float>2742.8</float>
+          <float>2742.82813</float>
         </value>
       </item>
       <item>
@@ -1929,7 +2570,7 @@
           <string>killsheet_p1_formStr_maasp_result_pressure_value_control</string>
         </key>
         <value>
-          <float>5983.904</float>
+          <float>854.8434</float>
         </value>
       </item>
       <item>
@@ -2505,6 +3146,189 @@
       <boolean>false</boolean>
     </stallHistory>
   </ropControllerData>
+  <loggingChartsPrefs>
+    <LoggingChartPref>
+      <name>DPPLog</name>
+      <colorHtml>FCFCFCFF</colorHtml>
+      <printHtml>D6D6D6FF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>-4495.60156</lowerBound>
+      <upperBound>36387.23</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>CPLog</name>
+      <colorHtml>00FFFFFF</colorHtml>
+      <printHtml>00FFFFFF</printHtml>
+      <strokeIndex>1</strokeIndex>
+      <lowerBound>-2943.38281</lowerBound>
+      <upperBound>39375.57</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>BHPLog</name>
+      <colorHtml>FF00FFFF</colorHtml>
+      <printHtml>FF00FFFF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>17056.6133</lowerBound>
+      <upperBound>59375.5664</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>FormationLog</name>
+      <colorHtml>FF00FFFF</colorHtml>
+      <printHtml>FF00FFFF</printHtml>
+      <strokeIndex>1</strokeIndex>
+      <lowerBound>17056.6133</lowerBound>
+      <upperBound>59375.5664</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>WOBLog</name>
+      <colorHtml>FFEB04FF</colorHtml>
+      <printHtml>FFEB04FF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>-86792.34</lowerBound>
+      <upperBound>442194.344</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>TankVolumeLog</name>
+      <colorHtml>FF0000FF</colorHtml>
+      <printHtml>FF0000FF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>0</lowerBound>
+      <upperBound>123</upperBound>
+    </LoggingChartPref>
+  </loggingChartsPrefs>
+  <edrChartsPrefs>
+    <ArrayOfLoggingChartPref>
+      <LoggingChartPref>
+        <name>HookloadLog</name>
+        <colorHtml>00ABFFFF</colorHtml>
+        <printHtml>00ABFFFF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>1500000</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>WOBLog</name>
+        <colorHtml>BDFF00FF</colorHtml>
+        <printHtml>BDFF00FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>-15000</lowerBound>
+        <upperBound>200000</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>ROPLog</name>
+        <colorHtml>FFA700FF</colorHtml>
+        <printHtml>FFA700FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>0.0277778</upperBound>
+      </LoggingChartPref>
+    </ArrayOfLoggingChartPref>
+    <ArrayOfLoggingChartPref>
+      <LoggingChartPref>
+        <name>DPPLog</name>
+        <colorHtml>00ABFFFF</colorHtml>
+        <printHtml>00ABFFFF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>10000</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>DiffLog</name>
+        <colorHtml>BDFF00FF</colorHtml>
+        <printHtml>BDFF00FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>10000</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>CPLog</name>
+        <colorHtml>FFA700FF</colorHtml>
+        <printHtml>FFA700FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>10000</upperBound>
+      </LoggingChartPref>
+    </ArrayOfLoggingChartPref>
+    <ArrayOfLoggingChartPref>
+      <LoggingChartPref>
+        <name>FlowLog</name>
+        <colorHtml>00ABFFFF</colorHtml>
+        <printHtml>00ABFFFF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>100</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>PitGainLog</name>
+        <colorHtml>BDFF00FF</colorHtml>
+        <printHtml>BDFF00FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>-1</lowerBound>
+        <upperBound>10</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>TotalFillLog</name>
+        <colorHtml>FFA700FF</colorHtml>
+        <printHtml>FFA700FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>4</upperBound>
+      </LoggingChartPref>
+    </ArrayOfLoggingChartPref>
+    <ArrayOfLoggingChartPref>
+      <LoggingChartPref>
+        <name>GasLog</name>
+        <colorHtml>00ABFFFF</colorHtml>
+        <printHtml>00ABFFFF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>150</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>TempLog</name>
+        <colorHtml>BDFF00FF</colorHtml>
+        <printHtml>BDFF00FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>150</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>GammaLog</name>
+        <colorHtml>FFA700FF</colorHtml>
+        <printHtml>FFA700FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>50</lowerBound>
+        <upperBound>100</upperBound>
+      </LoggingChartPref>
+    </ArrayOfLoggingChartPref>
+    <ArrayOfLoggingChartPref>
+      <LoggingChartPref>
+        <name>BlockSpeedLog</name>
+        <colorHtml>00ABFFFF</colorHtml>
+        <printHtml>00ABFFFF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>3</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>BlockHeightLog</name>
+        <colorHtml>BDFF00FF</colorHtml>
+        <printHtml>BDFF00FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>0</lowerBound>
+        <upperBound>50</upperBound>
+      </LoggingChartPref>
+      <LoggingChartPref>
+        <name>TankVolumeLog</name>
+        <colorHtml>FFA700FF</colorHtml>
+        <printHtml>FFA700FF</printHtml>
+        <strokeIndex>0</strokeIndex>
+        <lowerBound>80</lowerBound>
+        <upperBound>150</upperBound>
+      </LoggingChartPref>
+    </ArrayOfLoggingChartPref>
+  </edrChartsPrefs>
   <twistOffEventHasFired>false</twistOffEventHasFired>
+  <objectiveAchieved>false</objectiveAchieved>
   <saveWarnings />
 </SimSaveState>

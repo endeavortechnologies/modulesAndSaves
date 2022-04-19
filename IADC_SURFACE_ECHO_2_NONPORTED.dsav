@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<SimSaveState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <userNames>A|A|A</userNames>
+<SimSaveState>
+  <userNames>||</userNames>
   <version>DATA_VERSION_0_18</version>
-  <softwareVersion>O.1.1.7771-NONE (DEBUG)</softwareVersion>
-  <engineVersion>2018.1.0f2</engineVersion>
+  <softwareVersion>O.1.1.8130-NONE (DEBUG)</softwareVersion>
+  <engineVersion>2020.3.30f1</engineVersion>
   <slipsInHole>false</slipsInHole>
   <gradingData>
-    <canAdvance>true</canAdvance>
+    <canAdvance>false</canAdvance>
     <gradingState>ACTIVE</gradingState>
     <checkpoint>DRILLING_AHEAD</checkpoint>
     <gradingLevel>DEFAULT</gradingLevel>
@@ -18,8 +18,6 @@
       <ScriptedIncidents>NONE</ScriptedIncidents>
     </currentIdentifiedIncident>
     <resolvedIncidents />
-    <queuedIncident>NONE</queuedIncident>
-    <targetStrokesForIncident>0</targetStrokesForIncident>
   </gradingData>
   <randomIncidentData>
     <isInitialized>true</isInitialized>
@@ -27,7 +25,6 @@
     <targetStrokesForIncident>150</targetStrokesForIncident>
     <allowedIncidents>
       <ScriptedIncidents>BOP_FAILURE_UPPER_ANNULAR</ScriptedIncidents>
-      
     </allowedIncidents>
     <zeroStrokeReference>0</zeroStrokeReference>
     <triggeredIncidents>0</triggeredIncidents>
@@ -35,11 +32,11 @@
   <travelBlockPosition>
     <x>-1.31395545E-12</x>
     <y>31.7458134</y>
-    <z>-0.000211954117</z>
+    <z>0.00020468235</z>
   </travelBlockPosition>
   <topDriveData>
     <pipeHandlerRotation>180</pipeHandlerRotation>
-    <extenderPosition>0.05089136</extenderPosition>
+    <extenderPosition>0.052608382</extenderPosition>
     <isMadeUpToDrillString>true</isMadeUpToDrillString>
     <currentMode>DRILL</currentMode>
     <spinDirection>FORWARD</spinDirection>
@@ -48,7 +45,7 @@
     <isAutoSpinBrake>true</isAutoSpinBrake>
     <bumpDistance>5</bumpDistance>
     <isTripOut>false</isTripOut>
-    <shaftAngle>33169.94</shaftAngle>
+    <shaftAngle>55749.4766</shaftAngle>
     <rockForward>10</rockForward>
     <rockReverse>0</rockReverse>
     <modValuesList>
@@ -600,9 +597,9 @@
       <SegmentType>DRILL_PIPE</SegmentType>
     </segments>
     <position>
-      <x>-6.982651E-08</x>
+      <x>-6.941061E-08</x>
       <y>29.4157333</y>
-      <z>5.125752E-05</z>
+      <z>0.000459004747</z>
     </position>
     <stuckPipeBehaviour>
       <isSloughing>false</isSloughing>
@@ -619,7 +616,7 @@
       <flowModifierRate>NaN</flowModifierRate>
       <bitFailureState>NONE</bitFailureState>
       <diameter>0.214</diameter>
-      <tfo>229.647491</tfo>
+      <tfo>83.75117</tfo>
     </drillBit>
     <freezeTfoAt>-1</freezeTfoAt>
     <degreesPipeWoundUp>0</degreesPipeWoundUp>
@@ -653,7 +650,7 @@
         <strokesPerMinute>80</strokesPerMinute>
         <isOn>true</isOn>
         <tweenRateUp>5</tweenRateUp>
-        <totalStrokes>128.478546</totalStrokes>
+        <totalStrokes>184.144363</totalStrokes>
         <zeroStrokesReference>0</zeroStrokesReference>
         <zeroVolumeReference>0</zeroVolumeReference>
         <userStrokeLimitSetPoint>80</userStrokeLimitSetPoint>
@@ -788,23 +785,23 @@
           <averageDensity>1198.26428</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>27.4407921</mudVolume>
+          <mudVolume>105.875168</mudVolume>
           <averageDensity>1198.26428</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>17.0410862</mudVolume>
+          <mudVolume>3</mudVolume>
           <averageDensity>1198.26428</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>17.9399986</mudVolume>
+          <mudVolume>3</mudVolume>
           <averageDensity>1198.26428</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>19.4349976</mudVolume>
+          <mudVolume>3</mudVolume>
           <averageDensity>1198.26428</averageDensity>
         </MudTankData>
         <MudTankData>
-          <mudVolume>38.5141335</mudVolume>
+          <mudVolume>5.5</mudVolume>
           <averageDensity>1198.26428</averageDensity>
         </MudTankData>
       </activeTanks>
@@ -819,7 +816,7 @@
       <zeroSingleTripReference>0</zeroSingleTripReference>
       <zeroTotalTripReference>0</zeroTotalTripReference>
       <isTripTrackRunning>true</isTripTrackRunning>
-      <pitGain>0</pitGain>
+      <pitGain>0.004167330820301629</pitGain>
       <fixedTankDensity>1198.26428</fixedTankDensity>
       <bariteMixRate>0</bariteMixRate>
       <timeRequiredToMixBarite>-1</timeRequiredToMixBarite>
@@ -935,7 +932,7 @@
           <maxPercent>0.95</maxPercent>
           <displayOpenClosePercent>0</displayOpenClosePercent>
           <currentState>HOLD</currentState>
-          <currentSpeed>FAST</currentSpeed>
+          <currentSpeed>VARIABLE</currentSpeed>
           <isFailed>false</isFailed>
         </Choke>
         <Choke>
@@ -1045,7 +1042,7 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>1.5961286610357643</volume>
+              <volume>1.5919611610837461</volume>
               <density>1198.2642822265486</density>
             </mud>
             <type>NORMAL</type>
@@ -1237,7 +1234,7 @@
     <pitGainAlarm>
       <lowAlarm>-0.7949365</lowAlarm>
       <highAlarm>0.7949365</highAlarm>
-      <value>0</value>
+      <value>0.004167331</value>
       <isArmed>true</isArmed>
       <isTripped>false</isTripped>
       <isAlarmAcknowledged>false</isAlarmAcknowledged>
@@ -1283,7 +1280,7 @@
               <densityOfFluidGasIsMixedWith>0</densityOfFluidGasIsMixedWith>
             </gas>
             <mud>
-              <volume>41.368853716130936</volume>
+              <volume>41.368853885262652</volume>
               <density>1198.2642822265623</density>
             </mud>
             <type>NORMAL</type>
@@ -1370,8 +1367,8 @@
     <targetLiquidInfluxRate>0</targetLiquidInfluxRate>
   </hydraulicsSystemData>
   <simulationTimeData>
-    <uiSimTime>0001-01-01T00:04:10.8208714</uiSimTime>
-    <ticks>1003</ticks>
+    <uiSimTime>0001-01-01T00:04:53.3208714</uiSimTime>
+    <ticks>1170</ticks>
     <uiTimeMultiplier>1</uiTimeMultiplier>
   </simulationTimeData>
   <module>
@@ -1473,6 +1470,7 @@
       <name>Long string with mud motor and MWD</name>
       <initialMudWeight>0</initialMudWeight>
       <toolSpecs />
+      <fishingToolSpecs />
       <WebBHA>
         <BHAUsed>true</BHAUsed>
         <maxRotationSpeedWithoutDamageToBHA>360</maxRotationSpeedWithoutDamageToBHA>
@@ -1484,6 +1482,10 @@
         <Azimuth_UpdateFrequency>15</Azimuth_UpdateFrequency>
         <Inclination_UpdateFrequency>15</Inclination_UpdateFrequency>
         <ROP_UpdateFrequency>1</ROP_UpdateFrequency>
+        <gravityPushForce>0</gravityPushForce>
+        <centerStabilizingForce>0</centerStabilizingForce>
+        <numberOfRibs>0</numberOfRibs>
+        <torquePerRib>0</torquePerRib>
       </WebBHA>
       <WebMudMotor>
         <mudMotorUsed>false</mudMotorUsed>
@@ -1577,7 +1579,7 @@
         <diameter>0.214</diameter>
         <bitHydraulicsDiameter>0</bitHydraulicsDiameter>
         <numberNozzles>3</numberNozzles>
-        <nozzleDiameter>0</nozzleDiameter>
+        <nozzleDiameter>0.01374</nozzleDiameter>
         <maxDrillBitWOB>27000</maxDrillBitWOB>
         <maxDrillingRotationSpeed>900</maxDrillingRotationSpeed>
       </WebDrillBit>
@@ -1716,9 +1718,16 @@
           <depth>0</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>200</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Sand</name>
             <porosity>8</porosity>
@@ -1734,9 +1743,16 @@
           <depth>606</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>19.4084721</fracturePressure>
-          <maxROP>200</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1752,9 +1768,16 @@
           <depth>1406</depth>
           <pressureGradient>7.9</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Hard Rock</name>
             <porosity>5</porosity>
@@ -1770,9 +1793,16 @@
           <depth>1505</depth>
           <pressureGradient>7</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>50</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1788,9 +1818,16 @@
           <depth>1721</depth>
           <pressureGradient>8</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>5</porosity>
@@ -1806,9 +1843,16 @@
           <depth>1723</depth>
           <pressureGradient>13.5723591</pressureGradient>
           <fracturePressure>23.62</fracturePressure>
-          <maxROP>75</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>1</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Kick Formation</name>
             <porosity>5</porosity>
@@ -1824,9 +1868,16 @@
           <depth>1967</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Hard Rock 2</name>
             <porosity>5</porosity>
@@ -1842,9 +1893,16 @@
           <depth>1981</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1860,9 +1918,16 @@
           <depth>2047</depth>
           <pressureGradient>11.5</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Hard Rock</name>
             <porosity>5</porosity>
@@ -1878,9 +1943,16 @@
           <depth>2086</depth>
           <pressureGradient>11.5</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1896,9 +1968,16 @@
           <depth>2117</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Hard Rock</name>
             <porosity>5</porosity>
@@ -1914,9 +1993,16 @@
           <depth>2330</depth>
           <pressureGradient>13</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1932,9 +2018,16 @@
           <depth>2484</depth>
           <pressureGradient>9.3</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>200</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Hard Rock</name>
             <porosity>5</porosity>
@@ -1950,9 +2043,16 @@
           <depth>2540</depth>
           <pressureGradient>10</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Hard Rock 2</name>
             <porosity>5</porosity>
@@ -1968,9 +2068,16 @@
           <depth>2617</depth>
           <pressureGradient>10.9</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Soft Rock</name>
             <porosity>8</porosity>
@@ -1986,9 +2093,16 @@
           <depth>2642</depth>
           <pressureGradient>10.9</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>100</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Sand</name>
             <porosity>8</porosity>
@@ -2004,9 +2118,16 @@
           <depth>3801</depth>
           <pressureGradient>12.8</pressureGradient>
           <fracturePressure>29</fracturePressure>
-          <maxROP>200</maxROP>
+          <maxROPv2>0</maxROPv2>
           <influxGas>0</influxGas>
           <influxLiquid>0</influxLiquid>
+          <kickLossCoeff>0</kickLossCoeff>
+          <fracLossCoeff>0</fracLossCoeff>
+          <pushInclination>0</pushInclination>
+          <pushAzimuth>0</pushAzimuth>
+          <pushForceInclination>0</pushForceInclination>
+          <pushForceAzimuth>0</pushForceAzimuth>
+          <maxFlow>0</maxFlow>
           <RockType>
             <name>Default Hard Rock</name>
             <porosity>5</porosity>
@@ -2037,6 +2158,8 @@
     <ProgrammerSettings>
       <initialTopDriveHeight>27.432</initialTopDriveHeight>
       <initialStringHeight>1</initialStringHeight>
+      <minMudWeightDisplay>0</minMudWeightDisplay>
+      <maxMudWeightDisplay>0</maxMudWeightDisplay>
       <simNoise>true</simNoise>
       <enableGameOverSpam>true</enableGameOverSpam>
       <maxAnalogGaugePressure>34473.79</maxAnalogGaugePressure>
@@ -2067,6 +2190,7 @@
       <BOPLeakRate>0.005</BOPLeakRate>
       <rigType>LAND</rigType>
       <mpdIndex>0</mpdIndex>
+      <sbpdType>DEFAULT</sbpdType>
       <gravity>0</gravity>
       <JoshMath>
         <JoshExpression>FP + CP - BPL</JoshExpression>
@@ -2100,16 +2224,23 @@
       <isCementingModule>false</isCementingModule>
       <isManagedPressureDrilling>false</isManagedPressureDrilling>
       <mpdPumpDepth>0</mpdPumpDepth>
+      <sbpdSpoolDepth>0</sbpdSpoolDepth>
       <isFracPack>false</isFracPack>
+      <isEndeavorTools>false</isEndeavorTools>
       <isWFLinerHanger>false</isWFLinerHanger>
       <isWFLinerHangerTripping>false</isWFLinerHangerTripping>
       <isWireLine>false</isWireLine>
       <isWFWireLine>false</isWFWireLine>
+      <isBakerWireLine>false</isBakerWireLine>
       <isBakerLinerHanger>false</isBakerLinerHanger>
       <isBakerLinerHangerTripping>false</isBakerLinerHangerTripping>
       <isCoiledTubing>false</isCoiledTubing>
+      <isKellyDrive>false</isKellyDrive>
+      <isUpperCompletions>false</isUpperCompletions>
+      <isFishingOps>false</isFishingOps>
       <isWhipstock>false</isWhipstock>
       <isWhipstockInstalled>false</isWhipstockInstalled>
+      <isCementSqueeze>false</isCementSqueeze>
       <isDirectional>false</isDirectional>
       <noKillSheet>false</noKillSheet>
       <forceDownhole>false</forceDownhole>
@@ -2131,6 +2262,9 @@
       <wirelineTensionLimits />
       <wirelineDiffTensionLimits />
       <wirelineCPtensionLimits />
+      <maxTorsionForceBeforePipeBreaks>0</maxTorsionForceBeforePipeBreaks>
+      <torqueAddedPerDegreeOfTwist>0</torqueAddedPerDegreeOfTwist>
+      <maxDegreesReversePipeCanBeWound>0</maxDegreesReversePipeCanBeWound>
       <tensionToBreakString>0</tensionToBreakString>
       <tensionToBreakWeakPoint>0</tensionToBreakWeakPoint>
       <forceToFreeStuckCableMedium>0</forceToFreeStuckCableMedium>
@@ -2155,14 +2289,29 @@
       <truckRpmForMinPTOPower>7200</truckRpmForMinPTOPower>
       <wirelineDiffTensionIgnoreThreshold>1.48816</wirelineDiffTensionIgnoreThreshold>
       <goodTongTorqueProbability>0</goodTongTorqueProbability>
+      <segmentsCountOfFish>0</segmentsCountOfFish>
+      <initialGapLength>0</initialGapLength>
+      <fishingMaxSlackOffValue>0</fishingMaxSlackOffValue>
+      <fishingMaxGrappleWorkLoad>0</fishingMaxGrappleWorkLoad>
+      <fishingMinForceToSetGrapple>0</fishingMinForceToSetGrapple>
+      <fishingMinForceToBreakGrapple>0</fishingMinForceToBreakGrapple>
+      <fishingTotalForceToFreeFish>0</fishingTotalForceToFreeFish>
+      <fishingTotalTorqueToFreeFish>0</fishingTotalTorqueToFreeFish>
+      <fishingIsBumperSubInstalled>false</fishingIsBumperSubInstalled>
+      <fishingBumperSubLength>0</fishingBumperSubLength>
+      <fishingResetHeightAboveFish>0</fishingResetHeightAboveFish>
+      <fishingDistanceToResetPos>0</fishingDistanceToResetPos>
+      <timeProgressMode>None</timeProgressMode>
+      <cscsScript><![CDATA[]]></cscsScript>
     </ProgrammerSettings>
     <HydroV2Settings>
       <isOn>false</isOn>
       <isV2MudTanks>false</isV2MudTanks>
       <tankParameters />
+      <substanceInjectors />
+      <RPMLossCorrectionFactor>0</RPMLossCorrectionFactor>
     </HydroV2Settings>
     <GradingSettings>
-      <bopLineUp>INSIDE_OPEN</bopLineUp>
       <isTestModule>true</isTestModule>
       <wellControlMethod>DRILLERS</wellControlMethod>
       <wellControlForum>IADC</wellControlForum>
@@ -2172,6 +2321,7 @@
       <targetAnnularPressure>3500</targetAnnularPressure>
       <targetManifoldPressure>3600</targetManifoldPressure>
       <chokeLineUp>HARD</chokeLineUp>
+      <bopLineUp>INSIDE_OPEN</bopLineUp>
       <targetTankFillProportion>0.75</targetTankFillProportion>
       <targetTotalStrokesDuringStartup>200</targetTotalStrokesDuringStartup>
       <targetSlowPumpRate>30</targetSlowPumpRate>
@@ -2189,111 +2339,100 @@
       <minStrokesBeforeIncident>150</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <WeatherSettings>
-      <timeProgress>NONE</timeProgress>
-      <minutes>0</minutes>
-      <hours>12</hours>
-      <day>1</day>
-      <month>6</month>
-      <timeScale>5</timeScale>
-      <preset>CLEAR_SKY</preset>
-      <quality>MEDIUM</quality>
-      <latitude>0</latitude>
-      <longitude>0</longitude>
-    </WeatherSettings>
     <moduleName>IADC SURFACE ECHO</moduleName>
     <moduleText />
+    <loggingCharts />
     <isMetric>true</isMetric>
     <version>MODULE_V5</version>
   </module>
   <networkLogs>
     <NetworkLogData>
       <name>Root.__topDriveData.blockHeight</name>
-      <storedData>250:39.34582;240:39.34582;230:39.34582;220:39.34582;210:39.34582;200:39.34582;190:39.34582;180:39.34582;170:39.34582;160:39.34582;150:39.34582;140:39.34582;130:39.34582;120:39.34582;110:39.34582;100:39.34582;90:39.34582;80:39.34582;70:39.34582;60:39.34582;50:39.34582;40:39.34582;30:39.34582;20:39.34582;10:39.34582</storedData>
+      <storedData>290:39.34582;280:39.34581;270:39.34582;260:39.34581;250:39.34582;240:39.34582;230:39.34582;220:39.34582;210:39.34582;200:39.34582;190:39.34582;180:39.34582;170:39.34582;160:39.34582;150:39.34582;140:39.34582;130:39.34582;120:39.34582;110:39.34582;100:39.34582;90:39.34582;80:39.34582;70:39.34582;60:39.34582;50:39.34582;40:39.34582;30:39.34582;20:39.34582;10:39.34582</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__topDriveData.weightOnBit</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__topDriveData.hookLoad</name>
-      <storedData>250:1053290;240:1053290;230:1053290;220:1053290;210:1053290;200:1053290;190:1053290;180:1053290;170:1053290;160:1053290;150:1053290;140:1053290;130:1053290;120:1053290;110:1053290;100:1053197;90:1052400;80:1051468;70:1050557;60:1050078;50:1050077;40:1050077;30:1050077;20:1050081;10:1050081</storedData>
+      <storedData>290:1054695;280:1054695;270:1054695;260:1054695;250:1053290;240:1053290;230:1053290;220:1053290;210:1053290;200:1053290;190:1053290;180:1053290;170:1053290;160:1053290;150:1053290;140:1053290;130:1053290;120:1053290;110:1053290;100:1053197;90:1052400;80:1051468;70:1050557;60:1050078;50:1050077;40:1050077;30:1050077;20:1050081;10:1050081</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__topDriveData.blockSpeed</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__topDriveData.rateOfPenetration</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__topDriveData.rpm</name>
-      <storedData>250:600;240:600;230:600;220:600;210:600;200:297.5988;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:600;280:449.1078;270:600;260:506.8304;250:600;240:600;230:600;220:600;210:600;200:297.5988;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__topDriveData.torque</name>
-      <storedData>250:0.05526194;240:0.05526194;230:0.05526194;220:0.05526194;210:0.05526194;200:0.03868336;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0.05526194;240:0.05526194;230:0.05526194;220:0.05526194;210:0.05526194;200:0.03868336;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.edrGas</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.temperature</name>
-      <storedData>250:51.57217;240:51.57217;230:51.57217;220:51.57217;210:51.57217;200:51.57217;190:51.57217;180:51.57217;170:51.57217;160:51.57217;150:51.57217;140:51.57217;130:51.57217;120:51.57217;110:51.57217;100:51.57217;90:51.57217;80:51.57217;70:51.57217;60:51.57217;50:51.57217;40:51.57217;30:51.57217;20:51.57217;10:51.57217</storedData>
+      <storedData>290:51.57217;280:51.57217;270:51.57217;260:51.57217;250:51.57217;240:51.57217;230:51.57217;220:51.57217;210:51.57217;200:51.57217;190:51.57217;180:51.57217;170:51.57217;160:51.57217;150:51.57217;140:51.57217;130:51.57217;120:51.57217;110:51.57217;100:51.57217;90:51.57217;80:51.57217;70:51.57217;60:51.57217;50:51.57217;40:51.57217;30:51.57217;20:51.57217;10:51.57217</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.bitMeasuredDepth</name>
-      <storedData>250:1717.909;240:1717.909;230:1717.909;220:1717.909;210:1717.909;200:1717.909;190:1717.909;180:1717.909;170:1717.909;160:1717.909;150:1717.909;140:1717.909;130:1717.909;120:1717.909;110:1717.909;100:1717.909;90:1717.909;80:1717.909;70:1717.909;60:1717.909;50:1717.909;40:1717.909;30:1717.909;20:1717.909;10:1717.909</storedData>
+      <storedData>290:1717.909;280:1717.909;270:1717.909;260:1717.909;250:1717.909;240:1717.909;230:1717.909;220:1717.909;210:1717.909;200:1717.909;190:1717.909;180:1717.909;170:1717.909;160:1717.909;150:1717.909;140:1717.909;130:1717.909;120:1717.909;110:1717.909;100:1717.909;90:1717.909;80:1717.909;70:1717.909;60:1717.909;50:1717.909;40:1717.909;30:1717.909;20:1717.909;10:1717.909</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.bitMeasuredDepthChart</name>
-      <storedData>250:-1717.909;240:-1717.909;230:-1717.909;220:-1717.909;210:-1717.909;200:-1717.909;190:-1717.909;180:-1717.909;170:-1717.909;160:-1717.909;150:-1717.909;140:-1717.909;130:-1717.909;120:-1717.909;110:-1717.909;100:-1717.909;90:-1717.909;80:-1717.909;70:-1717.909;60:-1717.909;50:-1717.909;40:-1717.909;30:-1717.909;20:-1717.909;10:-1717.909</storedData>
+      <storedData>290:-1717.909;280:-1717.909;270:-1717.909;260:-1717.909;250:-1717.909;240:-1717.909;230:-1717.909;220:-1717.909;210:-1717.909;200:-1717.909;190:-1717.909;180:-1717.909;170:-1717.909;160:-1717.909;150:-1717.909;140:-1717.909;130:-1717.909;120:-1717.909;110:-1717.909;100:-1717.909;90:-1717.909;80:-1717.909;70:-1717.909;60:-1717.909;50:-1717.909;40:-1717.909;30:-1717.909;20:-1717.909;10:-1717.909</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.wirelineActualMD</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.wirelineUncorrectedMD</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.wirelineTension</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.wirelineSpeed</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__annulusData.wirelineCHTension</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__tanksData.totalFillVolume</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__tanksData.activeTanksVolume</name>
-      <storedData>250:120.371;240:120.371;230:120.3827;220:120.5517;210:120.7701;200:120.9884;190:121.1734;180:121.2648;170:121.3568;160:121.435;150:121.5041;140:121.583;130:121.6907;120:121.7897;110:121.8729;100:121.9547;90:122.0366;80:122.1178;70:122.1972;60:122.2411;50:122.2412;40:122.2412;30:122.2412;20:122.2412;10:122.2412</storedData>
+      <storedData>290:105.871;280:105.871;270:105.871;260:105.8752;250:105.871;240:105.871;230:105.8827;220:106.0517;210:106.2701;200:106.4884;190:106.6734;180:106.7648;170:106.8568;160:106.935;150:107.0041;140:107.083;130:107.1907;120:107.2897;110:107.3729;100:107.4547;90:107.5366;80:107.6178;70:107.6972;60:107.7411;50:107.7412;40:107.7412;30:107.7412;20:107.7412;10:107.7412</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__tanksData.mudGainLossLog</name>
-      <storedData>250:-1.116095;240:-1.860159;230:-1.848523;220:-1.679446;210:-1.461096;200:-1.242746;190:-1.057746;180:-0.9664354;170:-0.8744473;160:-0.7962791;150:-0.7271802;140:-0.6482706;130:-0.5406024;120:-0.44156;110:-0.3584163;100:-0.2765349;90:-0.1946535;80:-0.1133862;70:-0.03396125;60:0.009947648;50:0.01005;40:0.01005;30:0.01005;20:0.01005;10:0.01005</storedData>
+      <storedData>290:0.00416733;280:0.004167352;270:0.004167355;260:0.004167355;250:-1.116095;240:-1.860159;230:-1.848523;220:-1.679446;210:-1.461096;200:-1.242746;190:-1.057746;180:-0.9664354;170:-0.8744473;160:-0.7962791;150:-0.7271802;140:-0.6482706;130:-0.5406024;120:-0.44156;110:-0.3584163;100:-0.2765349;90:-0.1946535;80:-0.1133862;70:-0.03396125;60:0.009947648;50:0.01005;40:0.01005;30:0.01005;20:0.01005;10:0.01005</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__tanksData.tripVolumeLog</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__chokes.0.value.percentOpen</name>
-      <storedData>250:0.1270007;240:0.1270007;230:0.1270007;220:0.1270007;210:0.1270007;200:0.1270007;190:0.1270007;180:0.1270007;170:0.1270007;160:0.1270007;150:0.1270007;140:0.1270007;130:0.1270007;120:0.1270007;110:0.1270007;100:0.1270007;90:0.1270007;80:0.1270007;70:0.1270007;60:0.1270007;50:0.1270007;40:0.3970006;30:0.9232001;20:1;10:1</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0.1270007;240:0.1270007;230:0.1270007;220:0.1270007;210:0.1270007;200:0.1270007;190:0.1270007;180:0.1270007;170:0.1270007;160:0.1270007;150:0.1270007;140:0.1270007;130:0.1270007;120:0.1270007;110:0.1270007;100:0.1270007;90:0.1270007;80:0.1270007;70:0.1270007;60:0.1270007;50:0.1270007;40:0.3970006;30:0.9232001;20:1;10:1</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__chokes.1.value.percentOpen</name>
-      <storedData>250:0.1300007;240:0.1300007;230:0.1300007;220:0.1300007;210:0.1300007;200:0.1300007;190:0.1300007;180:0.1300007;170:0.1300007;160:0.1300007;150:0.1300007;140:0.1300007;130:0.1300007;120:0.1300007;110:0.1300007;100:0.1300007;90:0.1300007;80:0.1300007;70:0.1300007;60:0.2200007;50:0.7570003;40:1;30:1;20:1;10:1</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0.1300007;240:0.1300007;230:0.1300007;220:0.1300007;210:0.1300007;200:0.1300007;190:0.1300007;180:0.1300007;170:0.1300007;160:0.1300007;150:0.1300007;140:0.1300007;130:0.1300007;120:0.1300007;110:0.1300007;100:0.1300007;90:0.1300007;80:0.1300007;70:0.1300007;60:0.2200007;50:0.7570003;40:1;30:1;20:1;10:1</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__chokes.2.value.percentOpen</name>
@@ -2317,127 +2456,131 @@
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.flowRatePercent</name>
-      <storedData>250:27.2938;240:27.2938;230:27.2938;220:27.2938;210:27.2938;200:27.2938;190:14.92872;180:11.51649;170:11.22858;160:8.637367;150:8.637367;140:12.20424;130:13.6469;120:10.40576;110:10.23518;100:5.822631;90:0.25;80:0.25;70:0.175;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:27.2938;280:27.2938;270:27.2938;260:27.2938;250:27.2938;240:27.2938;230:27.2938;220:27.2938;210:27.2938;200:27.2938;190:14.92872;180:11.51649;170:11.22858;160:8.637367;150:8.637367;140:12.20424;130:13.6469;120:10.40576;110:10.23518;100:5.822631;90:0.25;80:0.25;70:0.175;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.drillPipePressure</name>
-      <storedData>250:6226.438;240:6226.438;230:6226.438;220:6226.438;210:6226.438;200:4394.349;190:1355.693;180:1281.976;170:941.3146;160:775.6735;150:1142.738;140:1742.74;130:1378.049;120:1056.403;110:868.7084;100:131.9193;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:6226.445;280:6226.474;270:6226.439;260:6226.439;250:6226.438;240:6226.438;230:6226.438;220:6226.438;210:6226.438;200:4394.349;190:1355.693;180:1281.976;170:941.3146;160:775.6735;150:1142.738;140:1742.74;130:1378.049;120:1056.403;110:868.7084;100:131.9193;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.casingPressure</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.diffPressure</name>
-      <storedData>250:6226.439;240:6226.439;230:6226.439;220:6226.439;210:6226.439;200:6226.439;190:2524.691;180:1306.863;170:1253.974;160:777.9775;150:777.9775;140:1493.46;130:1775.465;120:1090.274;110:1056.404;100:569.199;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:6226.439;280:6226.506;270:6226.439;260:6226.439;250:6226.439;240:6226.439;230:6226.439;220:6226.439;210:6226.439;200:6226.439;190:2524.691;180:1306.863;170:1253.974;160:777.9775;150:777.9775;140:1493.46;130:1775.465;120:1090.274;110:1056.404;100:569.199;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.standpipePressure</name>
-      <storedData>250:6226.438;240:6226.438;230:6226.438;220:6226.438;210:6226.438;200:4394.349;190:1355.693;180:1281.976;170:941.3146;160:775.6735;150:1142.738;140:1742.74;130:1378.049;120:1056.403;110:868.7084;100:131.9193;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:6226.445;280:6226.474;270:6226.439;260:6226.439;250:6226.438;240:6226.438;230:6226.438;220:6226.438;210:6226.438;200:4394.349;190:1355.693;180:1281.976;170:941.3146;160:775.6735;150:1142.738;140:1742.74;130:1378.049;120:1056.403;110:868.7084;100:131.9193;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.totalSpm</name>
-      <storedData>250:80;240:80;230:80;220:80;210:80;200:80;190:45.93203;180:40;170:39;160:30;150:30;140:36.00565;130:40;120:30.5;110:30;100:30;90:30;80:30;70:30;60:1;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:80;280:80;270:80;260:80;250:80;240:80;230:80;220:80;210:80;200:80;190:45.93203;180:40;170:39;160:30;150:30;140:36.00565;130:40;120:30.5;110:30;100:30;90:30;80:30;70:30;60:1;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.totalStrokes</name>
-      <storedData>250:147.18;240:133.8465;230:120.5131;220:107.1796;210:93.84621;200:80.51286;190:69.15197;180:62.7698;170:56.11355;160:50.4573;150:45.4573;140:40.20165;130:33.62501;120:27.57708;110:22.5;100:17.5;90:12.5;80:7.5375;70:2.6875;60:0.00625;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:199.4793;280:187.6795;270:173.213;260:160.8466;250:147.18;240:133.8465;230:120.5131;220:107.1796;210:93.84621;200:80.51286;190:69.15197;180:62.7698;170:56.11355;160:50.4573;150:45.4573;140:40.20165;130:33.62501;120:27.57708;110:22.5;100:17.5;90:12.5;80:7.5375;70:2.6875;60:0.00625;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__dirData.gamma</name>
-      <storedData>250:85.26866;240:85.50066;230:85.73936;220:85.16946;210:84.03469;200:86.51704;190:84.89787;180:86.66022;170:86.00481;160:85.40901;150:84.88429;140:84.91515;130:85.74989;120:86.39142;110:85.42476;100:82.84592;90:85.42165;80:87.66772;70:85.93333;60:83.76456;50:84.46153;40:83.87416;30:85.69321;20:85.09636;10:86.60389</storedData>
+      <storedData>290:114.8195;280:115.8061;270:113.5442;260:115.7874;250:85.26866;240:85.50066;230:85.73936;220:85.16946;210:84.03469;200:86.51704;190:84.89787;180:86.66022;170:86.00481;160:85.40901;150:84.88429;140:84.91515;130:85.74989;120:86.39142;110:85.42476;100:82.84592;90:85.42165;80:87.66772;70:85.93333;60:83.76456;50:84.46153;40:83.87416;30:85.69321;20:85.09636;10:86.60389</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__dirData.azimuth</name>
-      <storedData>250:270;240:270;230:270;220:270;210:270;200:270;190:270;180:270;170:270;160:270;150:270;140:270;130:270;120:270;110:270;100:270;90:270;80:270;70:270;60:270;50:270;40:270;30:270;20:270</storedData>
+      <storedData>290:54;280:0;270:108;260:0;250:270;240:270;230:270;220:270;210:270;200:270;190:270;180:270;170:270;160:270;150:270;140:270;130:270;120:270;110:270;100:270;90:270;80:270;70:270;60:270;50:270;40:270;30:270;20:270</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__dirData.inclination</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0</storedData>
+      <storedData>290:1.182813E-06;280:0;270:2.365625E-06;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__dirData.ribOrientation</name>
+      <storedData>293.3:200;293.28:200;293.26:200;293.25:200;293.23:200;293.2:200;293.18:200;293.16:200;293.15:200;293.13:200;293.11:200;293.09:200;293.08:200;293.06:200;293.04:200;293.03:200;293.01:200;292.98:200;292.96:200;292.94:200;292.92:200;292.91:200;292.89:200;292.87:200;292.86:200;292.84:200;292.82:200;292.81:200;292.79:200;292.77:200;292.75:200;292.74:200;292.72:200;292.7:200;292.69:200;292.67:200;292.64:200;292.62:200;292.6:200;292.59:200;292.57:200;292.55:200;292.53:200;292.52:200;292.5:200;292.48:200;292.47:200;292.45:200;292.42:200;292.4:200;292.38:200;292.35:200;292.33:200;292.31:200;292.3:200;292.28:200;292.26:200;292.25:200;292.23:200;292.21:200;292.19:200;292.18:200;292.16:200;292.14:200;292.13:200;292.11:200;292.09:200;292.08:200;292.06:200;292.04:200;292.01:200;291.99:200;291.97:200;291.96:200;291.94:200;291.92:200;291.91:200;291.89:200;291.87:200;291.85:200;291.84:200;291.82:200;291.81:200;291.79:200;291.77:200;291.75:200;291.74:200;291.72:200;291.7:200;291.69:200;291.67:200;291.65:200;291.63:200;291.62:200;291.6:200;291.57:200;291.55:200;291.53:200;291.52:200;291.5:200;291.48:200;291.45:200;291.43:200;291.41:200;291.4:200;291.38:200;291.35:200;291.33:200;291.31:200;291.29:200;291.28:200;291.26:200;291.23:200;291.21:200;291.19:200;291.18:200;291.16:200;291.14:200;291.12:200;291.11:200;291.09:200;291.07:200;291.06:200;291.04:200;291.01:200;290.99:200;290.97:200;290.95:200;290.94:200;290.92:200;290.89:200;290.87:200;290.85:200;290.84:200;290.82:200;290.8:200;290.78:200;290.77:200;290.75:200;290.73:200;290.72:200;290.7:200;290.67:200;290.65:200;290.63:200;290.6:200;290.58:200;290.56:200;290.55:200;290.53:200;290.51:200;290.5:200;290.48:200;290.46:200;290.44:200;290.42:200;290.39:200;290.38:200;290.36:200;290.34:200;290.33:200;290.31:200;290.29:200;290.28:200;290.26:200;290.24:200;290.22:200;290.21:200;290.19:200;290.17:200;290.16:200;290.14:200;290.12:200;290.11:200;290.09:200;290.07:200;290.04:200;290.02:200;290:200;289.99:200;289.97:200;289.95:200;289.94:200;289.92:200;289.9:200;289.88:200;289.87:200;289.85:200;289.82:200;289.8:200;289.78:200;289.77:200;289.75:200;289.73:200;289.7:200;289.68:200;289.66:200;289.65:200;289.63:200;289.6:200;289.58:200;289.56:200;289.55:200;289.53:200;289.51:200;289.48:200;289.46:200;289.44:200;289.43:200;289.41:200;289.39:200;289.38:200;289.36:200;289.34:200;289.32:200;289.31:200;289.29:200;289.26:200;289.24:200;289.22:200;289.21:200;289.19:200;289.17:200;289.14:200;289.12:200;289.1:200;289.09:200;289.07:200;289.04:200;289.02:200;289:200;288.98:200;288.97:200;288.95:200;288.92:200;288.9:200;288.88:200;288.87:200;288.85:200;288.83:200;288.81:200;288.8:200;288.78:200;288.76:200;288.75:200;288.73:200;288.7:200;288.68:200;288.66:200;288.64:200;288.63:200;288.61:200;288.59:200;288.58:200;288.56:200;288.54:200;288.53:200;288.51:200;288.49:200;288.47:200;288.46:200;288.44:200;288.42:200;288.41:200;288.39:200;288.37:200;288.36:200;288.34:200;288.32:200;288.29:200;288.27:200;288.25:200;288.24:200;288.22:200;288.2:200;288.19:200;288.17:200;288.14:200;288.12:200;288.1:200;288.07:200;288.05:200;288.03:200;288.02:200;288:200;287.98:200;287.97:200;287.95:200;287.92:200;287.9:200;287.88:200;287.85:200;287.83:200;287.81:200;287.8:200;287.78:200;287.76:200;287.75:200;287.73:200;287.71:200;287.69:200;287.68:200;287.66:200;287.64:200;287.63:200;287.61:200;287.59:200;287.58:200;287.56:200;287.54:200;287.51:200;287.48:200;287.46:200;287.44:200;287.42:200;287.41:200;287.39:200;287.37:200;287.36:200;287.34:200;287.32:200;287.29:200;287.27:200;287.25:200;287.24:200;287.22:200;287.2:200;287.19:200;287.17:200;287.14:200;287.12:200;287.1:200;287.07:200;287.05:200;287.03:200;287.02:200;287:200;286.98:200;286.97:200;286.95:200;286.93:200;286.91:200;286.9:200;286.88:200;286.85:200;286.83:200;286.81:200;286.8:200;286.78:200;286.76:200;286.73:200;286.71:200;286.69:200;286.68:200;286.66:200;286.64:200;286.63:200;286.61:200;286.59:200;286.57:200;286.56:200;286.54:200;286.51:200;286.49:200;286.47:200;286.46:200;286.44:200;286.42:200;286.39:200;286.37:200;286.35:200;286.34:200;286.32:200;286.29:200;286.27:200;286.25:200;286.23:200;286.22:200;286.2:200;286.17:200;286.16:200;286.14:200;286.12:200;286.1:200;286.07:200;286.05:200;286.03:200;286.01:200;286:200;285.98:200;285.95:200;285.93:200;285.91:200;285.9:200;285.88:200;285.86:200;285.84:200;285.83:200;285.81:200;285.79:200;285.78:200;285.76:200;285.73:200;285.71:200;285.69:200;285.67:200;285.66:200;285.64:200;285.62:200;285.61:200;285.59:200;285.57:200;285.56:200;285.54:200;285.52:200;285.5:200;285.49:200;285.47:200;285.45:200;285.44:200;285.42:200;285.39:200;285.37:200;285.35:200;285.32:200;285.3:200;285.28:200;285.27:200;285.25:200;285.23:200;285.22:200;285.2:200;285.18:200;285.16:200;285.15:200;285.13:200;285.1:200;285.08:200;285.06:200;285.05:200;285.03:200;285.01:200;284.98:200;284.96:200;284.94:200;284.93:200;284.91:200;284.89:200;284.88:200;284.86:200;284.84:200;284.82:200;284.81:200;284.79:200;284.76:200;284.74:200;284.72:200;284.71:200;284.69:200;284.67:200;284.64:200;284.62:200;284.6:200;284.59:200;284.57:200;284.54:200;284.52:200;284.5:200;284.49:200;284.47:200;284.45:200;284.44:200;284.42:200;284.4:200;284.38:200;284.37:200;284.35:200;284.32:200;284.3:200;284.28:200;284.27:200;284.25:200;284.23:200;284.2:200;284.18:200;284.16:200;284.15:200;284.13:200;284.1:200;284.08:200;284.06:200;284.04:200;284.03:200;284.01:200;283.98:200;283.96:200;283.94:200;283.93:200;283.91:200;283.89:200;283.87:200;283.86:200;283.84:200;283.82:200;283.81:200;283.79:200;283.76:200;283.74:200;283.72:200;283.7:200;283.69:200;283.67:200;283.64:200;283.62:200;283.6:200;283.59:200;283.57:200;283.55:200;283.53:200;283.52:200;283.5:200;283.48:200;283.47:200;283.45:200;283.42:200;283.4:200;283.38:200;283.35:200;283.33:200;283.31:200;283.3:200;283.28:200;283.26:200;283.25:200;283.23:200;283.21:200;283.19:200;283.18:200;283.16:200;283.14:200;283.13:200;283.11:200;283.09:200;283.08:200;283.06:200;283.04:200;283.01:200;282.99:200;282.97:200;282.96:200;282.94:200;282.92:200;282.91:200;282.89:200;282.87:200;282.85:200;282.84:200;282.82:200;282.79:200;282.77:200;282.75:200;282.74:200;282.72:200;282.7:200;282.67:200;282.65:200;282.63:200;282.62:200;282.6:200;282.57:200;282.55:200;282.53:200;282.51:200;282.5:200;282.48:200;282.45:200;282.43:200;282.41:200;282.4:200;282.38:200;282.36:200;282.34:200;282.33:200;282.31:200;282.29:200;282.28:200;282.26:200;282.23:200;282.21:200;282.19:200;282.17:200;282.16:200;282.14:200;282.12:200;282.11:200;282.09:200;282.07:200;282.06:200;282.04:200;282.02:200;282:200;281.99:200;281.97:200;281.95:200;281.94:200;281.92:200;281.91:200;281.89:200;281.85:200;281.84:200;281.82:200;281.79:200;281.77:200;281.75:200;281.74:200;281.72:200;281.7:200;281.67:200;281.65:200;281.63:200;281.62:200;281.6:200;281.57:200;281.55:200;281.53:200;281.51:200;281.5:200;281.48:200;281.45:200;281.43:200;281.41:200;281.4:200;281.38:200;281.35:200;281.33:200;281.31:200;281.29:200;281.28:200;281.26:200;281.23:200;281.21:200;281.19:200;281.18:200;281.16:200;281.14:200;281.12:200;281.11:200;281.09:200;281.07:200;281.06:200;281.04:200;281.01:200;280.99:200;280.97:200;280.95:200;280.94:200;280.92:200;280.89:200;280.87:200;280.85:200;280.84:200;280.82:200;280.8:200;280.78:200;280.77:200;280.75:200;280.73:200;280.72:200;280.7:200;280.67:200;280.65:200;280.63:200;280.6:200;280.58:200;280.56:200;280.55:200;280.53:200;280.51:200;280.5:200;280.48:200;280.46:200;280.44:200;280.43:200;280.41:200;280.39:200;280.38:200;280.36:200;280.34:200;280.33:200;280.31:200;280.29:200;280.26:200;280.24:200;280.22:200;280.21:200;280.19:200;280.17:200;280.16:200;280.14:200;280.12:200;280.1:200;280.09:200;280.07:200;280.04:200;280.02:200;280:200;279.99:200;279.97:200;279.95:200;279.92:200;279.9:200;279.88:200;279.87:200;279.85:200;279.82:200;279.8:200;279.78:200;279.76:200;279.75:200;279.73:200;279.7:200;279.68:200;279.66:200;279.65:200;279.63:200;279.61:200;279.59:200;279.58:200;279.56:200;279.54:200;279.53:200;279.51:200;279.48:200;279.46:200;279.44:200;279.42:200;279.41:200;279.39:200;279.37:200;279.36:200;279.34:200;279.32:200;279.31:200;279.29:200;279.27:200;279.25:200;279.24:200;279.22:200;279.2:200;279.19:200;279.17:200;279.14:200;279.12:200;279.1:200;279.07:200;279.05:200;279.03:200;279.02:200;279:200;278.98:200;278.97:200;278.95:200;278.93:200;278.91:200;278.9:200;278.88:200;278.85:200;278.83:200;278.81:200;278.8:200;278.78:200;278.76:200;278.73:200;278.71:200;278.69:200;278.68:200;278.66:200;278.64:200;278.63:200;278.61:200;278.59:200;278.57:200;278.56:200;278.54:200;278.51:200;278.49:200;278.47:200;278.46:200;278.44:200;278.42:200;278.39:200;278.37:200;278.35:200;278.34:200;278.32:200;278.29:200;278.27:200;278.25:200;278.23:200;278.22:200;278.2:200;278.17:200;278.15:200;278.13:200;278.12:200;278.1:200;278.08:200;278.06:200;278.05:200;278.03:200;278.01:200;278:200;277.98:200;277.95:200;277.93:200;277.91:200;277.89:200;277.88:200;277.86:200;277.84:200;277.83:200;277.81:200;277.79:200;277.78:200;277.76:200;277.74:200;277.72:200;277.71:200;277.69:200;277.67:200;277.66:200;277.64:200;277.62:200;277.61:200;277.59:200;277.57:200;277.56:200;277.51:200;277.49:200;277.47:200;277.45:200;277.44:200;277.42:200;277.39:200;277.37:200;277.35:200;277.34:200;277.32:200;277.3:200;277.28:200;277.27:200;277.25:200;277.23:200;277.22:200;277.2:200;277.17:200;277.15:200;277.13:200;277.12:200;277.1:200;277.08:200;277.06:200;277.05:200;277.03:200;277.01:200;277:200;276.98:200;276.95:200;276.93:200;276.91:200;276.9:200;276.88:200;276.86:200;276.84:200;276.83:200;276.81:200;276.79:200;276.78:200;276.76:200;276.73:200;276.71:200;276.69:200;276.67:200;276.66:200;276.64:200;276.62:200;276.61:200;276.59:200;276.57:200;276.56:200;276.54:200;276.52:200;276.5:200;276.49:200;276.47:200;276.45:200;276.44:200;276.42:200;276.39:200;276.37:200;276.35:200;276.32:200;276.3:200;276.28:200;276.27:200;276.25:200;276.23:200;276.22:200;276.2:200;276.18:200;276.16:200;276.15:200;276.13:200;276.1:200;276.08:200;276.06:200;276.05:200;276.03:200;276.01:200;275.98:200;275.96:200;275.94:200;275.93:200;275.91:200;275.89:200;275.88:200;275.86:200;275.84:200;275.82:200;275.81:200;275.79:200;275.76:200;275.74:200;275.72:200;275.71:200;275.69:200;275.67:200;275.64:200;275.62:200;275.6:200;275.59:200;275.57:200;275.54:200;275.52:200;275.5:200;275.48:200;275.47:200;275.45:200;275.42:200;275.4:200;275.38:200;275.37:200;275.35:200;275.33:200;275.31:200;275.3:200;275.28:200;275.26:200;275.25:200;275.23:200;275.2:200;275.18:200;275.16:200;275.14:200;275.13:200;275.11:200;275.09:200;275.08:200;275.06:200;275.04:200;275.03:200;275.01:200;274.99:200;274.97:200;274.96:200;274.94:200;274.92:200;274.91:200;274.89:200;274.85:200;274.84:200;274.82:200;274.79:200;274.77:200;274.75:200;274.74:200;274.72:200;274.7:200;274.67:200;274.65:200;274.63:200;274.62:200;274.6:200;274.57:200;274.55:200;274.53:200;274.51:200;274.5:200;274.48:200;274.45:200;274.43:200;274.41:200;274.4:200;274.38:200;274.36:200;274.34:200;274.33:200;274.31:200;274.29:200;274.28:200;274.26:200;274.23:200;274.21:200;274.19:200;274.17:200;274.16:200;274.14:200;274.12:200;274.11:200;274.09:200;274.07:200;274.06:200;274.04:200;274.01:200;274:200;273.99:200;273.96:200;273.94:200;273.92:200;273.89:200;273.87:200;273.85:200;273.84:200;273.82:200;273.79:200;273.77:200;273.75:200;273.73:200;273.72:200;273.7:200;273.67:200;273.65:200;273.63:200;273.62:200;273.6:200;273.58:200;273.56:200;273.55:200;273.53:200;273.51:200;273.5:200;273.48:200;273.45:200;273.43:200;273.41:200;273.39:200;273.38:200;273.36:200;273.34:200;273.33:200;273.31:200;273.29:200;273.28:200;273.26:200;273.24:200;273.22:200;273.21:200;273.19:200;273.17:200;273.16:200;273.14:200;273.13:200;273.12:200;273.1:200;273.08:200;273.05:200;273.02:200;272.99:200;272.96:200;272.93:200;272.91:200;272.88:200;272.84:200;272.81:200;272.78:200;272.74:0;272.71:0;272.42:200;272.4:200;272.38:200;272.35:200;272.33:200;272.31:200;272.3:200;272.28:200;272.26:200;272.25:200;272.23:200;272.21:200;272.19:200;272.18:200;272.16:200;272.14:200;272.13:200;272.11:200;272.09:200;272.08:200;272.06:200;272.04:200;272.01:200;271.99:200;271.97:200;271.96:200;271.94:200;271.92:200;271.91:200;271.89:200;271.87:200;271.85:200;271.84:200;271.82:200;271.79:200;271.77:200;271.75:200;271.74:200;271.72:200;271.7:200;271.67:200;271.65:200;271.63:200;271.62:200;271.6:200;271.57:200;271.55:200;271.53:200;271.51:200;271.5:200;271.48:200;271.45:200;271.43:200;271.41:200;271.4:200;271.38:200;271.36:200;271.34:200;271.33:200;271.31:200;271.29:200;271.28:200;271.26:200;271.23:200;271.21:200;271.19:200;271.17:200;271.16:200;271.14:200;271.12:200;271.11:200;271.09:200;271.07:200;271.06:200;271.04:200;271.01:200;270.99:200;270.97:200;270.96:200;270.94:200;270.92:200;270.91:200;270.89:200;270.87:200;270.85:200;270.84:200;270.82:200;270.79:200;270.77:200;270.75:200;270.74:200;270.72:200;270.7:200;270.67:200;270.65:200;270.63:200;270.62:200;270.6:200;270.57:200;270.55:200;270.53:200;270.51:200;270.5:200;270.48:200;270.45:200;270.43:200;270.41:200;270.4:200;270.38:200;270.36:200;270.34:200;270.33:200;270.31:200;270.29:200;270.28:200;270.26:200;270.23:200;270.21:200;270.19:200;270.18:200;270.16:200;270.14:200;270.12:200;270.11:200;270.09:200;270.07:200;270.06:200;270.04:200;270.01:200;269.99:200;269.97:200;269.95:200;269.94:200;269.92:200;269.89:200;269.87:200;269.85:200;269.84:200;269.82:200;269.8:200;269.78:200;269.77:200;269.75:200;269.73:200;269.72:200;269.7:200;269.67:200;269.65:200;269.63:200;269.6:200;269.58:200;269.56:200;269.55:200;269.53:200;269.51:200;269.5:200;269.48:200;269.46:200;269.44:200;269.43:200;269.41:200;269.39:200;269.38:200;269.36:200;269.34:200;269.33:200;269.31:200;269.29:200;269.26:200;269.24:200;269.22:200;269.21:200;269.19:200;269.17:200;269.16:200;269.14:200;269.12:200;269.11:200;269.09:200;269.07:200;269.04:200;269.02:200;269:200;268.99:200;268.97:200;268.95:200;268.94:200;268.92:200;268.9:200;268.88:200;268.87:200;268.85:200;268.83:200;268.8:200;268.78:200;268.77:200;268.75:200;268.73:200;268.72:200;268.7:200;268.68:200;268.66:200;268.65:200;268.63:200;268.6:200;268.58:200;268.56:200;268.55:200;268.53:200;268.52:200;268.5:200;268.48:200;268.45:200;268.43:200;268.41:200;268.39:200;268.38:200;268.36:200;268.34:200;268.33:200;268.31:200;268.29:200;268.28:200;268.26:200;268.24:200;268.22:200;268.21:200;268.19:200;268.17:200;268.16:200;268.14:200;268.12:200;268.11:200;268.09:200;268.07:200;268.04:200;268.02:200;268:200;267.99:200;267.97:200;267.95:200;267.94:200;267.92:200;267.89:200;267.87:200;267.85:200;267.82:200;267.8:200;267.78:200;267.77:200;267.75:200;267.73:200;267.72:200;267.7:200;267.68:200;267.66:200;267.65:200;267.63:200;267.6:200;267.58:200;267.56:200;267.55:200;267.53:200;267.51:200;267.48:200;267.46:200;267.44:200;267.43:200;267.41:200;267.39:200;267.38:200;267.36:200;267.34:200;267.32:200;267.31:200;267.29:200;267.26:200;267.24:200;267.22:200;267.21:200;267.19:200;267.17:200;267.16:200;267.14:200;267.12:200;267.1:200;267.09:200;267.07:200;267.04:200;267.02:200;267:200;266.99:200;266.97:200;266.95:200;266.92:200;266.9:200;266.88:200;266.87:200;266.85:200;266.82:200;266.8:200;266.78:200;266.76:200;266.75:200;266.73:200;266.7:200;266.68:200;266.66:200;266.65:200;266.63:200;266.61:200;266.59:200;266.58:200;266.56:200;266.54:200;266.53:200;266.51:200;266.48:200;266.46:200;266.44:200;266.42:200;266.41:200;266.39:200;266.37:200;266.36:200;266.34:200;266.32:200;266.31:200;266.29:200;266.27:200;266.25:200;266.24:200;266.22:200;266.2:200;266.19:200;266.17:200;266.14:200;266.12:200;266.1:200;266.07:200;266.05:200;266.03:200;266.02:200;266:200;265.98:200;265.97:200;265.95:200;265.94:200;265.92:200;265.9:200;265.88:200;265.85:200;265.83:200;265.81:200;265.8:200;265.78:200;265.76:200;265.75:200;265.73:200;265.72:200;265.7:200;265.69:200;265.66:200;265.65:200;265.63:200;265.6:200;265.58:200;265.56:200;265.54:200;265.53:200;265.51:200;265.48:200;265.46:200;265.44:200;265.43:200;265.41:200;265.39:200;265.37:200;265.36:200;265.34:200;265.32:200;265.31:200;265.29:200;265.26:200;265.24:200;265.22:200;265.2:200;265.19:200;265.17:200;265.14:200;265.12:200;265.1:200;265.09:200;265.07:200;265.05:200;265.03:200;265.02:200;265:200;264.98:200;264.97:200;264.95:200;264.92:200;264.9:200;264.88:200;264.85:200;264.83:200;264.81:200;264.8:200;264.78:200;264.76:200;264.75:200;264.73:200;264.7:200;264.68:200;264.66:200;264.65:200;264.63:200;264.6:200;264.59:200;264.57:200;264.53:200;264.51:200;264.49:200;264.47:200;264.45:200;264.44:200;264.42:200;264.39:200;264.37:200;264.36:200;264.34:200;264.32:200;264.31:200;264.29:200;264.28:200;264.26:200;264.24:200;264.22:200;264.21:200;264.19:200;264.17:200;264.16:200;264.14:200;264.12:200;264.1:200;264.09:200;264.07:200;264.04:200;264.02:200;264:200;263.99:200;263.97:200;263.95:200;263.92:200;263.9:200;263.88:200;263.87:200;263.85:200;263.82:200;263.8:200;263.78:200;263.76:200;263.75:200;263.73:200;263.7:200;263.68:200;263.66:200;263.65:200;263.63:200;263.61:200;263.59:200;263.57:200;263.55:200;263.53:200;263.51:200;263.49:200;263.47:200;263.45:200;263.43:200;263.41:200;263.4:200;263.38:200;263.36:200;263.34:200;263.33:200;263.31:200;263.29:200;263.28:200;263.26:200;263.23:200;263.21:200;263.19:200;263.17:200;263.16:200;263.14:200;263.12:200;263.11:200;263.09:200;263.07:200;263.06:200;263.04:200;263.02:200;263:200;262.99:200;262.97:200;262.95:200;262.94:200;262.92:200;262.89:200;262.87:200;262.85:200;262.84:200;262.82:200;262.79:200;262.77:200;262.75:200;262.74:200;262.72:200;262.7:200;262.67:200;262.65:200;262.63:200;262.62:200;262.6:200;262.57:200;262.55:200;262.53:200;262.51:200;262.5:200;262.48:200;262.45:200;262.43:200;262.41:200;262.4:200;262.38:200;262.36:200;262.34:200;262.33:200;262.31:200;262.29:200;262.28:200;262.26:200;262.23:200;262.21:200;262.19:200;262.17:200;262.16:200;262.14:200;262.12:200;262.11:200;262.09:200;262.07:200;262.06:200;262.04:200;262.02:200;262:200;261.99:200;261.97:200;261.95:200;261.94:200;261.92:200;261.89:200;261.87:200;261.85:200;261.84:200;261.82:200;261.8:200;261.78:200;261.77:200;261.75:200;261.73:200;261.72:200;261.7:200;261.67:200;261.65:200;261.63:200;261.62:200;261.6:200;261.58:200;261.56:200;261.55:200;261.53:200;261.51:200;261.5:200;261.48:200;261.45:200;261.43:200;261.41:200;261.39:200;261.38:200;261.36:200;261.34:200;261.33:200;261.31:200;261.29:200;261.28:200;261.26:200;261.23:200;261.21:200;261.19:200;261.17:200;261.16:200;261.14:200;261.12:200;261.11:200;261.09:200;261.07:200;261.06:200;261.04:200;261.02:200;261:200;260.99:200;260.97:200;260.95:200;260.94:200;260.92:200;260.91:200;260.89:200;260.88:200;260.86:200;260.84:200;260.82:200;260.79:200;260.78:200;260.77:200;260.74:200;260.72:200;260.7:200;260.67:200;260.65:200;260.63:200;260.62:200;260.6:200;260.57:200;260.55:200;260.53:200;260.51:200;260.5:200;260.48:200;260.45:200;260.43:200;260.41:200;260.4:200;260.38:200;260.36:200;260.34:200;260.33:200;260.31:200;260.29:200;260.28:200;260.26:200;260.23:200;260.21:200;260.19:200;260.18:200;260.16:200;260.14:200;260.13:200;260.11:200;260.09:200;260.07:200;260.06:200;260.04:200;260.01:200;259.99:200;259.97:200;259.96:200;259.94:200;259.92:200;259.89:200;259.87:200;259.85:200;259.84:200;259.82:200;259.79:200;259.77:200;259.75:200;259.74:200;259.72:200;259.7:200;259.67:200;259.65:200;259.63:200;259.62:200;259.6:200;259.57:200;259.55:200;259.53:200;259.51:200;259.5:200;259.48:200;259.45:200;259.43:200;259.41:200;259.4:200;259.38:200;259.36:200;259.34:200;259.33:200;259.31:200;259.29:200;259.28:200;259.26:200;259.23:200;259.21:200;259.19:200;259.17:200;259.16:200;259.14:200;259.12:200;259.11:200;259.09:200;259.07:200;259.06:200;259.04:200;259.02:200;259:200;258.99:200;258.97:200;258.95:200;258.94:200;258.92:200;258.89:200;258.87:200;258.85:200;258.82:200;258.8:200;258.78:200;258.77:200;258.75:200;258.73:200;258.72:200;258.7:200;258.68:200;258.66:200;258.65:200;258.63:200;258.6:200;258.58:200;258.56:200;258.55:200;258.53:200;258.51:200;258.48:200;258.46:200;258.44:200;258.43:200;258.41:200;258.39:200;258.38:200;258.36:200;258.34:200;258.32:200;258.31:200;258.29:200;258.26:200;258.24:200;258.22:200;258.21:200;258.19:200;258.17:200;258.14:200;258.12:200;258.1:200;258.09:200;258.07:200;258.04:200;258.02:200;258:200;257.98:200;257.97:200;257.95:200;257.92:200;257.9:200;257.88:200;257.87:200;257.85:200;257.83:200;257.81:200;257.8:200;257.78:200;257.76:200;257.75:200;257.73:200;257.7:200;257.68:200;257.66:200;257.65:200;257.63:200;257.61:200;257.59:200;257.58:200;257.56:200;257.54:200;257.53:200;257.51:200;257.48:200;257.46:200;257.44:200;257.42:200;257.41:200;257.39:200;257.37:200;257.36:200;257.34:200;257.32:200;257.31:200;257.29:200;257.27:200;257.25:200;257.24:200;257.22:200;257.2:200;257.19:200;257.17:200;257.14:200;257.12:200;257.1:200;257.09:200;257.07:200;257.05:200;257.03:200;257.02:200;257:200;256.98:200;256.97:200;256.95:200;256.92:200;256.9:200;256.88:200;256.87:200;256.85:200;256.83:200;256.81:200;256.8:200;256.78:200;256.76:200;256.75:200;256.73:200;256.7:200;256.68:200;256.66:200;256.64:200;256.63:200;256.61:200;256.59:200;256.58:200;256.56:200;256.54:200;256.53:200;256.51:200;256.49:200;256.47:200;256.46:200;256.44:200;256.42:200;256.41:200;256.39:200;256.37:200;256.36:200;256.34:200;256.32:200;256.29:200;256.27:200;256.25:200;256.24:200;256.22:200;256.2:200;256.19:200;256.17:200;256.15:200;256.13:200;256.12:200;256.1:200;256.07:200;256.05:200;256.03:200;256.02:200;256:200;255.98:200;255.96:200;255.94:200;255.93:200;255.9:200;255.88:200;255.85:200;255.83:200;255.81:200;255.78:200;255.76:200;255.74:200;255.73:200;255.71:200;255.69:200;255.68:200;255.66:200;255.64:200;255.61:200;255.59:200;255.57:200;255.56:200;255.54:200;255.52:200;255.51:200;255.49:200;255.47:200;255.44:200;255.42:200;255.39:200;255.37:200;255.35:200;255.34:200;255.32:200;255.3:200;255.27:200;255.25:200;255.22:200;255.2:200;255.17:200;255.15:200;255.13:200;255.1:200;255.08:200;255.05:200;255.03:200;255:200;254.98:200;254.96:200;254.94:200;254.93:200;254.91:200;254.88:200;254.86:200;254.83:200;254.81:200;254.79:200;254.77:200;254.76:200;254.74:200;254.71:200;254.69:200;254.66:200;254.64:200;254.62:200;254.6:200;254.59:200;254.57:200;254.55:200;254.54:200;254.52:200;254.49:200;254.47:200;254.45:200;254.42:200;254.4:200;254.38:200;254.37:200;254.35:200;254.32:200;254.3:200;254.28:200;254.25:200;254.23:200;254.21:200;254.2:200;254.18:200;254.16:200;254.15:200;254.13:200;254.11:200;254.08:200;254.06:200;254.03:200;254.01:200;253.99:200;253.98:200;253.96:200;253.94:200;253.91:200;253.89:200;253.86:200;253.84:200;253.82:200;253.81:200;253.79:200;253.77:200;253.74:200;253.72:200;253.69:200;253.67:200;253.64:200;253.62:200;253.6:200;253.57:200;253.55:200;253.52:200;253.5:200;253.47:200;253.45:200;253.43:200;253.41:200;253.4:200;253.38:200;253.35:200;253.33:200;253.3:200;253.27:200;253.25:200;253.22:200;253.2:200;253.17:200;253.15:200;253.13:200;253.12:200;253.1:200;253.08:200;253.05:200;253.03:200;253:200;252.98:200;252.96:200;252.95:200;252.93:200;252.91:200;252.88:200;252.86:200;252.83:200;252.81:200;252.78:200;252.76:200;252.74:200;252.71:200;252.69:200;252.66:200;252.64:200;252.61:200;252.59:200;252.57:200;252.55:200;252.54:200;252.52:200;252.49:200;252.47:200;252.44:200;252.42:200;252.4:200;252.38:200;252.36:200;252.32:200;252.3:200;252.27:200;252.25:200;252.23:200;252.21:200;252.2:200;252.18:200;252.16:200;252.15:200;252.13:200;252.1:200;252.08:200;252.06:200;252.03:200;252.01:200;251.99:200;251.98:200;251.96:200;251.94:200;251.93:200;251.91:200;251.88:200;251.86:200;251.84:200;251.82:200;251.81:200;251.79:200;251.77:200;251.76:200;251.74:200;251.71:200;251.69:200;251.67:200;251.64:200;251.62:200;251.6:200;251.59:200;251.57:200;251.55:200;251.54:200;251.52:200;251.5:200;251.47:200;251.44:200;251.43:200;251.41:200;251.38:200;251.36:200;251.33:200;251.3:200;251.28:200;251.25:200;251.22:200;251.18:200;251.15:200;251.12:0;251.08:0;251.05:0;251.02:0;251.01:0;250.98:0;250.95:0;250.91:0;250.88:0;250.86:0;250.83:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.bottomHolePressure</name>
-      <storedData>250:20728.53;240:20728.53;230:20728.53;220:20728.53;210:20728.53;200:20728.53;190:20422.56;180:20322.71;170:20318.16;160:20277.2;150:20277.2;140:20338.37;130:20362.51;120:20304.15;110:20301.25;100:20258.24;90:20207.79;80:20207.79;70:20207.75;60:20207.33;50:20207.31;40:20207.31;30:20207.33;20:20207.2;10:20207.18</storedData>
+      <storedData>290:20728.53;280:20728.6;270:20728.53;260:20728.53;250:20728.53;240:20728.53;230:20728.53;220:20728.53;210:20728.53;200:20728.53;190:20422.56;180:20322.71;170:20318.16;160:20277.2;150:20277.2;140:20338.37;130:20362.51;120:20304.15;110:20301.25;100:20258.24;90:20207.79;80:20207.79;70:20207.75;60:20207.33;50:20207.31;40:20207.31;30:20207.33;20:20207.2;10:20207.18</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.bottomHoleFracturePressure</name>
-      <storedData>250:49853.09;240:49853.09;230:49853.09;220:49853.09;210:49853.09;200:49853.09;190:49853.09;180:49853.09;170:49853.09;160:49853.09;150:49853.09;140:49853.09;130:49853.09;120:49853.09;110:49853.09;100:49853.09;90:49853.09;80:49853.09;70:49853.09;60:49853.09;50:49853.09;40:49853.09;30:49853.09;20:49853.09;10:49853.09</storedData>
+      <storedData>290:47205.72;280:47205.72;270:47205.72;260:47205.72;250:49853.09;240:49853.09;230:49853.09;220:49853.09;210:49853.09;200:49853.09;190:49853.09;180:49853.09;170:49853.09;160:49853.09;150:49853.09;140:49853.09;130:49853.09;120:49853.09;110:49853.09;100:49853.09;90:49853.09;80:49853.09;70:49853.09;60:49853.09;50:49853.09;40:49853.09;30:49853.09;20:49853.09;10:49853.09</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.bottomHoleLeakOffPressure</name>
-      <storedData>250:47205.72;240:47205.72;230:47205.72;220:47205.72;210:47205.72;200:47205.72;190:47205.72;180:47205.72;170:47205.72;160:47205.72;150:47205.72;140:47205.72;130:47205.72;120:47205.72;110:47205.72;100:47205.72;90:47205.72;80:47205.72;70:47205.72;60:47205.72;50:47205.72;40:47205.72;30:47205.72;20:47205.72;10:47205.72</storedData>
+      <storedData>290:49853.09;280:49853.09;270:49853.09;260:49853.09;250:47205.72;240:47205.72;230:47205.72;220:47205.72;210:47205.72;200:47205.72;190:47205.72;180:47205.72;170:47205.72;160:47205.72;150:47205.72;140:47205.72;130:47205.72;120:47205.72;110:47205.72;100:47205.72;90:47205.72;80:47205.72;70:47205.72;60:47205.72;50:47205.72;40:47205.72;30:47205.72;20:47205.72;10:47205.72</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.formationPressure</name>
-      <storedData>250:12033.51;240:12033.51;230:12033.51;220:12033.51;210:12033.51;200:12033.51;190:12033.51;180:12033.51;170:12033.51;160:12033.51;150:12033.51;140:12033.51;130:12033.51;120:12033.51;110:12033.51;100:12033.51;90:12033.51;80:12033.51;70:12033.51;60:12033.51;50:12033.51;40:12033.51;30:12033.51;20:12033.51;10:12033.51</storedData>
+      <storedData>290:12033.51;280:12033.51;270:12033.51;260:12033.51;250:12033.51;240:12033.51;230:12033.51;220:12033.51;210:12033.51;200:12033.51;190:12033.51;180:12033.51;170:12033.51;160:12033.51;150:12033.51;140:12033.51;130:12033.51;120:12033.51;110:12033.51;100:12033.51;90:12033.51;80:12033.51;70:12033.51;60:12033.51;50:12033.51;40:12033.51;30:12033.51;20:12033.51;10:12033.51</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.formationMargin</name>
-      <storedData>250:15480.89;240:15480.89;230:15480.89;220:15480.89;210:15480.89;200:15480.89;190:15480.89;180:15480.89;170:15480.89;160:15480.89;150:15480.89;140:15480.89;130:15480.89;120:15480.89;110:15480.89;100:15480.89;90:15480.89;80:15480.89;70:15480.89;60:15480.89;50:15480.89;40:15480.89;30:15480.89;20:15480.89;10:15480.89</storedData>
+      <storedData>290:15480.89;280:15480.88;270:15480.89;260:15480.89;250:15480.89;240:15480.89;230:15480.89;220:15480.89;210:15480.89;200:15480.89;190:15480.89;180:15480.89;170:15480.89;160:15480.89;150:15480.89;140:15480.89;130:15480.89;120:15480.89;110:15480.89;100:15480.89;90:15480.89;80:15480.89;70:15480.89;60:15480.89;50:15480.89;40:15480.89;30:15480.89;20:15480.89;10:15480.89</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.casingShoeFracturePressure</name>
-      <storedData>250:21931.58;240:21931.58;230:21931.58;220:21931.58;210:21931.58;200:21931.58;190:21931.58;180:21931.58;170:21931.58;160:21931.58;150:21931.58;140:21931.58;130:21931.58;120:21931.58;110:21931.58;100:21931.58;90:21931.58;80:21931.58;70:21931.58;60:21931.58;50:21931.58;40:21931.58;30:21931.58;20:21931.58;10:21931.58</storedData>
+      <storedData>290:21931.58;280:21931.58;270:21931.58;260:21931.58;250:21931.58;240:21931.58;230:21931.58;220:21931.58;210:21931.58;200:21931.58;190:21931.58;180:21931.58;170:21931.58;160:21931.58;150:21931.58;140:21931.58;130:21931.58;120:21931.58;110:21931.58;100:21931.58;90:21931.58;80:21931.58;70:21931.58;60:21931.58;50:21931.58;40:21931.58;30:21931.58;20:21931.58;10:21931.58</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.casingShoeLeakOffPressure</name>
-      <storedData>250:21187.36;240:21187.36;230:21187.36;220:21187.36;210:21187.36;200:21187.36;190:21187.36;180:21187.36;170:21187.36;160:21187.36;150:21187.36;140:21187.36;130:21187.36;120:21187.36;110:21187.36;100:21187.36;90:21187.36;80:21187.36;70:21187.36;60:21187.36;50:21187.36;40:21187.36;30:21187.36;20:21187.36;10:21187.36</storedData>
+      <storedData>290:21187.36;280:21187.36;270:21187.36;260:21187.36;250:21187.36;240:21187.36;230:21187.36;220:21187.36;210:21187.36;200:21187.36;190:21187.36;180:21187.36;170:21187.36;160:21187.36;150:21187.36;140:21187.36;130:21187.36;120:21187.36;110:21187.36;100:21187.36;90:21187.36;80:21187.36;70:21187.36;60:21187.36;50:21187.36;40:21187.36;30:21187.36;20:21187.36;10:21187.36</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.casingShoePressure</name>
-      <storedData>250:13512.05;240:13512.05;230:13512.05;220:13512.05;210:13512.05;200:13512.05;190:13377.58;180:13333.69;170:13331.69;160:13313.69;150:13313.69;140:13340.57;130:13351.18;120:13325.53;110:13324.26;100:13305.35;90:13283.18;80:13283.18;70:13283.18;60:13283.13;50:13283.12;40:13283.12;30:13283.13;20:13282.7;10:13282.65</storedData>
+      <storedData>290:13512.05;280:13512.11;270:13512.05;260:13512.05;250:13512.05;240:13512.05;230:13512.05;220:13512.05;210:13512.05;200:13512.05;190:13377.58;180:13333.69;170:13331.69;160:13313.69;150:13313.69;140:13340.57;130:13351.18;120:13325.53;110:13324.26;100:13305.35;90:13283.18;80:13283.18;70:13283.18;60:13283.13;50:13283.12;40:13283.12;30:13283.13;20:13282.7;10:13282.65</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.totalGasVolume</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.gasPressure</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.bottomMostGasDepthChart</name>
-      <storedData>250:1719.072;240:1719.072;230:1719.072;220:1719.072;210:1719.072;200:1719.072;190:1719.072;180:1719.072;170:1719.072;160:1719.072;150:1719.072;140:1719.072;130:1719.072;120:1719.072;110:1719.072;100:1719.072;90:1719.072;80:1719.072;70:1719.072;60:1719.072;50:1719.072;40:1719.072;30:1719.072;20:1719.072;10:1719.072</storedData>
+      <storedData>290:1719.072;280:1719.072;270:1719.072;260:1719.072;250:1719.072;240:1719.072;230:1719.072;220:1719.072;210:1719.072;200:1719.072;190:1719.072;180:1719.072;170:1719.072;160:1719.072;150:1719.072;140:1719.072;130:1719.072;120:1719.072;110:1719.072;100:1719.072;90:1719.072;80:1719.072;70:1719.072;60:1719.072;50:1719.072;40:1719.072;30:1719.072;20:1719.072;10:1719.072</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.topMostGasDepthChart</name>
-      <storedData>250:1719.072;240:1719.072;230:1719.072;220:1719.072;210:1719.072;200:1719.072;190:1719.072;180:1719.072;170:1719.072;160:1719.072;150:1719.072;140:1719.072;130:1719.072;120:1719.072;110:1719.072;100:1719.072;90:1719.072;80:1719.072;70:1719.072;60:1719.072;50:1719.072;40:1719.072;30:1719.072;20:1719.072;10:1719.072</storedData>
+      <storedData>290:1719.072;280:1719.072;270:1719.072;260:1719.072;250:1719.072;240:1719.072;230:1719.072;220:1719.072;210:1719.072;200:1719.072;190:1719.072;180:1719.072;170:1719.072;160:1719.072;150:1719.072;140:1719.072;130:1719.072;120:1719.072;110:1719.072;100:1719.072;90:1719.072;80:1719.072;70:1719.072;60:1719.072;50:1719.072;40:1719.072;30:1719.072;20:1719.072;10:1719.072</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.trappedMudPressure</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.trappedGasPressure</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.overkillPressure</name>
-      <storedData>250:8695.03;240:8695.03;230:8695.03;220:8695.03;210:8695.03;200:8695.03;190:8389.053;180:8289.206;170:8284.654;160:8243.693;150:8243.693;140:8304.859;130:8329.002;120:8270.646;110:8267.748;100:8224.732;90:8174.284;80:8174.284;70:8174.246;60:8173.826;50:8173.81;40:8173.81;30:8173.823;20:8173.69;10:8173.671</storedData>
+      <storedData>290:8695.03;280:8695.098;270:8695.03;260:8695.03;250:8695.03;240:8695.03;230:8695.03;220:8695.03;210:8695.03;200:8695.03;190:8389.053;180:8289.206;170:8284.654;160:8243.693;150:8243.693;140:8304.859;130:8329.002;120:8270.646;110:8267.748;100:8224.732;90:8174.284;80:8174.284;70:8174.246;60:8173.826;50:8173.81;40:8173.81;30:8173.823;20:8173.69;10:8173.671</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.annulusHydrostaticPressure</name>
-      <storedData>250:20207.65;240:20207.65;230:20207.65;220:20207.65;210:20207.65;200:20207.65;190:20207.65;180:20207.65;170:20207.65;160:20207.65;150:20207.65;140:20207.65;130:20207.65;120:20207.65;110:20207.65;100:20207.65;90:20207.65;80:20207.65;70:20207.61;60:20207.32;50:20207.31;40:20207.31;30:20207.31;20:20207.18;10:20207.18</storedData>
+      <storedData>290:20207.65;280:20207.65;270:20207.65;260:20207.65;250:20207.65;240:20207.65;230:20207.65;220:20207.65;210:20207.65;200:20207.65;190:20207.65;180:20207.65;170:20207.65;160:20207.65;150:20207.65;140:20207.65;130:20207.65;120:20207.65;110:20207.65;100:20207.65;90:20207.65;80:20207.65;70:20207.61;60:20207.32;50:20207.31;40:20207.31;30:20207.31;20:20207.18;10:20207.18</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.hydrostaticUnderBit</name>
-      <storedData>250:13.67169;240:13.67169;230:13.67169;220:13.67169;210:13.67169;200:13.67169;190:13.67169;180:13.67169;170:13.67169;160:13.67169;150:13.67169;140:13.67169;130:13.67169;120:13.67169;110:13.67169;100:13.67169;90:13.67169;80:13.67169;70:13.67169;60:13.67169;50:13.67169;40:13.67169;30:13.67169;20:13.67169;10:13.67169</storedData>
+      <storedData>290:13.67169;280:13.6717;270:13.67169;260:13.67169;250:13.67169;240:13.67169;230:13.67169;220:13.67169;210:13.67169;200:13.67169;190:13.67169;180:13.67169;170:13.67169;160:13.67169;150:13.67169;140:13.67169;130:13.67169;120:13.67169;110:13.67169;100:13.67169;90:13.67169;80:13.67169;70:13.67169;60:13.67169;50:13.67169;40:13.67169;30:13.67169;20:13.67169;10:13.67169</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.drillPipeHydrostaticAtBit</name>
-      <storedData>250:20193.97;240:20193.97;230:20193.97;220:20193.97;210:20193.97;200:20193.97;190:20193.97;180:20193.97;170:20193.97;160:20193.97;150:20193.97;140:20193.97;130:20193.97;120:20193.97;110:20193.97;100:20193.97;90:20193.97;80:20193.97;70:20193.97;60:20193.61;50:20193.57;40:20193.57;30:20193.57;20:20193.94;10:20193.95</storedData>
+      <storedData>290:20193.97;280:20193.98;270:20193.97;260:20193.98;250:20193.97;240:20193.97;230:20193.97;220:20193.97;210:20193.97;200:20193.97;190:20193.97;180:20193.97;170:20193.97;160:20193.97;150:20193.97;140:20193.97;130:20193.97;120:20193.97;110:20193.97;100:20193.97;90:20193.97;80:20193.97;70:20193.97;60:20193.61;50:20193.57;40:20193.57;30:20193.57;20:20193.94;10:20193.95</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.annulusLosses</name>
-      <storedData>250:520.8878;240:520.8878;230:520.8878;220:520.8878;210:520.8878;200:520.8878;190:214.91;180:115.0648;170:110.5134;160:69.55041;150:69.55041;140:130.7163;130:154.8609;120:96.50349;110:93.60497;100:50.58942;90:0.1412626;80:0.1412626;70:0.1412626;60:0.01412626;50:0;40:0;30:0.01412626;20:0.01412626;10:0</storedData>
+      <storedData>290:520.8878;280:520.9551;270:520.8878;260:520.8878;250:520.8878;240:520.8878;230:520.8878;220:520.8878;210:520.8878;200:520.8878;190:214.91;180:115.0648;170:110.5134;160:69.55041;150:69.55041;140:130.7163;130:154.8609;120:96.50349;110:93.60497;100:50.58942;90:0.1412626;80:0.1412626;70:0.1412626;60:0.01412626;50:0;40:0;30:0.01412626;20:0.01412626;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.drillBitLosses</name>
-      <storedData>250:1599.61;240:1599.61;230:1599.61;220:1599.61;210:1599.61;200:1599.61;190:615.735;180:284.79;170:272.33;160:160.19;150:160.19;140:332.361;130:399.9;120:233.073;110:224.95;100:120.388;90:0.13;80:0.13;70:0.13;60:0.013;50:0;40:0;30:0.013;20:0.013;10:0</storedData>
+      <storedData>290:1599.61;280:1599.61;270:1599.61;260:1599.61;250:1599.61;240:1599.61;230:1599.61;220:1599.61;210:1599.61;200:1599.61;190:615.735;180:284.79;170:272.33;160:160.19;150:160.19;140:332.361;130:399.9;120:233.073;110:224.95;100:120.388;90:0.13;80:0.13;70:0.13;60:0.013;50:0;40:0;30:0.013;20:0.013;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.drillStringLosses</name>
-      <storedData>250:4105.941;240:4105.941;230:4105.941;220:4105.941;210:4105.941;200:4105.941;190:1694.046;180:907.0077;170:871.1307;160:548.2368;150:548.2368;140:1030.382;130:1220.703;120:760.6966;110:737.8488;100:398.3298;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:4105.941;280:4105.941;270:4105.941;260:4105.941;250:4105.941;240:4105.941;230:4105.941;220:4105.941;210:4105.941;200:4105.941;190:1694.046;180:907.0077;170:871.1307;160:548.2368;150:548.2368;140:1030.382;130:1220.703;120:760.6966;110:737.8488;100:398.3298;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.killLinePressure</name>
@@ -2465,11 +2608,59 @@
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.volumeLostToFracture</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__hydData.balloonVolume</name>
-      <storedData>250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+      <storedData>290:0;280:0;270:0;260:0;250:0;240:0;230:0;220:0;210:0;200:0;190:0;180:0;170:0;160:0;150:0;140:0;130:0;120:0;110:0;100:0;90:0;80:0;70:0;60:0;50:0;40:0;30:0;20:0;10:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.mudPumpsFlow</name>
+      <storedData>290:0.02183504;280:0.02183504;270:0.02183504;260:0.01965154;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.boostPumpFlow</name>
+      <storedData>290:0;280:0;270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.outCoriolisFlow</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.FSPPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.SBPPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.PT13</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.PT06</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.liquidSealPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.MGSPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.BOPPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.serviceRigTubingPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
+    </NetworkLogData>
+    <NetworkLogData>
+      <name>Root.__hydData.serviceRigAnnulusCPressure</name>
+      <storedData>270:0;260:0;250:0</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__rnData.torqueLog</name>
@@ -2930,6 +3121,55 @@
       <boolean>false</boolean>
     </stallHistory>
   </ropControllerData>
+  <loggingChartsPrefs>
+    <LoggingChartPref>
+      <name>DPPLog</name>
+      <colorHtml>FCFCFCFF</colorHtml>
+      <printHtml>D6D6D6FF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>-4495.60156</lowerBound>
+      <upperBound>36387.23</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>CPLog</name>
+      <colorHtml>00FFFFFF</colorHtml>
+      <printHtml>00FFFFFF</printHtml>
+      <strokeIndex>1</strokeIndex>
+      <lowerBound>-2943.38281</lowerBound>
+      <upperBound>39375.57</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>BHPLog</name>
+      <colorHtml>FF00FFFF</colorHtml>
+      <printHtml>FF00FFFF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>17056.6133</lowerBound>
+      <upperBound>59375.5664</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>FormationLog</name>
+      <colorHtml>FF00FFFF</colorHtml>
+      <printHtml>FF00FFFF</printHtml>
+      <strokeIndex>1</strokeIndex>
+      <lowerBound>17056.6133</lowerBound>
+      <upperBound>59375.5664</upperBound>
+    </LoggingChartPref>
+    <LoggingChartPref>
+      <name>WOBLog</name>
+      <colorHtml>FFEB04FF</colorHtml>
+      <printHtml>FFEB04FF</printHtml>
+      <strokeIndex>0</strokeIndex>
+      <lowerBound>-86792.34</lowerBound>
+      <upperBound>442194.344</upperBound>
+    </LoggingChartPref>
+  </loggingChartsPrefs>
+  <edrChartsPrefs>
+    <ArrayOfLoggingChartPref />
+    <ArrayOfLoggingChartPref />
+    <ArrayOfLoggingChartPref />
+    <ArrayOfLoggingChartPref />
+    <ArrayOfLoggingChartPref />
+  </edrChartsPrefs>
   <twistOffEventHasFired>false</twistOffEventHasFired>
   <objectiveAchieved>false</objectiveAchieved>
   <saveWarnings />
