@@ -2112,7 +2112,7 @@
       <minStrokesBeforeIncident>150</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC MODULE B 1 - PREPARE TO DRILL</moduleName>
+  <moduleName>IADC_SURFACE_B_5.dsav</moduleName>
     <moduleText>This module is designed to allow users to correctly line up for drilling.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

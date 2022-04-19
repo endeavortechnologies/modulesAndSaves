@@ -2304,7 +2304,7 @@
       <minStrokesBeforeIncident>400</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>500</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>MODULE SUBSEA SS01</moduleName>
+  <moduleName>EXXON_EXXON_SUBSEA_C_WASHEDCHOKE2.dsav</moduleName>
     <moduleText>SS01</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

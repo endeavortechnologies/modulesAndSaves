@@ -4106,7 +4106,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>TEXADA FF 18199 SWD</moduleName>
+  <moduleName>EXXON_TEXADA_4_GAS_BELOW_BOP_30SPM.dsav</moduleName>
     <moduleText>DRILLERS METHOD</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

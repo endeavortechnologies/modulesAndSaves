@@ -2130,7 +2130,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC MODULE 5 - SHUT DOWN TO COMPLETE THE 1st CIRCULATION OF THE DRILLER'S METHOD</moduleName>
+  <moduleName>IADC_SURFACE_5.dsav</moduleName>
     <moduleText>This module is designed to allow users to practice shutting in the well after removal of influx.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

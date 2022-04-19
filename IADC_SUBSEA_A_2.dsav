@@ -2257,7 +2257,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC SUBSEA MODULE A 1 - PREPARE TO KILL AND STARTUP</moduleName>
+  <moduleName>IADC_SUBSEA_A_2.dsav</moduleName>
     <moduleText>This module is designed to allow users to line up for, and start the kill operation.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

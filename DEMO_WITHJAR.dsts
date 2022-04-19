@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<moduleName>Jarring + Well Control Module</moduleName>
+  <moduleName>DEMO_WITHJAR.dsts</moduleName>
 	<moduleText>Same well as DEMO_IWCF
 Drilling jar is installed below top collar
 Jar cocking force = 8.9 kDaN DOWN

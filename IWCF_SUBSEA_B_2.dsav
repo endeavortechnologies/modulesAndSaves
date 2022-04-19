@@ -2195,7 +2195,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF SUBSEA B 2</moduleName>
+  <moduleName>IWCF_SUBSEA_B_2.dsav</moduleName>
     <moduleText>IWCF SUBSEA B 2</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

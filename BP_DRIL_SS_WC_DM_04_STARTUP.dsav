@@ -2236,7 +2236,7 @@
       <minStrokesBeforeIncident>200</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>DRIL_SS_WC_DM_03_STARTUP</moduleName>
+  <moduleName>BP_DRIL_SS_WC_DM_04_STARTUP.dsav</moduleName>
     <moduleText>THE PURPOSE OF THIS MODULE IS TO PRACTICE BRINGING THE PUMPS ONLINE DURING WELL CONTROL SCENARIOS.
 
 YOU MUST:

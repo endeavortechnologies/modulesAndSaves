@@ -2215,7 +2215,7 @@
       <latitude>0</latitude>
       <longitude>0</longitude>
     </WeatherSettings>
-    <moduleName>IADC SURFACE ECHO</moduleName>
+  <moduleName>IADC_SURFACE_ECHO_7_NONPORTED.dsav</moduleName>
     <moduleText />
     <isMetric>true</isMetric>
     <version>MODULE_V5</version>

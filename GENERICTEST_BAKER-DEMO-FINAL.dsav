@@ -3584,7 +3584,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>BAKER MODULE</moduleName>
+  <moduleName>GENERICTEST_BAKER-DEMO-FINAL.dsav</moduleName>
     <moduleText>BAKER PACKER DEMO</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

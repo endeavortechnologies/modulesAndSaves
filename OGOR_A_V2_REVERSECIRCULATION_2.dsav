@@ -2274,7 +2274,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF Module One</moduleName>
+  <moduleName>OGOR_A_V2_REVERSECIRCULATION_2.dsav</moduleName>
     <moduleText>IWCF assessment module #1</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

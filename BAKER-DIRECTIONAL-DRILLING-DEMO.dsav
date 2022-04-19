@@ -10905,7 +10905,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>BAKER DIRECTIONAL DRILLING MODULE</moduleName>
+  <moduleName>BAKER-DIRECTIONAL-DRILLING-DEMO.dsav</moduleName>
     <moduleText>DRILL A CONTINUOUS BUILD</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

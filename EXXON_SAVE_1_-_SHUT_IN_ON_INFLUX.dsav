@@ -2313,7 +2313,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>MODULE SUBSEA SS01</moduleName>
+  <moduleName>EXXON_SAVE_1_-_SHUT_IN_ON_INFLUX.dsav</moduleName>
     <moduleText>SS01</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

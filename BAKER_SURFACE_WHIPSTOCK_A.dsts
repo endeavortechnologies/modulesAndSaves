@@ -838,7 +838,7 @@
     <latitude>0</latitude>
     <longitude>0</longitude>
   </WeatherSettings>
-  <moduleName>GPS Alberta</moduleName>
+  <moduleName>BAKER_SURFACE_WHIPSTOCK_A.dsts</moduleName>
   <moduleText>Canadian drilling</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

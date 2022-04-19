@@ -2269,7 +2269,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC SUBSEA MODULE 1 - IDENTIFY INCIDENT</moduleName>
+  <moduleName>IADC_SUBSEA_A_3.dsav</moduleName>
     <moduleText>This module is designed to practice identifying incidents.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

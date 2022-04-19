@@ -2035,7 +2035,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF SURFACE D 2</moduleName>
+  <moduleName>IWCF_SURFACE_D_2.dsav</moduleName>
     <moduleText>IWCF SURFACE D 2</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

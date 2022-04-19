@@ -481,7 +481,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>TEXADA FF 18199 SWD</moduleName>
+  <moduleName>EXXON_TEXADA_MASTER_18199_SWD_DRILLERS.dsts</moduleName>
   <moduleText>DRILLERS METHOD</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

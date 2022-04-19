@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<moduleName>IWCF Module - Bad Lineup</moduleName>
+  <moduleName>DEMO_IWCF_BADLINEUP.dsts</moduleName>
 	<moduleText>Starting manifold and accumulator settings are wrong.
 Standpipe manifold should be lined up to drill
 Choke manifold should be lined up to route mud to the degasser

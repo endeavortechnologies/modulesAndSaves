@@ -2096,7 +2096,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>LEVEL 4 SUBSEA - WAIT/WEIGHT</moduleName>
+  <moduleName>DEMO_LEVEL_4_SUBSEA_-_GRADED_-_WAIT_AND_WEIGHT_METHOD.dsav</moduleName>
     <moduleText>Use the application to execute the Level 4 Supervisor Well Control Procedures. (SUBSEA)
   
   The Driller has notified you that the well has gone underbalanced, the well has been shut in 

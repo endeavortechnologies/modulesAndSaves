@@ -2096,7 +2096,7 @@
       <minStrokesBeforeIncident>200</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>400</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>LEVEL 4 SUBSEA - DRILLERS METHOD</moduleName>
+  <moduleName>DEMO_LEVEL_4_SUBSEA_-_GRADED_-_DRILLERS_METHOD.dsav</moduleName>
     <moduleText>Use the application to execute the Level 4 Supervisor Well Control Procedures. (SUBSEA)
   
   The Driller has notified you that the well has gone underbalanced, the well has been shut in 

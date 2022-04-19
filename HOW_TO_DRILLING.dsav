@@ -2459,7 +2459,7 @@
       <minStrokesBeforeIncident>150</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC-SUBSEA-B-1</moduleName>
+  <moduleName>HOW_TO_DRILLING.dsav</moduleName>
     <moduleText>SS03</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

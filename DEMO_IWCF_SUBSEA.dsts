@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<moduleName>IWCF Subsea Module One</moduleName>
+  <moduleName>DEMO_IWCF_SUBSEA.dsts</moduleName>
 	<moduleText>IWCF subsea assessment module #1
 		Stickup Height for hang-off: 5.8m / 19ft
 		Block Height for hang-off: 15.7m / 51.6ft

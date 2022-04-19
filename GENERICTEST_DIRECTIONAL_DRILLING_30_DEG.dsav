@@ -3458,7 +3458,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>Drill the well to TD based on the directional plan provided</moduleName>
+  <moduleName>GENERICTEST_DIRECTIONAL_DRILLING_30_DEG.dsav</moduleName>
     <moduleText>This module is designed with the following Learning Objectives:
 
 	  1. Identify Gravity and Magnetic Toolfaces. Know the difference.

@@ -764,7 +764,7 @@
 		<minStrokesBeforeIncident>0</minStrokesBeforeIncident>
 		<maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
 	</RandomIncidentSettings>
-	<moduleName>IWCF Subsea Module One</moduleName>
+  <moduleName>WEATHERFORD_WFT_3_22150.dsts</moduleName>
 	<moduleText>IWCF subsea assessment module #1
 Stickup Height for hang-off: 5.8m / 19ft
 Block Height for hang-off: 15.7m / 51.6ft

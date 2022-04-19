@@ -624,7 +624,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>Wide Catch Overshot</moduleName>
+  <moduleName>DEMO_FISHING_AUTO_MAN.dsts</moduleName>
   <moduleText>Fish a stuck drill string out of the well</moduleText>
   <loggingCharts />
   <edrCharts />

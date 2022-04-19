@@ -912,7 +912,7 @@
     <latitude>0</latitude>
     <longitude>0</longitude>
   </WeatherSettings>
-  <moduleName>IWCF Module One</moduleName>
+  <moduleName>DEMO_MUDTANKS_Surface.DSTS</moduleName>
   <moduleText>IWCF assessment module #1</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

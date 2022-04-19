@@ -3342,7 +3342,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>ISE BP DISCO 2020</moduleName>
+  <moduleName>MAERSK_SNAP_2_1_-_14073_FT.dsav</moduleName>
     <moduleText>KICK DURING CONNECTION</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

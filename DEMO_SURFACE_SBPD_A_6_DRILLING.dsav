@@ -2129,7 +2129,7 @@
       <minStrokesBeforeIncident>500</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>600</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>Managed Pressure Drilling</moduleName>
+  <moduleName>DEMO_SURFACE_SBPD_A_6_DRILLING.dsav</moduleName>
     <moduleText>Drill ahead using the managed pressure drilling system</moduleText>
     <loggingCharts />
     <edrCharts>

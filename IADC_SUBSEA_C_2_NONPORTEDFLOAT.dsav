@@ -2188,7 +2188,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC-SUBSEA-B-1</moduleName>
+  <moduleName>IADC_SUBSEA_C_2_NONPORTEDFLOAT.dsav</moduleName>
     <moduleText>SS03</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

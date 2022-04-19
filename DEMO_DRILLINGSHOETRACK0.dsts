@@ -750,7 +750,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>IWCF Module One</moduleName>
+  <moduleName>DEMO_DRILLINGSHOETRACK0.dsts</moduleName>
   <moduleText>IWCF assessment module #1</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

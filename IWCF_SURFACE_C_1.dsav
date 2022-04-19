@@ -2023,7 +2023,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF SURFACE C 1</moduleName>
+  <moduleName>IWCF_SURFACE_C_1.dsav</moduleName>
     <moduleText>IWCF SURFACE C 1</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

@@ -2016,7 +2016,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF Module One</moduleName>
+  <moduleName>OGOR_B_LUBEANDBLEED.dsav</moduleName>
     <moduleText>IWCF assessment module #1</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

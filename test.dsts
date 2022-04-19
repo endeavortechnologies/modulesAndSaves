@@ -759,7 +759,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>IWCF Module One</moduleName>
+  <moduleName>test.dsts</moduleName>
   <moduleText>IWCF assessment module #1</moduleText>
   <loggingCharts />
   <edrCharts />

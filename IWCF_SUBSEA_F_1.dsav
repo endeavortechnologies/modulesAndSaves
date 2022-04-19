@@ -2308,7 +2308,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF SUBSEA 6</moduleName>
+  <moduleName>IWCF_SUBSEA_F_1.dsav</moduleName>
     <moduleText>IWCF  SUBSEA 6</moduleText>
     <loggingCharts />
     <edrCharts>

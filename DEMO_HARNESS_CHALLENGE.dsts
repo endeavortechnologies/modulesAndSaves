@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<moduleName>Harness Demo - IWCF Surface Vertical Well 1</moduleName>
+  <moduleName>DEMO_HARNESS_CHALLENGE.dsts</moduleName>
 	<moduleText>Harness Energy Demo</moduleText>
 	<moduleVersion>0.7</moduleVersion>
 	<isMetric>false</isMetric>

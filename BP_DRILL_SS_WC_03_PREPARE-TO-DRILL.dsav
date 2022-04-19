@@ -2097,7 +2097,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>DRIL_SS_WC_DM_03_PREPARE-TO-DRILL</moduleName>
+  <moduleName>BP_DRILL_SS_WC_03_PREPARE-TO-DRILL.dsav</moduleName>
     <moduleText>THE PURPOSE OF THIS MODULE IS TO SET UP TO DRILL AHEAD.
 
     YOU MUST:

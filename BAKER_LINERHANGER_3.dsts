@@ -661,7 +661,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>BAKER LINER HANGER SET AND PUMP</moduleName>
+  <moduleName>BAKER_LINERHANGER_3.dsts</moduleName>
   <moduleText>PERFORM THE PUMPING OPERATIONS</moduleText>
   <loggingCharts />
   <edrCharts />

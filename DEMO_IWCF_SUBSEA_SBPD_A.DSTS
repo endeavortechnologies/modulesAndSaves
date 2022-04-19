@@ -726,7 +726,7 @@
     <minStrokesBeforeIncident>500</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>600</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>IWCF Subsea Module One</moduleName>
+  <moduleName>DEMO_IWCF_SUBSEA_SBPD_A.DSTS</moduleName>
   <moduleText>changed the drill string to 5" drill pipe and added a bigger bit hydraulic diameter</moduleText>
   <loggingCharts />
   <edrCharts>

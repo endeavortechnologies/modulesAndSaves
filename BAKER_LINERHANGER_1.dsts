@@ -605,7 +605,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>BAKER LINER HANGER MAKE UP HANGER</moduleName>
+  <moduleName>BAKER_LINERHANGER_1.dsts</moduleName>
   <moduleText>INSTALL THE LINER HANGER FROM THE SETBACK AREA.</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

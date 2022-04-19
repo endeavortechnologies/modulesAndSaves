@@ -943,7 +943,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>WELL 3</moduleName>
+  <moduleName>BAKER_WIRELINE_WELL_03.DSTS</moduleName>
   <moduleText>WEAKPOINT 10K</moduleText>
   <loggingCharts />
   <edrCharts />

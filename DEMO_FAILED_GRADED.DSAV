@@ -2490,7 +2490,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC SUBSEA DELTA </moduleName>
+  <moduleName>DEMO_FAILED_GRADED.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

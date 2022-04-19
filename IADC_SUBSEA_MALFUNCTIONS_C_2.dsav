@@ -2252,7 +2252,7 @@
       <minStrokesBeforeIncident>310</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>311</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC-SUBSEA-B-1</moduleName>
+  <moduleName>IADC_SUBSEA_MALFUNCTIONS_C_2.dsav</moduleName>
     <moduleText>SS03</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

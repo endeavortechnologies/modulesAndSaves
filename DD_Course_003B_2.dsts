@@ -784,7 +784,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>Directional Drilling Module One</moduleName>
+  <moduleName>DD_Course_003B_2.dsts</moduleName>
   <moduleText>The well is at KOP. Drill the well to 90° using 6° DLS at an azimuth of 0°.</moduleText>
   <loggingCharts />
   <edrCharts />

@@ -3083,7 +3083,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>WELL 10</moduleName>
+  <moduleName>ENDEAVOR_WIRELINE_WELL_10_WITH STRING.DSTS</moduleName>
   <moduleText>WEAKPOINT 9K</moduleText>
   <loggingCharts />
   <edrCharts />

@@ -2313,7 +2313,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>MODULE SUBSEA SS01</moduleName>
+  <moduleName>EXXON_EXXON_SUBSEA_C.dsav</moduleName>
     <moduleText>SS01</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

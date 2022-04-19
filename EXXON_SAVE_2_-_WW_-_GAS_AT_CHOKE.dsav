@@ -2351,7 +2351,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>MODULE SUBSEA SS01</moduleName>
+  <moduleName>EXXON_SAVE_2_-_WW_-_GAS_AT_CHOKE.dsav</moduleName>
     <moduleText>SS01</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

@@ -2337,7 +2337,7 @@
       <minStrokesBeforeIncident>150</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC SURFACE DELTA</moduleName>
+  <moduleName>IADC_SURFACE_DELTA_8_NONPORTED_REDCLOSED.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

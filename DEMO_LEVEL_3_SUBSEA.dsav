@@ -1963,7 +1963,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>LEVEL 3 SUBSEA</moduleName>
+  <moduleName>DEMO_LEVEL_3_SUBSEA.dsav</moduleName>
     <moduleText>Use the application to execute the Level 3 Drillers Well Control Procedures.
   
 The company representative has issued the following work instructions:

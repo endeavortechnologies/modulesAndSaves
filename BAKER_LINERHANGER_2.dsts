@@ -605,7 +605,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>BAKER LINER HANGER RIH</moduleName>
+  <moduleName>BAKER_LINERHANGER_2.dsts</moduleName>
   <moduleText>TRIP THE LINER TO BOTTOM.</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

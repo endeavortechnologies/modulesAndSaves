@@ -2042,7 +2042,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>dmvw</moduleName>
+  <moduleName>DEMO_SUBSEA_-_DRILLERS_METHOD_-_NON-PORTED_FLOAT.dsav</moduleName>
     <moduleText>Perform the Driller's and Supervisors roles in this well control training module.
 
 The module starts with the Top Drive connected to the drill string. The user will need to prepare to drill, drill ahead, identify kick, shut in well, circulate the kick out using Driller's Method Step #1.

@@ -2112,7 +2112,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC MODULE A 4 - REMOVE THE INFLUX AND SHUT DOWN PUMPS</moduleName>
+  <moduleName>IADC_SURFACE_A_4.dsav</moduleName>
     <moduleText>This module is designed to allow users to circulate gas through the choke.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE

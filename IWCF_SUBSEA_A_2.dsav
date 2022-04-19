@@ -2270,7 +2270,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF SUBSEA 5</moduleName>
+  <moduleName>IWCF_SUBSEA_A_2.dsav</moduleName>
     <moduleText>IWCF  SUBSEA 5</moduleText>
     <loggingCharts />
     <edrCharts>

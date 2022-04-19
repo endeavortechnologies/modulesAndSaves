@@ -1987,7 +1987,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>GPS Alberta</moduleName>
+  <moduleName>BAKER_CEMENTSQUEEZE.dsav</moduleName>
     <moduleText>Canadian drilling</moduleText>
     <loggingCharts />
     <edrCharts />

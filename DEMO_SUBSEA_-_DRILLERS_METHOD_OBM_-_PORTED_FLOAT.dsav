@@ -2042,7 +2042,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>SUBSEA BOP - OBM</moduleName>
+  <moduleName>DEMO_SUBSEA_-_DRILLERS_METHOD_OBM_-_PORTED_FLOAT.dsav</moduleName>
     <moduleText>DRILL INTO THE KICK FORMATION, SHUT IN THE WELL AND USE ANY DESIRED WELL CONTROL METHOD. THE DRILL STRING IS EQUIPPED WITH A PORTED FLOAT.</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

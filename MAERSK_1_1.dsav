@@ -3324,7 +3324,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>ISE BP DISCO 2020</moduleName>
+  <moduleName>MAERSK_1_1.dsav</moduleName>
     <moduleText>KICK DURING CONNECTION</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

@@ -2517,7 +2517,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>ISE BP DISCO 2020</moduleName>
+  <moduleName>MAERSK_3_2.dsav</moduleName>
     <moduleText>HANG-OFF SCENARIO</moduleText>
     <isMetric>true</isMetric>
     <version>MODULE_V5</version>

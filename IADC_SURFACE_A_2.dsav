@@ -2125,7 +2125,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC MODULE A 2 - PREPARE TO KILL AND STARTUP</moduleName>
+  <moduleName>IADC_SURFACE_A_2.dsav</moduleName>
     <moduleText>This module is designed to allow users to line up for, and start the kill operation.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

@@ -2130,7 +2130,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC MODULE 3 - IDENTIFY INCIDENT</moduleName>
+  <moduleName>IADC_SURFACE_3.dsav</moduleName>
     <moduleText>This module is designed to practice identifying incidents.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

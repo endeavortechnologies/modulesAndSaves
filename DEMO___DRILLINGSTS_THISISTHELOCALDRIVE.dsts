@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<moduleName>Sample1</moduleName>
+  <moduleName>DEMO___DRILLINGSTS_THISISTHELOCALDRIVE.dsts</moduleName>
 <moduleText>This is a deep Well KL from the pc</moduleText>
 <moduleVersion>0.1</moduleVersion>
 <isMetric>true</isMetric>

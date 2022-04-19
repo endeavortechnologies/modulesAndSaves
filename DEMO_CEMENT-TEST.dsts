@@ -578,7 +578,7 @@
     <strokeMarginAfterIncident>0</strokeMarginAfterIncident>
     <targetKillMudWeight>0</targetKillMudWeight>
   </GradingSettings>
-  <moduleName>IWCF Module One</moduleName>
+  <moduleName>DEMO_CEMENT-TEST.dsts</moduleName>
   <moduleText>IWCF assessment module #1</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V4</version>

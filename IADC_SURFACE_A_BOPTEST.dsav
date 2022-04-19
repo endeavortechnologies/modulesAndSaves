@@ -1725,7 +1725,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC MODULE B 1 - PREPARE TO DRILL AND DRILL AHEAD</moduleName>
+  <moduleName>IADC_SURFACE_A_BOPTEST.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

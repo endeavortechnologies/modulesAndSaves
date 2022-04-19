@@ -625,7 +625,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>IWCF Module One</moduleName>
+  <moduleName>BAKER_UPPERCOMPLETION.dsts</moduleName>
   <moduleText>IWCF assessment module #1</moduleText>
   <loggingCharts />
   <edrCharts />

@@ -27401,7 +27401,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>ISE EGYPT-2021</moduleName>
+  <moduleName>MAERSK_EGYPT_A.dsav</moduleName>
     <moduleText>12.25'' SECTION</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

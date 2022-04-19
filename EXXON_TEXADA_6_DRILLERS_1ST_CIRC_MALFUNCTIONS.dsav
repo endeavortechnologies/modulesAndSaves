@@ -4120,7 +4120,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>TEXADA FF 18199 SWD</moduleName>
+  <moduleName>EXXON_TEXADA_6_DRILLERS_1ST_CIRC_MALFUNCTIONS.dsav</moduleName>
     <moduleText>DRILLERS METHOD</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

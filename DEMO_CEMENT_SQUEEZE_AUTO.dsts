@@ -666,7 +666,7 @@ if (topDrive != null && Call("isReady", topDrive) == true)
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>GPS Alberta</moduleName>
+  <moduleName>DEMO_CEMENT_SQUEEZE_AUTO.dsts</moduleName>
   <moduleText>Canadian drilling</moduleText>
   <loggingCharts />
   <edrCharts />

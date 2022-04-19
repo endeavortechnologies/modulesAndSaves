@@ -2463,7 +2463,7 @@
       <minStrokesBeforeIncident>150</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC SUBSEA ECHO </moduleName>
+  <moduleName>IADC_SUBSEA_ECHO_2_NONPORTED.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

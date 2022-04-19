@@ -2209,7 +2209,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC SUBSEA MODULE 1 - PUMP KILL MUD IN ACCORDANCE WITH THE 2nd CIRCULATION OF DRILLER'S METHOD</moduleName>
+  <moduleName>IADC_SUBSEA_A_6.dsav</moduleName>
     <moduleText>This module is designed to allow users to pump Kill Mud holding BHP Constant.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

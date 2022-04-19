@@ -2075,7 +2075,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IWCF SURFACE 5</moduleName>
+  <moduleName>IWCF_SURFACE_A_1.dsav</moduleName>
     <moduleText>IWCF SURFACE 5</moduleText>
     <loggingCharts />
     <edrCharts>

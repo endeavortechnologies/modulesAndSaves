@@ -2204,7 +2204,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC-SUBSEA-B-1</moduleName>
+  <moduleName>IADC_SUBSEA_ECD_BHP.dsav</moduleName>
     <moduleText>SS03</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

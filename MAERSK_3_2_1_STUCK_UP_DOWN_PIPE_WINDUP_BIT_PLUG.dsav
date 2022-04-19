@@ -2763,7 +2763,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>ISE BP DISCO 2020</moduleName>
+  <moduleName>MAERSK_3_2_1_STUCK_UP_DOWN_PIPE_WINDUP_BIT_PLUG.dsav</moduleName>
     <moduleText>SAVNNAH FAULT</moduleText>
     <loggingCharts />
     <isMetric>true</isMetric>

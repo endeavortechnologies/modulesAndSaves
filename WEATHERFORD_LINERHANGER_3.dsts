@@ -606,7 +606,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>BAKER LINER HANGER SET AND PUMP</moduleName>
+  <moduleName>WEATHERFORD_LINERHANGER_3.dsts</moduleName>
   <moduleText>PERFORM THE PUMPING OPERATIONS</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

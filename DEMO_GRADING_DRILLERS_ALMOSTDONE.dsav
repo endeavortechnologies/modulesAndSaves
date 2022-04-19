@@ -2470,7 +2470,7 @@
       <minStrokesBeforeIncident>200</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>400</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC TEST MODULE</moduleName>
+  <moduleName>DEMO_GRADING_DRILLERS_ALMOSTDONE.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

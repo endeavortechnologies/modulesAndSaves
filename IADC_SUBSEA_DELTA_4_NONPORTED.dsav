@@ -2514,7 +2514,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName> IADC SUBSEA DELTA </moduleName>
+  <moduleName>IADC_SUBSEA_DELTA_4_NONPORTED.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

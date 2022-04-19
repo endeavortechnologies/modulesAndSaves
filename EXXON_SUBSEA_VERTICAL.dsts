@@ -570,7 +570,7 @@
     <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
     <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
   </RandomIncidentSettings>
-  <moduleName>MODULE SUBSEA SS01</moduleName>
+  <moduleName>EXXON_SUBSEA_VERTICAL.dsts</moduleName>
   <moduleText>SS01</moduleText>
   <isMetric>true</isMetric>
   <version>MODULE_V5</version>

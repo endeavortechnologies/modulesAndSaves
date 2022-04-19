@@ -2251,7 +2251,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC SUBSEA MODULE A 1 - PREPARE TO DRILL AND DRILL AHEAD</moduleName>
+  <moduleName>IWCF_SUBSEA_A_CHOKEPLUGGED_19.dsav</moduleName>
     <moduleText>This module is designed to allow users to correctly line up for drilling, and drill ahead.
 
 *ALWAYS REFER TO GRADING TAB FOR REQUIRED OBJECTIVE*

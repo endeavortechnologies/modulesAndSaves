@@ -2302,7 +2302,7 @@
       <minStrokesBeforeIncident>150</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>300</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>IADC SURFACE ECHO</moduleName>
+  <moduleName>IADC_SURFACE_ECHO_1_NONPORTED.dsav</moduleName>
     <moduleText />
     <loggingCharts />
     <isMetric>true</isMetric>

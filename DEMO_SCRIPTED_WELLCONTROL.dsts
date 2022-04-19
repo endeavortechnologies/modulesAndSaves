@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<moduleName>IWCF Module One</moduleName>
+  <moduleName>DEMO_SCRIPTED_WELLCONTROL.dsts</moduleName>
 	<moduleText>IWCF assessment module #1</moduleText>
 	<loggingCharts>
 		<LoggingChartPref>

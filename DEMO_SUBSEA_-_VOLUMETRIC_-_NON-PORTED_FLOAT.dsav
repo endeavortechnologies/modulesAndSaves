@@ -2106,7 +2106,7 @@
       <minStrokesBeforeIncident>0</minStrokesBeforeIncident>
       <maxStrokesBeforeIncident>0</maxStrokesBeforeIncident>
     </RandomIncidentSettings>
-    <moduleName>dril_ss_wc_vmvw_01</moduleName>
+  <moduleName>DEMO_SUBSEA_-_VOLUMETRIC_-_NON-PORTED_FLOAT.dsav</moduleName>
     <moduleText>A very large gas influx has been taken. The Operator has decided to bring the gas to surface using the Volumetric Method of Well Control.
 
 The principle of this method is to allow the gas influx to migrate up the well. As it does BHP will increase due to pressure inversion.

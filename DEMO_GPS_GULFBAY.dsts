@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebModule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<moduleName>GPS Gulf Bay</moduleName>
+  <moduleName>DEMO_GPS_GULFBAY.dsts</moduleName>
 	<moduleText>Offshore drilling
 Stickup Height for hang-off: 5.8m / 19ft
 Block Height for hang-off: 15.7m / 51.6ft
