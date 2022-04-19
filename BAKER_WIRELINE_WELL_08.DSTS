@@ -3106,7 +3106,7 @@
     <automaticallyRepairIncident>false</automaticallyRepairIncident>
     <targetAnnularPressure>0</targetAnnularPressure>
     <targetManifoldPressure>0</targetManifoldPressure>
-    <targetTankFillProportion>0</targetTankFillProportion>
+    <targetTankFillProportion>0.9</targetTankFillProportion>
     <targetTotalStrokesDuringStartup>0</targetTotalStrokesDuringStartup>
     <targetSlowPumpRate>0</targetSlowPumpRate>
     <targetDrillingPumpRate>0</targetDrillingPumpRate>

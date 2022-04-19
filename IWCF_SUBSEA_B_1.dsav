@@ -2090,7 +2090,7 @@
       <automaticallyRepairIncident>false</automaticallyRepairIncident>
       <targetAnnularPressure>10500</targetAnnularPressure>
       <targetManifoldPressure>15000</targetManifoldPressure>
-      <targetTankFillProportion>0.75</targetTankFillProportion>
+      <targetTankFillProportion>0.9</targetTankFillProportion>
       <targetTotalStrokesDuringStartup>200</targetTotalStrokesDuringStartup>
       <targetSlowPumpRate>45</targetSlowPumpRate>
       <targetDrillingPumpRate>0</targetDrillingPumpRate>

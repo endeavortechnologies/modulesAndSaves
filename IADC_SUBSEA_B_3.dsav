@@ -2114,7 +2114,7 @@
       <targetAnnularPressure>3500</targetAnnularPressure>
       <targetManifoldPressure>3600</targetManifoldPressure>
       <chokeLineUp>HARD</chokeLineUp>
-      <targetTankFillProportion>0.75</targetTankFillProportion>
+      <targetTankFillProportion>0.9</targetTankFillProportion>
       <targetTotalStrokesDuringStartup>200</targetTotalStrokesDuringStartup>
       <targetSlowPumpRate>30</targetSlowPumpRate>
       <targetDrillingPumpRate>80</targetDrillingPumpRate>

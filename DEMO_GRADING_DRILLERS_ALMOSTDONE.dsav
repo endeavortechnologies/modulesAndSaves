@@ -2453,7 +2453,7 @@
       <targetManifoldPressure>15000</targetManifoldPressure>
       <chokeLineUp>HARD</chokeLineUp>
       <bopLineUp>OUTSIDE OPEN</bopLineUp>
-      <targetTankFillProportion>0.75</targetTankFillProportion>
+      <targetTankFillProportion>0.9</targetTankFillProportion>
       <targetTotalStrokesDuringStartup>200</targetTotalStrokesDuringStartup>
       <targetSlowPumpRate>45</targetSlowPumpRate>
       <targetDrillingPumpRate>100</targetDrillingPumpRate>
