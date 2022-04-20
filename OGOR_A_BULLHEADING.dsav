@@ -2351,7 +2351,7 @@
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__tanksData.activeTanksVolume</name>
-      <storedData>150:117.2031;140:117.2031;130:117.2031;120:117.2031;110:117.2031;100:117.2;90:117.2;80:117.2;70:117.2;60:117.2;50:117.2;40:117.2;30:117.2;20:117.2;10:117.2</storedData>
+      <storedData>150:200.1031;140:200.1031;130:200.1031;120:200.1031;110:200.1031;100:200.1;90:200.1;80:200.1;70:200.1;60:200.1;50:200.1;40:200.1;30:200.1;20:200.1;10:200.1</storedData>
     </NetworkLogData>
     <NetworkLogData>
       <name>Root.__surfaceCirc.__tanksData.mudGainLossLog</name>
