@@ -1048,9 +1048,9 @@
         <BOPComponentData>
           <isOpen>true</isOpen>
           <type>UPPER_ANNULUS</type>
-          <bopCurrentState>CLOSED</bopCurrentState>
-          <lightCurrentState>CLOSED</lightCurrentState>
-          <previousLightState>OPEN</previousLightState>
+          <bopCurrentState>OPEN</bopCurrentState>
+          <lightCurrentState>OPEN</lightCurrentState>
+          <previousLightState>BLOCK</previousLightState>
           <isFailed>false</isFailed>
         </BOPComponentData>
         <BOPComponentData>
