@@ -24,9 +24,9 @@
     <targetStrokesForIncident>150</targetStrokesForIncident>
     <allowedIncidents>
       <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
-      <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
+      <!-- <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
       <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
-      <ScriptedIncidents>BOP_FAILURE_LOWER_ANNULAR</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_LOWER_ANNULAR</ScriptedIncidents> -->
     </allowedIncidents>
     <zeroStrokeReference>22.5625</zeroStrokeReference>
     <triggeredIncidents>0</triggeredIncidents>
@@ -1048,9 +1048,9 @@
         <BOPComponentData>
           <isOpen>true</isOpen>
           <type>UPPER_ANNULUS</type>
-          <bopCurrentState>OPEN</bopCurrentState>
-          <lightCurrentState>OPEN</lightCurrentState>
-          <previousLightState>BLOCK</previousLightState>
+          <bopCurrentState>CLOSED</bopCurrentState>
+          <lightCurrentState>CLOSED</lightCurrentState>
+          <previousLightState>OPEN</previousLightState>
           <isFailed>false</isFailed>
         </BOPComponentData>
         <BOPComponentData>

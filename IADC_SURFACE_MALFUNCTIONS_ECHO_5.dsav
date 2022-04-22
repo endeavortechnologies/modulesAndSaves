@@ -23,10 +23,10 @@
     <isInitialized>true</isInitialized>
     <targetStrokesForIncident>150</targetStrokesForIncident>
     <allowedIncidents>
-      <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
+      <!-- <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
       <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
-      <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
-      <ScriptedIncidents>BOP_FAILURE_LOWER_ANNULAR</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents> -->
+      <ScriptedIncidents>BOP_FAILURE_UPPER_RAMS</ScriptedIncidents>
     </allowedIncidents>
     <zeroStrokeReference>22.5625</zeroStrokeReference>
     <triggeredIncidents>0</triggeredIncidents>
@@ -1051,6 +1051,7 @@
           <bopCurrentState>OPEN</bopCurrentState>
           <lightCurrentState>OPEN</lightCurrentState>
           <previousLightState>BLOCK</previousLightState>
+          <isFailed>false</isFailed>
           <isFailed>false</isFailed>
         </BOPComponentData>
         <BOPComponentData>
