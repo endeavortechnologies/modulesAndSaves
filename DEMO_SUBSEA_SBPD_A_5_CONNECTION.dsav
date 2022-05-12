@@ -1749,7 +1749,7 @@
       </WebMudMotor>
       <WebDrillPipe>
         <innerDiameter>0.101599947</innerDiameter>
-        <outerDiameter>0.126999944</outerDiameter>
+        <outerDiameter>0.110</outerDiameter>
         <length>0</length>
         <nominalWeight>29</nominalWeight>
         <burstPressure>0</burstPressure>
@@ -1828,7 +1828,7 @@
       <WebDrillBit>
         <bitType>PDC</bitType>
         <diameter>0.2031999</diameter>
-        <bitHydraulicsDiameter>0.165099919</bitHydraulicsDiameter>
+        <bitHydraulicsDiameter>0.110</bitHydraulicsDiameter>
         <numberNozzles>3</numberNozzles>
         <nozzleDiameter>0.01374</nozzleDiameter>
         <maxDrillBitWOB>127000</maxDrillBitWOB>
@@ -1848,9 +1848,9 @@
         <valveLength>20</valveLength>
       </WebNonPortedFloat>
       <WebDrillStringConfiguration>
-        <pipeCount>139</pipeCount>
+        <pipeCount>169</pipeCount>
         <heavyWeightPipeCount>0</heavyWeightPipeCount>
-        <collarCount>30</collarCount>
+        <collarCount>0</collarCount>
         <drillingJarPosition>-1</drillingJarPosition>
         <dsPackerPosition>0</dsPackerPosition>
         <casingTwoCount>0</casingTwoCount>
@@ -2153,8 +2153,8 @@
       <maxBottomPressure>0</maxBottomPressure>
       <incorrectLineups>false</incorrectLineups>
       <bulkModulus>2.2E+07</bulkModulus>
-      <plasticViscosity>0.3</plasticViscosity>
-      <yieldPoint>0.3</yieldPoint>
+      <plasticViscosity>0</plasticViscosity>
+      <yieldPoint>0</yieldPoint>
       <kickLossCoeff>2.75E+12</kickLossCoeff>
       <fracLossCoeff>2.75E+12</fracLossCoeff>
       <minChokePercent>0</minChokePercent>
@@ -2295,6 +2295,9 @@
               Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.countdownsEnabled", null, false);
               Call("Endtech.Network_v2.NetworkBulletinBoard.simulationData.serverPrefs.faultsEnabled", null, false);
             }
+              // args for SBPDtest: backpressure 0 spm, backpressure maxSPM, maxSPM, boostSPM, pump1SPM, pump2SPM, ticksToPause 
+              //Call("Endtech.AutomationScripts.SBPDtest.rampUpRampDownTest", null, 1565, 1255, 240, 86, 120, 120, 500);
+              Call("Endtech.AutomationScripts.Automation.rpmCorrectionController", null, 0.63, 30, 0.455, 140);
         }
       ]]></cscsScript>
     </ProgrammerSettings>
