@@ -2297,7 +2297,8 @@
             }
               // args for SBPDtest: backpressure 0 spm, backpressure maxSPM, maxSPM, boostSPM, pump1SPM, pump2SPM, ticksToPause 
               //Call("Endtech.AutomationScripts.SBPDtest.rampUpRampDownTest", null, 1565, 1255, 240, 86, 120, 120, 500);
-              Call("Endtech.AutomationScripts.Automation.rpmCorrectionController", null, 0.63, 30, 0.455, 140);
+              //Call("Endtech.AutomationScripts.Automation.rpmCorrectionController", null, 0.63, 30, 0.455, 140);
+              Call("Endtech.AutomationScripts.Automation.balesControl");
         }
       ]]></cscsScript>
     </ProgrammerSettings>
