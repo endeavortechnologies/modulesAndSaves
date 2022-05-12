@@ -423,36 +423,36 @@
   </roughneckData>
   <drillStringData>
     <segments>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
       <SegmentType>DRILL_PIPE</SegmentType>
       <SegmentType>DRILL_PIPE</SegmentType>
       <SegmentType>DRILL_PIPE</SegmentType>
@@ -1758,7 +1758,7 @@
       </WebMudMotor>
       <WebDrillPipe>
         <innerDiameter>0.101599947</innerDiameter>
-        <outerDiameter>0.126999944</outerDiameter>
+        <outerDiameter>0.110</outerDiameter>
         <length>0</length>
         <nominalWeight>29</nominalWeight>
         <burstPressure>0</burstPressure>
@@ -1823,7 +1823,7 @@
       </WebCable>
       <WebDrillCollar>
         <innerDiameter>0.05715</innerDiameter>
-        <outerDiameter>0.1651</outerDiameter>
+        <outerDiameter>0.110</outerDiameter>
         <length>0</length>
         <nominalWeight>147</nominalWeight>
         <burstPressure>0</burstPressure>

@@ -423,36 +423,36 @@
   </roughneckData>
   <drillStringData>
     <segments>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
-      <SegmentType>DRILL_COLLAR</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
+      <SegmentType>DRILL_PIPE</SegmentType>
       <SegmentType>DRILL_PIPE</SegmentType>
       <SegmentType>DRILL_PIPE</SegmentType>
       <SegmentType>DRILL_PIPE</SegmentType>
