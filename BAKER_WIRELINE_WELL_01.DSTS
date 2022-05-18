@@ -102,7 +102,7 @@
         <length>2.228088</length>
         <diameter>0.0921999961</diameter>
         <weight>631.647461</weight>
-        <series>1329xa</series>
+        <series>1329XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -111,7 +111,7 @@
         <length>1.67335188</length>
         <diameter>0.08585</diameter>
         <weight>489.304382</weight>
-        <series>1339xa</series>
+        <series>1339XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -120,7 +120,7 @@
         <length>2.404872</length>
         <diameter>0.08585</diameter>
         <weight>480.427826</weight>
-        <series>1424pa</series>
+        <series>1424PA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -129,7 +129,7 @@
         <length>5.282184</length>
         <diameter>0.08585</diameter>
         <weight>1067.552</weight>
-        <series>1424xa</series>
+        <series>1424XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -138,7 +138,7 @@
         <length>8.756904</length>
         <diameter>0.0921999961</diameter>
         <weight>2139.59448</weight>
-        <series>1515xa</series>
+        <series>1515XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -147,7 +147,7 @@
         <length>2.4384</length>
         <diameter>0.08585</diameter>
         <weight>591.635254</weight>
-        <series>1633ea</series>
+        <series>1633EA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -156,7 +156,7 @@
         <length>2.386584</length>
         <diameter>0.08585</diameter>
         <weight>560.4759</weight>
-        <series>1677ea</series>
+        <series>1677EA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -165,7 +165,7 @@
         <length>2.401824</length>
         <diameter>0.08585</diameter>
         <weight>753.5287</weight>
-        <series>1678ba</series>
+        <series>1678BA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -174,7 +174,7 @@
         <length>1.316736</length>
         <diameter>0.08585</diameter>
         <weight>286.02066</weight>
-        <series>1678fa</series>
+        <series>1678FA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -183,7 +183,7 @@
         <length>3.313176</length>
         <diameter>0.09525</diameter>
         <weight>991.508545</weight>
-        <series>1678mc</series>
+        <series>1678MC</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -192,7 +192,7 @@
         <length>1.511808</length>
         <diameter>0.0921999961</diameter>
         <weight>991.508545</weight>
-        <series>1678pb</series>
+        <series>1678PB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -201,7 +201,7 @@
         <length>2.337816</length>
         <diameter>0.12065</diameter>
         <weight>1112.0741</weight>
-        <series>1970bb</series>
+        <series>1970BB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -210,7 +210,7 @@
         <length>4.52</length>
         <diameter>0.127</diameter>
         <weight>2277.49658</weight>
-        <series>1970cb</series>
+        <series>1970CB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -219,7 +219,7 @@
         <length>1.908048</length>
         <diameter>0.12065</diameter>
         <weight>1067.57312</weight>
-        <series>1970eb</series>
+        <series>1970EB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -228,7 +228,7 @@
         <length>3.09372</length>
         <diameter>0.12065</diameter>
         <weight>1112.0741</weight>
-        <series>1970ic</series>
+        <series>1970IC</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -237,7 +237,7 @@
         <length>2.904744</length>
         <diameter>0.189479992</diameter>
         <weight>1521.30566</weight>
-        <series>1970mb</series>
+        <series>1970MB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -246,7 +246,7 @@
         <length>2.688336</length>
         <diameter>0.12065</diameter>
         <weight>1494.60242</weight>
-        <series>1970ob</series>
+        <series>1970OB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -255,7 +255,7 @@
         <length>2.404872</length>
         <diameter>0.12065</diameter>
         <weight>1112.0741</weight>
-        <series>1970rb</series>
+        <series>1970RB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -264,7 +264,7 @@
         <length>3.938016</length>
         <diameter>0.12065</diameter>
         <weight>1770.39221</weight>
-        <series>1970wa</series>
+        <series>1970WA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -273,7 +273,7 @@
         <length>3.419856</length>
         <diameter>0.12395</diameter>
         <weight>1601.35974</weight>
-        <series>2234xa</series>
+        <series>2234XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -282,7 +282,7 @@
         <length>2.066544</length>
         <diameter>0.08585</diameter>
         <weight>431.477478</weight>
-        <series>2346xa</series>
+        <series>2346XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -291,7 +291,7 @@
         <length>2.313432</length>
         <diameter>0.0921999961</diameter>
         <weight>667.2445</weight>
-        <series>2446xa</series>
+        <series>2446XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -300,7 +300,7 @@
         <length>1.898904</length>
         <diameter>0.0921999961</diameter>
         <weight>572.0413</weight>
-        <series>3514xb</series>
+        <series>3514XB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -309,7 +309,7 @@
         <length>1.41732</length>
         <diameter>0.08585</diameter>
         <weight>400.339935</weight>
-        <series>3939xa</series>
+        <series>3939XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -318,7 +318,7 @@
         <length>4.733544</length>
         <diameter>0.08585</diameter>
         <weight>1293.98767</weight>
-        <series>3944xd</series>
+        <series>3944XD</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -327,7 +327,7 @@
         <length>1.16738391</length>
         <diameter>0.0921999961</diameter>
         <weight>355.857727</weight>
-        <series>3981xb</series>
+        <series>3981XB</series>
         <canMeasureCHT>true</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -336,7 +336,7 @@
         <length>3.788664</length>
         <diameter>0.08585</diameter>
         <weight>733.956543</weight>
-        <series>4401xa</series>
+        <series>4401XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -345,7 +345,7 @@
         <length>1.594104</length>
         <diameter>0.0921999961</diameter>
         <weight>352.299133</weight>
-        <series>4430xb</series>
+        <series>4430XB</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -354,7 +354,7 @@
         <length>1.25577593</length>
         <diameter>0.08585</diameter>
         <weight>320.2852</weight>
-        <series>4341xa</series>
+        <series>4341XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
@@ -372,7 +372,7 @@
         <length>3.236976</length>
         <diameter>0.0921999961</diameter>
         <weight>622.751038</weight>
-        <series>4253xa</series>
+        <series>4253XA</series>
         <canMeasureCHT>false</canMeasureCHT>
         <installedOrder>0</installedOrder>
       </WebDrillStringToolSpecs>
