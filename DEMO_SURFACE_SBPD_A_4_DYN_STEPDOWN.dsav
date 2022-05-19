@@ -1897,7 +1897,7 @@
         <Strata>
           <name>Drilling Break</name>
           <depth>1603</depth>
-          <pressureGradient>16.58</pressureGradient>
+          <pressureGradient>16.978</pressureGradient>
           <fracturePressure>22.3</fracturePressure>
           <maxROPv2>0</maxROPv2>
           <influxGas>1</influxGas>
