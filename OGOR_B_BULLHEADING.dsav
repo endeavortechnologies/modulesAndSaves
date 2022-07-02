@@ -2193,7 +2193,7 @@
       <rateOfInflux>0.003</rateOfInflux>
       <gaugeTimeDelay>1</gaugeTimeDelay>
       <BOPLeakRate>0</BOPLeakRate>
-      <rigType>LAND</rigType>
+      <rigType>SERVICE</rigType>
       <mpdIndex>0</mpdIndex>
       <gravity>0</gravity>
       <JoshMath />
