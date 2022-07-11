@@ -3,7 +3,7 @@
   <WebWellConfiguration>
     <casings>
       <WebCasing>
-        <name>Surface Casing</name>
+        <name>Surface2 Casing</name>
         <topDepth>0</topDepth>
         <depth>1000</depth>
         <width>0.224</width>
