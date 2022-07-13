@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-16"?>
 <SimSaveState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <userNames>|2|</userNames>
+  <userNames>||</userNames>
   <version>DATA_VERSION_0_18</version>
   <softwareVersion>O.1.1.8130-NONE (DEBUG)</softwareVersion>
   <engineVersion>2020.3.30f1</engineVersion>
@@ -1952,7 +1952,7 @@
       <maxCasingPressure>0</maxCasingPressure>
       <maxBottomPressure>0</maxBottomPressure>
       <incorrectLineups>false</incorrectLineups>
-      <bulkModulus>2.2E+08</bulkModulus>
+      <bulkModulus>2.2E+07</bulkModulus>
       <plasticViscosity>0.3</plasticViscosity>
       <yieldPoint>0.3</yieldPoint>
       <kickLossCoeff>2.75E+12</kickLossCoeff>
