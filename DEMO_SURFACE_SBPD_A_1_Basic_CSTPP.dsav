@@ -1675,7 +1675,7 @@
         <diameter>0.2031999</diameter>
         <bitHydraulicsDiameter>0.127</bitHydraulicsDiameter>
         <numberNozzles>3</numberNozzles>
-        <nozzleDiameter>0.01374</nozzleDiameter>
+        <nozzleDiameter>1</nozzleDiameter>
         <maxDrillBitWOB>127000</maxDrillBitWOB>
         <maxDrillingRotationSpeed>900</maxDrillingRotationSpeed>
       </WebDrillBit>
