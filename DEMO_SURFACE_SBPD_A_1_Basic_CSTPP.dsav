@@ -1952,9 +1952,9 @@
       <maxCasingPressure>0</maxCasingPressure>
       <maxBottomPressure>0</maxBottomPressure>
       <incorrectLineups>false</incorrectLineups>
-      <bulkModulus>2.2E+09</bulkModulus>
-      <plasticViscosity>0.3</plasticViscosity>
-      <yieldPoint>0.3</yieldPoint>
+      <bulkModulus>2.2E+07</bulkModulus>
+      <plasticViscosity>0.18</plasticViscosity>
+      <yieldPoint>0.02</yieldPoint>
       <kickLossCoeff>2.75E+12</kickLossCoeff>
       <fracLossCoeff>2.75E+12</fracLossCoeff>
       <minChokePercent>0</minChokePercent>
