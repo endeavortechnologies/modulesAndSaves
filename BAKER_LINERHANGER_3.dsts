@@ -285,7 +285,7 @@
       <secondsForCompression>0</secondsForCompression>
       <torqueToReleaseOvershot>0</torqueToReleaseOvershot>
       <turnScaling>0</turnScaling>
-      <plugDensity>7788.718</plugDensity>
+      <plugDensity>1550</plugDensity>
       <pressureToSetDies>15000</pressureToSetDies>
       <pressureToBreakBall>20684.2715</pressureToBreakBall>
       <pressureToBreakPlug>6894.75732</pressureToBreakPlug>
@@ -513,9 +513,9 @@
     <maxCasingPressure>0</maxCasingPressure>
     <maxBottomPressure>0</maxBottomPressure>
     <incorrectLineups>false</incorrectLineups>
-    <bulkModulus>0</bulkModulus>
-    <plasticViscosity>0</plasticViscosity>
-    <yieldPoint>0</yieldPoint>
+    <bulkModulus>21994270.5</bulkModulus>
+    <plasticViscosity>0.18</plasticViscosity>
+    <yieldPoint>0.02</yieldPoint>
     <kickLossCoeff>0</kickLossCoeff>
     <fracLossCoeff>0</fracLossCoeff>
     <minChokePercent>0</minChokePercent>
