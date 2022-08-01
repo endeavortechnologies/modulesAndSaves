@@ -1952,7 +1952,7 @@
       <maxCasingPressure>0</maxCasingPressure>
       <maxBottomPressure>0</maxBottomPressure>
       <incorrectLineups>false</incorrectLineups>
-      <bulkModulus>2.2E+07</bulkModulus>
+      <bulkModulus>2.2E+08</bulkModulus>
       <plasticViscosity>0.3</plasticViscosity>
       <yieldPoint>0.3</yieldPoint>
       <kickLossCoeff>2.75E+12</kickLossCoeff>
@@ -1985,7 +1985,7 @@
       <maxRateOfUtubingPerSecond>0</maxRateOfUtubingPerSecond>
       <minRateOfUtubingPerSecond>0</minRateOfUtubingPerSecond>
       <pumpTweenRateUpCoeff>0</pumpTweenRateUpCoeff>
-      <pumpTweenRateDownCoeff>0.5</pumpTweenRateDownCoeff>
+      <pumpTweenRateDownCoeff>0.6</pumpTweenRateDownCoeff>
       <killLineGasSplitPct>0</killLineGasSplitPct>
       <lateralFrictionScaling>0</lateralFrictionScaling>
       <secondsBeforeKick>0</secondsBeforeKick>
