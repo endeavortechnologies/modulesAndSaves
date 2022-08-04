@@ -616,7 +616,7 @@
       <flowModifierRate>NaN</flowModifierRate>
       <bitFailureState>NONE</bitFailureState>
       <diameter>0.2031999</diameter>
-      <tfo>180</tfo>
+      <tfo>220</tfo>
     </drillBit>
     <freezeTfoAt>-1</freezeTfoAt>
     <degreesPipeWoundUp>0</degreesPipeWoundUp>
@@ -1952,9 +1952,9 @@
       <maxCasingPressure>0</maxCasingPressure>
       <maxBottomPressure>0</maxBottomPressure>
       <incorrectLineups>false</incorrectLineups>
-      <bulkModulus>2.2E+08</bulkModulus>
-      <plasticViscosity>0.3</plasticViscosity>
-      <yieldPoint>0.3</yieldPoint>
+      <bulkModulus>3.2E+06</bulkModulus>
+      <plasticViscosity>0.01</plasticViscosity>
+      <yieldPoint>0.015</yieldPoint>
       <kickLossCoeff>2.75E+12</kickLossCoeff>
       <fracLossCoeff>2.75E+12</fracLossCoeff>
       <minChokePercent>0</minChokePercent>
