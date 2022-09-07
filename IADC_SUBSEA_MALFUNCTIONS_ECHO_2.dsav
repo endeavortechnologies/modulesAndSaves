@@ -24,10 +24,7 @@
     <queuedIncident>NONE</queuedIncident>
     <targetStrokesForIncident>150</targetStrokesForIncident>
     <allowedIncidents>
-      <!-- <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents> -->
-      <!-- <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents> -->
       <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
-      <!-- <ScriptedIncidents>BOP_FAILURE_LOWER_ANNULAR</ScriptedIncidents> -->
     </allowedIncidents>
     <zeroStrokeReference>51.3125</zeroStrokeReference>
     <triggeredIncidents>1</triggeredIncidents>
