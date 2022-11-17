@@ -13,7 +13,6 @@
     <includedSteps>
       <GradingCheckpoint>STARTUP</GradingCheckpoint>
       <GradingCheckpoint>INCIDENT</GradingCheckpoint>
-      <GradingCheckpoint>INCIDENT</GradingCheckpoint>
       <GradingCheckpoint>REMOVEINFLUX</GradingCheckpoint>
     </includedSteps>
     <bhpState>OK</bhpState>
@@ -26,10 +25,14 @@
   </gradingData>
   <randomIncidentData>
     <isInitialized>true</isInitialized>
-    <queuedIncident>NONE</queuedIncident>
-    <targetStrokesForIncident>10</targetStrokesForIncident>
-    <allowedIncidents />
-    <zeroStrokeReference>1640.95313</zeroStrokeReference>
+    <targetStrokesForIncident>150</targetStrokesForIncident>
+    <allowedIncidents>
+      <ScriptedIncidents>BIT_PLUGGED</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_1_PLUGGED</ScriptedIncidents>
+      <ScriptedIncidents>CHOKE_1_WASHOUT</ScriptedIncidents>
+      <ScriptedIncidents>BOP_FAILURE_UPPER_RAMS</ScriptedIncidents>
+    </allowedIncidents>
+    <zeroStrokeReference>47.69584</zeroStrokeReference>
     <triggeredIncidents>0</triggeredIncidents>
   </randomIncidentData>
   <travelBlockPosition>
